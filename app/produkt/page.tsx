@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, FileText, Search, FolderOpen, FileSpreadsheet, Mail, AlertTriangle, Clock, Shield, Zap, Lock, Sparkles, MessageSquare, GitCompare, BookOpen } from "lucide-react";
+import { Check, FileText, Search, FolderOpen, FileSpreadsheet, Mail, AlertTriangle, Clock, Shield, Zap, Lock, Sparkles, MessageSquare, GitCompare, BookOpen, Scale, Star, Gift } from "lucide-react";
 
 // Enhanced UI Mockup Components
 function WorkspaceMockup() {
@@ -193,14 +193,14 @@ export default function ProduktPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
             <span className="pill-badge bg-[#f5f5f5] text-[#6b6b6b] border border-[#e8e8e8] mb-6 inline-block">
-              Die KI-Workstation für Ihr Notariat
+              Die Komplettlösung für Ihr Notariat
             </span>
             <h1 className="font-serif font-medium text-4xl md:text-5xl lg:text-6xl text-[#1a1a1a] mb-6 tracking-tight">
               Effizienz trifft auf Kontrolle
             </h1>
             <p className="text-lg text-[#6b6b6b] mb-8">
-              Senury vereint alle Werkzeuge, die Sie für effiziente Kaufvertragsbearbeitung brauchen:
-              Von der strukturierten Erfassung bis zum exportierten Entwurf.
+              Senury vereint alle Werkzeuge, die Sie für effiziente Notariatsarbeit brauchen:
+              Von Kaufverträgen über Recherche bis zum exportierten Entwurf.
               Alles an einem Ort, alles §203 StGB-konform.
             </p>
             <Button className="bg-[#1a1a1a] hover:bg-[#2d2d2d] text-white h-14 px-8 text-base rounded-full transition-colors">
@@ -301,20 +301,20 @@ export default function ProduktPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">Intelligente Recherche</span>
+              <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">KI-Recherche</span>
               <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
-                Antworten auf Ihre Fragen
+                Chat-basierte Rechtsrecherche
               </h2>
               <p className="text-[#6b6b6b] text-lg leading-relaxed mb-8">
-                Stellen Sie Fragen zu Klauseln und Vorschriften. Erhalten Sie kontextuelle Antworten
-                mit Quellenangaben – direkt in Ihrem Workflow.
+                Stellen Sie Fragen zu Klauseln und Vorschriften. Erhalten Sie präzise, fundierte Antworten
+                aus erstklassigen juristischen Datenquellen – mit Quellenangaben direkt in Ihrem Workflow.
               </p>
               <ul className="space-y-3">
                 {[
-                  "Kontextbewusste Antworten",
+                  "Chat-Interface für natürliche Fragen",
+                  "Fundierte Antworten aus juristischen Datenquellen",
                   "Quellenangaben zu Gesetzen und Vorschriften",
-                  "Integration in den Editor",
-                  "Lernende KI aus Ihren Vorlagen"
+                  "Kontextbewusst: Integration in den Editor"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-[#1a1a1a]">
                     <Check className="w-5 h-5 text-[#c9a66b]" strokeWidth={1.5} />
@@ -408,6 +408,76 @@ export default function ProduktPage() {
               title="Integrationen"
               description="Word- und Outlook-Add-ins für Ihren gewohnten Workflow."
             />
+            <FeatureDetailCard
+              icon={GitCompare}
+              title="Kontrolle"
+              description="Perspektivisch: Minutenschnelle Analyse großer Dokumentenmengen. (In Entwicklung)"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Document Types Section */}
+      <section className="py-24 lg:py-32 bg-white border-y border-[#e8e8e8]">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">Urkunden</span>
+            <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
+              Kaufverträge und mehr
+            </h2>
+            <p className="text-[#6b6b6b] text-lg max-w-2xl mx-auto">
+              Kaufverträge bleiben unser Hauptfokus – aber Senury unterstützt auch bei weiteren urkundlichen Beurkundungen.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                icon: FileText,
+                title: "Kaufverträge",
+                status: "Vollständig",
+                description: "Grundstücke, Wohnungseigentum, bebaute/unbebaute Grundstücke"
+              },
+              {
+                icon: Gift,
+                title: "Schenkungen",
+                status: "Verfügbar",
+                description: "Schenkungsverträge mit Vorlagen und Klauseln"
+              },
+              {
+                icon: Scale,
+                title: "Übertragungen",
+                status: "Verfügbar",
+                description: "Grundstücksübertragungen und Erbbaurechte"
+              },
+              {
+                icon: Star,
+                title: "Weitere",
+                status: "In Planung",
+                description: "Erbfolge-, Teilungsverträge, Gesellschaftsverträge"
+              }
+            ].map((doc, i) => (
+              <Card key={i} className="bg-[#faf8f7] border-[#e8e8e8] rounded-xl overflow-hidden">
+                <CardContent className="p-6">
+                  <div className="w-12 h-12 bg-white border border-[#e8e8e8] flex items-center justify-center rounded-lg mb-4">
+                    <doc.icon className="w-6 h-6 text-[#1a1a1a]" />
+                  </div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <h3 className="font-serif text-lg font-medium text-[#1a1a1a]">{doc.title}</h3>
+                  </div>
+                  <span className={`text-[10px] px-2 py-0.5 rounded-full ${
+                    doc.status === "Vollständig"
+                      ? "bg-[#c9a66b]/10 text-[#c9a66b]"
+                      : doc.status === "Verfügbar"
+                      ? "bg-[#6b6b6b]/10 text-[#6b6b6b]"
+                      : "bg-[#e5e5e5] text-[#9a9a9a]"
+                  }`}>
+                    {doc.status}
+                  </span>
+                  <p className="text-[#6b6b6b] text-sm leading-relaxed mt-3">{doc.description}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
