@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Senury - Preise &amp; Pilot</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "libra-navy": "#0A192F",
+                        "libra-charcoal": "#1A1A1A",
+                        "libra-gray": "#F4F5F7",
+                        "libra-text": "#334155",
+                        "libra-border": "#E2E8F0",
+                        "primary": "#0f172a", // Navy for buttons
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "Public Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "sm": "0.125rem", "lg": "0.375rem", "xl": "0.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .memo-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-libra-charcoal font-sans antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full border-b border-libra-border bg-white/95 backdrop-blur">
+<div class="px-6 md:px-12 py-4 flex items-center justify-between mx-auto w-full">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center text-libra-navy">
+<span class="material-symbols-outlined text-2xl">gavel</span>
+</div>
+<span class="text-lg font-semibold tracking-tight text-libra-navy font-serif">Senury</span>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-10 items-center">
+<nav class="flex items-center gap-8">
+<a class="text-sm font-medium text-slate-600 hover:text-libra-navy transition-colors" href="#">Funktionen</a>
+<a class="text-sm font-medium text-slate-600 hover:text-libra-navy transition-colors" href="#">Sicherheit</a>
+<a class="text-sm font-medium text-libra-navy border-b border-libra-navy pb-0.5" href="#">Preise</a>
+<a class="text-sm font-medium text-slate-600 hover:text-libra-navy transition-colors" href="#">Über uns</a>
+</nav>
+<button class="bg-libra-navy hover:bg-slate-800 text-white text-sm font-medium py-2 px-5 rounded transition-colors">
+                        Demo anfordern
+                    </button>
+</div>
+<button class="md:hidden p-2 text-slate-600">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<div class="w-full flex justify-center py-16 md:py-24">
+<div class="flex flex-col max-w-6xl w-full px-4 md:px-8">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 pb-8 border-b border-libra-navy">
+<div class="max-w-2xl">
+<span class="text-xs font-mono uppercase tracking-widest text-slate-500 mb-2 block">Senury Intelligence</span>
+<h1 class="text-4xl md:text-5xl font-medium tracking-tight text-libra-navy mb-4 font-serif">
+                                Preismodelle
+                            </h1>
+<p class="text-slate-600 text-lg font-light leading-relaxed">
+                                Transparente Kostenstruktur für modernste Notariats-Software. Skalierbar nach Kanzleigröße und Sicherheitsanforderungen.
+                            </p>
+</div>
+<div class="mt-6 md:mt-0 text-right hidden md:block">
+<span class="text-sm text-slate-500 block">Letzte Aktualisierung</span>
+<span class="text-sm font-medium text-libra-navy">Oktober 2023</span>
+</div>
+</div>
+<div class="w-full border-y border-libra-border bg-white mb-12">
+<div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-libra-border">
+<div class="flex flex-col p-8 lg:p-10 hover:bg-slate-50 transition-colors duration-500">
+<h3 class="font-serif text-3xl font-medium text-libra-navy mb-3">Pilot</h3>
+<p class="text-sm text-slate-500 mb-8 leading-relaxed h-12">Einstieg in KI-gestützte Notariatsarbeit. Fokus auf einfachem Onboarding.</p>
+<div class="mb-8">
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-light text-libra-navy tracking-tight">499 €</span>
+</div>
+<span class="text-sm text-slate-400 block mt-1">pro Monat</span>
+</div>
+<button class="w-full bg-libra-navy hover:bg-[#112240] text-white font-medium py-3 px-4 rounded mb-10 transition-colors text-sm shadow-sm">
+                                Starten
+                            </button>
+<div class="space-y-4 flex-1 pt-4 border-t border-dashed border-libra-border">
+<p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-2">Onboarding Umfang</p>
+<ul class="space-y-3 text-sm text-slate-600 font-sans">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[18px] text-slate-400 shrink-0">check</span>
+<span>Sofortiger Zugang (Self-Serve)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[18px] text-slate-400 shrink-0">check</span>
+<span>Bis zu 50 Transaktionen / Mo</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[18px] text-slate-400 shrink-0">check</span>
+<span>Inkl. Video-Tutorial Bibliothek</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[18px] text-slate-400 shrink-0">check</span>
+<span>5 Standard Vorlagen</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[18px] text-slate-400 shrink-0">check</span>
+<span>Secure Cloud Deployment</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col p-8 lg:p-10 bg-slate-50/40 relative">
+<div class="absolute top-0 left-0 w-full h-[2px] bg-libra-navy"></div>
+<div class="flex justify-between items-start mb-3">
+<h3 class="font-serif text-3xl font-medium text-libra-navy">Standard</h3>
+<span class="text-[10px] font-bold uppercase tracking-wider bg-libra-navy text-white px-2 py-1 rounded-sm">Empfohlen</span>
+</div>
+<p class="text-sm text-slate-500 mb-8 leading-relaxed h-12">Für etablierte Kanzleien mit wachsendem Vertragsvolumen.</p>
+<div class="mb-8">
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-light text-libra-navy tracking-tight">899 €</span>
+</div>
+<span class="text-sm text-slate-400 block mt-1">pro Monat</span>
+</div>
+<button class="w-full bg-libra-navy hover:bg-[#112240] text-white font-medium py-3 px-4 rounded mb-10 transition-colors text-sm shadow-md">
+                                Demo buchen
+                            </button>
+<div class="space-y-4 flex-1 pt-4 border-t border-dashed border-libra-border">
+<p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-2">Alles im Pilot, plus</p>
+<ul class="space-y-3 text-sm text-libra-navy font-medium font-sans">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[18px] text-libra-navy shrink-0">check</span>
+<span>Persönliches Onboarding (2h)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[18px] text-libra-navy shrink-0">check</span>
+<span>Bis zu 200 Transaktionen / Mo</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[18px] text-libra-navy shrink-0">check</span>
+<span>20 KI-Optimierte Vorlagen</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[18px] text-libra-navy shrink-0">check</span>
+<span>Prioritärer Support</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[18px] text-libra-navy shrink-0">check</span>
+<span>XNotar Integration</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col p-8 lg:p-10 hover:bg-slate-50 transition-colors duration-500">
+<h3 class="font-serif text-3xl font-medium text-libra-navy mb-3">Enterprise</h3>
+<p class="text-sm text-slate-500 mb-8 leading-relaxed h-12">Maximale Sicherheit und maßgeschneiderte Infrastruktur.</p>
+<div class="mb-8">
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-semibold text-libra-charcoal tracking-tight">Auf Anfrage</span>
+</div>
+<span class="text-sm text-slate-400 block mt-1">Individuelles Angebot</span>
+</div>
+<button class="w-full bg-white border border-libra-border hover:border-libra-navy text-libra-navy font-medium py-3 px-4 rounded mb-10 transition-all text-sm hover:shadow-md">
+                                Kontaktieren
+                            </button>
+<div class="space-y-4 flex-1 pt-4 border-t border-dashed border-libra-border">
+<p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-2">Alles im Standard, plus</p>
+<ul class="space-y-3 text-sm text-slate-600 font-sans">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[18px] text-slate-600 shrink-0">check</span>
+<span>Custom Setup &amp; Training</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[18px] text-slate-600 shrink-0">check</span>
+<span>Unbegrenzte Transaktionen</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[18px] text-slate-600 shrink-0">check</span>
+<span>Unbegrenzte Vorlagen</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[18px] text-slate-600 shrink-0">check</span>
+<span>Individuelle API + Audit Logs</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[18px] text-slate-600 shrink-0">check</span>
+<span>24/7 Account Manager</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-slate-50 rounded-lg p-8 md:p-10 border border-libra-border mb-20">
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<div class="md:w-1/3">
+<h3 class="font-serif text-2xl font-medium text-libra-navy mb-2">Warum Senury?</h3>
+<p class="text-slate-600 text-sm leading-relaxed">
+                            Wir verstehen die Bedenken bei der Einführung neuer Software im Notariat. Hier sind Antworten auf die wichtigsten Fragen zur Wirtschaftlichkeit und Sicherheit.
+                        </p>
+<a class="inline-flex items-center gap-2 text-libra-navy font-medium text-sm mt-4 border-b border-libra-navy pb-0.5 hover:opacity-80 transition-opacity" href="#">
+                            Alle Fragen ansehen <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+<div>
+<h4 class="font-semibold text-libra-navy text-sm mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">paid</span>
+                                    Lohnt sich das?
+                                </h4>
+<p class="text-slate-500 text-sm leading-relaxed">
+                                    Absolut. Durch Automatisierung von Standardverträgen sparen Kanzleien im Schnitt 15h pro Woche. Der ROI ist meist nach 3 Monaten erreicht.
+                                </p>
+</div>
+<div>
+<h4 class="font-semibold text-libra-navy text-sm mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">security</span>
+                                    Sind die Daten sicher?
+                                </h4>
+<p class="text-slate-500 text-sm leading-relaxed">
+                                    Ja. ISO-zertifizierte Server in Frankfurt. Für Standard &amp; Enterprise bieten wir zudem komplette On-Premise Lösungen an.
+                                </p>
+</div>
+<div>
+<h4 class="font-semibold text-libra-navy text-sm mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">school</span>
+                                    Wie aufwendig ist Schulung?
+                                </h4>
+<p class="text-slate-500 text-sm leading-relaxed">
+                                    Minimal. Die Pilot-Version ist selbsterklärend. Für größere Pakete bieten wir Webinare und Schulungen an, um Ihr Team fit zu machen.
+                                </p>
+</div>
+<div>
+<h4 class="font-semibold text-libra-navy text-sm mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">integration_instructions</span>
+                                    Kompatibel mit TriNotar?
+                                </h4>
+<p class="text-slate-500 text-sm leading-relaxed">
+                                    Wir bieten Schnittstellen für gängige Software (RA-MICRO, TriNotar) und direkte XNotar Anbindung im Standard-Paket.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full max-w-3xl mx-auto pt-8">
+<h2 class="text-2xl font-medium tracking-tight mb-8 text-libra-navy text-center font-serif">
+                            Weitere Fragen
+                        </h2>
+<div class="divide-y divide-libra-border border-t border-b border-libra-border">
+<details class="group py-4 cursor-pointer">
+<summary class="flex items-center justify-between gap-4 font-medium list-none text-slate-800 hover:text-libra-navy transition-colors font-serif">
+<span>Ist ein Wechsel zwischen den Paketen möglich?</span>
+<span class="material-symbols-outlined text-slate-400 transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-sm text-slate-500 leading-relaxed pl-0 max-w-2xl font-sans">
+                                    Ja, ein Upgrade vom Pilot auf Standard oder Enterprise ist jederzeit zum Monatsanfang möglich. Ihre bestehenden Daten und Vorlagen werden dabei nahtlos migriert.
+                                </div>
+</details>
+<details class="group py-4 cursor-pointer">
+<summary class="flex items-center justify-between gap-4 font-medium list-none text-slate-800 hover:text-libra-navy transition-colors font-serif">
+<span>Gibt es eine Mindestvertragslaufzeit?</span>
+<span class="material-symbols-outlined text-slate-400 transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-sm text-slate-500 leading-relaxed pl-0 max-w-2xl font-sans">
+                                    Für das Pilot-Paket gibt es keine lange Bindung, es ist monatlich kündbar. Standard-Verträge laufen in der Regel 12 Monate, um die Implementierungskosten zu decken, bieten dafür aber Rabatte bei jährlicher Zahlung.
+                                </div>
+</details>
+<details class="group py-4 cursor-pointer">
+<summary class="flex items-center justify-between gap-4 font-medium list-none text-slate-800 hover:text-libra-navy transition-colors font-serif">
+<span>Was passiert, wenn wir das Transaktionslimit erreichen?</span>
+<span class="material-symbols-outlined text-slate-400 transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-sm text-slate-500 leading-relaxed pl-0 max-w-2xl font-sans">
+                                    Sie erhalten eine Benachrichtigung bei 80% und 100% Auslastung. Zusätzliche Transaktionen können entweder einzeln abgerechnet werden oder Sie führen ein Upgrade auf das nächsthöhere Paket durch. Der Betrieb wird nicht unterbrochen.
+                                </div>
+</details>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-slate-50 border-t border-libra-border py-12">
+<div class="px-6 md:px-12 max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2 text-libra-navy">
+<span class="material-symbols-outlined filled">gavel</span>
+<span class="font-semibold text-lg font-serif">Senury</span>
+</div>
+<div class="flex gap-8 flex-wrap justify-center">
+<a class="text-sm text-slate-500 hover:text-libra-navy transition-colors" href="#">Impressum</a>
+<a class="text-sm text-slate-500 hover:text-libra-navy transition-colors" href="#">Datenschutz</a>
+<a class="text-sm text-slate-500 hover:text-libra-navy transition-colors" href="#">AGB</a>
+<a class="text-sm text-slate-500 hover:text-libra-navy transition-colors" href="#">Kontakt</a>
+</div>
+<div class="text-sm text-slate-400 font-light">
+                    © 2023 Senury GmbH
+                </div>
+</div>
+</footer>
+</div>
+</body></html>

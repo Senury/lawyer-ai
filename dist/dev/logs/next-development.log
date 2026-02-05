@@ -1,0 +1,36 @@
+[00:00:00.748] Server  LOG     ✓ Ready in 557ms
+[00:00:04.563] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:17.858] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:03:20.385] Server  LOG     ✓ Compiled in 546ms
+[00:03:20.493] Browser ERROR   ./senury/senury.com/app/globals.css:4096:7
+Parsing CSS source code failed
+  4094 |   }
+  4095 |   .\[\&\[\4 p�\e state\=open\]\>svg\]\:rotate-180 {
+> 4096 |     &[p�state=open]>svg {
+       |       ^
+  4097 |       rotate: 180deg;
+  4098 |     }
+  4099 |   }
+
+No qualified name in attribute selector: Delim('\u{4}').
+
+Import trace:
+  Client Component Browser:
+    ./senury/senury.com/app/globals.css [Client Component Browser]
+    ./senury/senury.com/app/layout.tsx [Server Component]
+[00:05:14.562] Browser ERROR   ./senury/senury.com/app/globals.css:4096:7
+Parsing CSS source code failed
+  4094 |   }
+  4095 |   .\[\&\[\4 p�\e state\=open\]\>svg\]\:rotate-180 {
+> 4096 |     &[p�state=open]>svg {
+       |       ^
+  4097 |       rotate: 180deg;
+  4098 |     }
+  4099 |   }
+
+No qualified name in attribute selector: Delim('\u{4}').
+
+Import trace:
+  Client Component Browser:
+    ./senury/senury.com/app/globals.css [Client Component Browser]
+    ./senury/senury.com/app/layout.tsx [Server Component]

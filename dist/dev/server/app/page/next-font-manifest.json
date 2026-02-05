@@ -1,0 +1,11 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/senury/senury.com/app/page": [
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+      "static/media/5f402bd2d8eef81a-s.p.b72f0478.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}
