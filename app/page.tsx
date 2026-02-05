@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, FileText, Zap, Shield, Check, Sparkles, TextCursorInput, BookOpen, Clock, Users, Lock, ChevronRight, Star, MessageSquare, LayoutGrid } from "lucide-react";
+import { ArrowRight, FileText, Zap, Shield, Check, Sparkles, TextCursorInput, BookOpen, Clock, Users, Lock, ChevronRight, Star, MessageSquare, LayoutGrid, Search, Scale } from "lucide-react";
 
 // Enhanced UI Mockup Components
 function ClauseLibraryMockup() {
@@ -153,10 +153,10 @@ export default function LandingPage() {
               </div>
               <h1 className="font-serif font-medium text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-[#1a1a1a] mb-6 tracking-tight">
                 Kaufverträge in Minuten.
-                <span className="italic text-[#6b6b6b] block mt-2">Nicht in Stunden.</span>
+                <span className="italic text-[#6b6b6b] block mt-2">Ihre Komplettlösung für das Notariat.</span>
               </h1>
               <p className="text-base md:text-lg text-[#6b6b6b] mb-8 max-w-md leading-relaxed">
-                Senury unterstützt Notare und ihre Teams bei der Erstellung strukturierter Kaufvertragsentwürfe. Mit KI-gestütztem Drafting, intelligenter Klauselverwaltung und lückenloser Dokumentation – natürlich §203 StGB-konform.
+                Weniger Zeit für repetitive Arbeit. Mehr Zeit für Ihre Mandanten – mit unterstützender KI, die Ihnen die Kontrolle lässt.
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-4">
                 <Button className="bg-[#1a1a1a] hover:bg-[#2d2d2d] text-white text-sm font-medium h-12 px-6 rounded-full transition-all">
@@ -394,10 +394,10 @@ export default function LandingPage() {
           <div className="text-center mb-16">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">Funktionen</span>
             <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
-              Alles, was Sie brauchen
+              Die Komplettlösung für Ihr Notariat
             </h2>
             <p className="text-[#6b6b6b] text-lg max-w-2xl mx-auto">
-              Eine komplette Lösung für die effiziente Erstellung von Kaufverträgen
+              Effiziente Kaufverträge und vieles mehr. Von der Erfassung über die Recherche bis zum fertigen Entwurf.
             </p>
           </div>
 
@@ -405,17 +405,17 @@ export default function LandingPage() {
             <FeatureCard
               icon={TextCursorInput}
               title="Intelligente Erfassung"
-              description="Strukturierte Datenerfassung mit automatischen Plausibilitätsprüfungen. Keine Informationen gehen verloren."
+              description="Strukturierte Datenerfassung für Kaufverträge und andere Urkunden. Mit automatischen Plausibilitätsprüfungen."
             />
             <FeatureCard
               icon={FileText}
               title="KI-gestütztes Drafting"
-              description="Basierend auf Ihren Vorlagen und bewährten Klauseln entsteht der erste Entwurf in Minuten."
+              description="Kaufverträge in Minuten – und Unterstützung für Schenkungen, Übertragungen und weitere Urkunden."
             />
             <FeatureCard
-              icon={Shield}
-              title="Lückenlose Dokumentation"
-              description="Automatische Versionierung und Audit-Trails. Compliance-ready für §203 StGB und DSGVO."
+              icon={Search}
+              title="KI-Recherche"
+              description="Chat-basierte Rechtsrecherche mit präzisen, fundierten Antworten aus erstklassigen juristischen Datenquellen."
             />
             <FeatureCard
               icon={BookOpen}
@@ -432,6 +432,67 @@ export default function LandingPage() {
               title="Nahtlose Integration"
               description="Word- und Outlook-Add-ins für Ihren gewohnten Workflow. Importieren Sie Ihre Vorlagen."
             />
+          </div>
+        </div>
+      </section>
+
+      {/* More than Kaufverträge */}
+      <section className="py-16 lg:py-24 bg-white border-y border-[#e8e8e8]">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">Urkunden</span>
+              <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
+                Mehr als nur Kaufverträge
+              </h2>
+              <p className="text-lg text-[#6b6b6b] mb-6 leading-relaxed">
+                Während Kaufverträge unser Hauptfokus bleiben, unterstützt Senury auch bei weiteren urkundlichen Beurkundungen – von Schenkungen bis zu Grundstücksübertragungen.
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "Kaufverträge (Grundstücke, Wohnungseigentum)",
+                  "Schenkungsverträge",
+                  "Grundstücksübertragungen",
+                  "Weitere Urkunden (in Vorbereitung)"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-[#1a1a1a]">
+                    <Scale className="w-4 h-4 text-[#c9a66b]" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-[#faf8f7] p-8 border border-[#e8e8e8] rounded-xl">
+              <div className="space-y-4">
+                <div className="p-4 bg-white border border-[#e8e8e8] rounded-lg flex items-center gap-4">
+                  <div className="w-10 h-10 bg-[#c9a66b]/10 flex items-center justify-center rounded-lg">
+                    <FileText className="w-5 h-5 text-[#c9a66b]" />
+                  </div>
+                  <div>
+                    <div className="font-medium text-[#1a1a1a]">Kaufvertrag</div>
+                    <div className="text-sm text-[#6b6b6b]">Vollständig unterstützt</div>
+                  </div>
+                </div>
+                <div className="p-4 bg-white border border-[#e8e8e8] rounded-lg flex items-center gap-4">
+                  <div className="w-10 h-10 bg-[#6b6b6b]/10 flex items-center justify-center rounded-lg">
+                    <Star className="w-5 h-5 text-[#6b6b6b]" />
+                  </div>
+                  <div>
+                    <div className="font-medium text-[#1a1a1a]">Schenkung</div>
+                    <div className="text-sm text-[#6b6b6b]">Verfügbar</div>
+                  </div>
+                </div>
+                <div className="p-4 bg-white border border-[#e8e8e8] rounded-lg flex items-center gap-4">
+                  <div className="w-10 h-10 bg-[#9a9a9a]/10 flex items-center justify-center rounded-lg">
+                    <MessageSquare className="w-5 h-5 text-[#9a9a9a]" />
+                  </div>
+                  <div>
+                    <div className="font-medium text-[#1a1a1a]">Übertragung</div>
+                    <div className="text-sm text-[#6b6b6b]">Verfügbar</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

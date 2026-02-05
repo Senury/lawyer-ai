@@ -9,9 +9,15 @@ Claude must follow these rules at all times when assisting with this project.
 
 **Project name:** Senury
 **Domain:** German legal-tech / notary software
-**Product:** AI-assisted notary software focused on Kaufverträge and related contracts
+**Product:** AI-assisted notary software — a **Komplettlösung für Notariate**
 
-Senury helps German notaries and their teams generate structured contract drafts (e.g. Kaufverträge) using guided data intake, templates, clause libraries, AI-assisted drafting, and research/chat features.
+Senury is a comprehensive solution for German notaries. While **Kaufverträge** remain the primary focus and most mature feature, the platform includes:
+
+- **Urkunden (Document Drafting):** Kaufverträge (primary), Schenkungen, Grundstücksübertragungen, and other urkundliche Beurkundungen
+- **Recherche:** AI-powered legal research chat with access to juridical databases
+- **Kontrolle:** Document analysis capabilities (perspective/future feature)
+
+Senury helps notaries and their teams generate structured contract drafts using guided data intake, templates, clause libraries, AI-assisted drafting, and research features.
 
 **Critical constraint:**
 Senury operates in a professional secrecy context (§203 StGB).
@@ -202,6 +208,8 @@ Claude must NOT:
 - "§203 StGB-konform von Grund auf"
 - "KI-gestützt, nicht KI-ersetzend"
 - "Nachvollziehbar und auditierbar"
+- "Die Komplettlösung für Ihr Notariat" (for broader context)
+- "Kaufverträge in Minuten — und vieles mehr" (when mentioning other features)
 
 ### Technical Writing
 - Explicit assumptions
