@@ -88,6 +88,11 @@ export const metadata: Metadata = {
   },
   category: "technology",
   classification: "Legal Technology",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+  },
 };
 
 export default async function RootLayout({
