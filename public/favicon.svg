@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background -->
+  <rect width="100" height="100" fill="#fdfcfb"/>
+
+  <!-- Outer rotated square (gold) -->
+  <rect x="15" y="15" width="70" height="70"
+        fill="none"
+        stroke="#c9a66b"
+        stroke-width="3"
+        transform="rotate(3 50 50)"/>
+
+  <!-- Inner rotated square (dark) -->
+  <rect x="22" y="22" width="56" height="56"
+        fill="none"
+        stroke="#1a1a1a"
+        stroke-width="3"
+        transform="rotate(-3 50 50)"/>
+
+  <!-- Letter S -->
+  <text x="50" y="65"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="42"
+        font-weight="600"
+        fill="#1a1a1a"
+        text-anchor="middle">S</text>
+</svg>
