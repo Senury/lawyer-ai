@@ -194,8 +194,8 @@ export default function ProduktPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-24 pb-16 lg:pt-32 lg:pb-24 bg-gradient-to-b from-[#fdfcfb] to-white">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="pt-24 pb-12 sm:pb-16 lg:pt-32 lg:pb-24 bg-gradient-to-b from-[#fdfcfb] to-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <span className="pill-badge bg-[#f5f5f5] text-[#6b6b6b] border border-[#e8e8e8] mb-6 inline-block">
               {t("hero.badge")}
@@ -214,8 +214,8 @@ export default function ProduktPage() {
       </section>
 
       {/* Product Screenshot */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="max-w-5xl mx-auto px-6">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="relative">
             <WorkspaceMockup />
           </div>
@@ -226,9 +226,9 @@ export default function ProduktPage() {
       </section>
 
       {/* Feature 1: Vorgangsverwaltung - Text Left, Mockup Right */}
-      <section className="py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
               <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("features.caseManagement.label")}</span>
               <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
@@ -254,9 +254,9 @@ export default function ProduktPage() {
       </section>
 
       {/* Feature 2: KI-Drafting - Mockup Left, Text Right */}
-      <section className="py-24 lg:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-16 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1 bg-[#faf8f7] p-8 border border-[#e8e8e8] rounded-xl">
               <div className="space-y-4">
                 <SplitViewMockup />
@@ -288,9 +288,9 @@ export default function ProduktPage() {
       </section>
 
       {/* Feature 3: Recherche - Text Left, Mockup Right */}
-      <section className="py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
               <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("features.aiResearch.label")}</span>
               <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
@@ -316,9 +316,9 @@ export default function ProduktPage() {
       </section>
 
       {/* Feature 4: Intake - Mockup Left, Text Right */}
-      <section className="py-24 lg:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-16 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1 bg-[#faf8f7] p-8 border border-[#e8e8e8] rounded-xl">
               <FormMockup />
             </div>
@@ -344,9 +344,9 @@ export default function ProduktPage() {
       </section>
 
       {/* Feature Detail Grid */}
-      <section className="py-24 lg:py-32 bg-[#faf8f7]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("detailGrid.label")}</span>
             <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
               {t("detailGrid.title")}
@@ -356,7 +356,7 @@ export default function ProduktPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#e8e8e8]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#e8e8e8]">
             <FeatureDetailCard
               icon={FolderOpen}
               title={t("detailGrid.items.caseManagement.title")}
@@ -397,9 +397,9 @@ export default function ProduktPage() {
       </section>
 
       {/* Document Types Section */}
-      <section className="py-24 lg:py-32 bg-white border-y border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
+      <section className="py-16 sm:py-24 lg:py-32 bg-white border-y border-[#e8e8e8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("documentTypes.label")}</span>
             <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
               {t("documentTypes.title")}
@@ -409,7 +409,7 @@ export default function ProduktPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {[
               { key: "purchaseContract", icon: FileText },
               { key: "gift", icon: Gift },
@@ -442,9 +442,9 @@ export default function ProduktPage() {
       </section>
 
       {/* Security Section */}
-      <section className="py-24 lg:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
+      <section className="py-16 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("security.label")}</span>
             <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
               {t("security.title")}
@@ -454,7 +454,7 @@ export default function ProduktPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
               { key: "encryption", icon: Lock },
               { key: "compliance", icon: Shield },
@@ -475,9 +475,9 @@ export default function ProduktPage() {
       </section>
 
       {/* Integrations */}
-      <section className="py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("integrations.label")}</span>
             <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
               {t("integrations.title")}
@@ -516,11 +516,11 @@ export default function ProduktPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="bg-[#faf8f7] border border-[#e8e8e8] p-6 flex gap-4 rounded-lg">
-            <AlertTriangle className="w-6 h-6 text-[#6b6b6b] flex-shrink-0 mt-0.5" />
-            <div>
+      <section className="py-12 sm:py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="bg-[#faf8f7] border border-[#e8e8e8] p-4 sm:p-6 flex flex-col sm:flex-row gap-3 sm:gap-4 rounded-lg">
+            <AlertTriangle className="w-6 h-6 text-[#6b6b6b] flex-shrink-0 mt-0.5 hidden sm:block" />
+            <div className="flex-1">
               <h4 className="font-medium text-[#1a1a1a] mb-2">{t("disclaimer.title")}</h4>
               <p className="text-sm text-[#6b6b6b] leading-relaxed">
                 {t("disclaimer.text")}
@@ -531,8 +531,8 @@ export default function ProduktPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 lg:py-32 bg-[#1a1a1a] text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#1a1a1a] text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-serif font-medium text-3xl md:text-4xl lg:text-5xl mb-6">
             {t("cta.title")}
           </h2>

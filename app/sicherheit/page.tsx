@@ -62,9 +62,9 @@ export default function SicherheitPage() {
       </section>
 
       {/* Stats Row */}
-      <section className="py-12 bg-[#faf8f7] border-y border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <section className="py-10 sm:py-12 bg-[#faf8f7] border-y border-[#e8e8e8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
             {stats.map((stat) => (
               <div key={stat.key} className="text-center">
                 <div className="font-serif text-3xl md:text-4xl font-medium text-[#1a1a1a] mb-1 tracking-tight">
@@ -78,9 +78,9 @@ export default function SicherheitPage() {
       </section>
 
       {/* Trust Badges */}
-      <section className="py-12 bg-white border-b border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <section className="py-10 sm:py-12 bg-white border-b border-[#e8e8e8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
             {certifications.map((cert) => (
               <div key={cert.key} className="text-center">
                 <div className="w-12 h-12 bg-[#fafafa] border border-[#e8e8e8] flex items-center justify-center mx-auto mb-3 rounded-lg">
@@ -95,9 +95,9 @@ export default function SicherheitPage() {
       </section>
 
       {/* Compliance Cards */}
-      <section className="py-24 lg:py-32 bg-[#faf8f7]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10 sm:mb-12">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("compliance.label")}</span>
             <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
               {t("compliance.title")}
@@ -107,7 +107,7 @@ export default function SicherheitPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {complianceCards.map((card) => (
               <Card key={card.key} className="bg-white border-[#e8e8e8] rounded-xl overflow-hidden">
                 <CardContent className="p-8">
@@ -125,9 +125,9 @@ export default function SicherheitPage() {
       </section>
 
       {/* Technical Details */}
-      <section className="py-24 lg:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
+      <section className="py-16 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("technical.label")}</span>
             <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
               {t("technical.title")}
@@ -137,7 +137,7 @@ export default function SicherheitPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
             {technicalDetails.map((item) => (
               <Card key={item.key} className="bg-[#faf8f7] border-[#e8e8e8] rounded-xl">
                 <CardContent className="p-8">
@@ -158,9 +158,9 @@ export default function SicherheitPage() {
       </section>
 
       {/* Data Location */}
-      <section className="py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
               <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("hosting.label")}</span>
               <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
@@ -199,9 +199,9 @@ export default function SicherheitPage() {
       </section>
 
       {/* Downloads */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center mb-8">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-6 sm:mb-8">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("downloads.label")}</span>
             <h2 className="font-serif font-medium text-2xl md:text-3xl text-[#1a1a1a] mb-4">
               {t("downloads.title")}
@@ -238,8 +238,8 @@ export default function SicherheitPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 lg:py-32 bg-[#1a1a1a] text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#1a1a1a] text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <div className="w-16 h-16 bg-white/10 flex items-center justify-center mx-auto mb-8 rounded-xl">
             <Shield className="w-8 h-8 text-white" />
           </div>
