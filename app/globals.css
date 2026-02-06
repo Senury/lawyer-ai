@@ -187,3 +187,146 @@ html {
 .tracking-tight-custom {
   letter-spacing: -0.02em;
 }
+
+/* Fluid Typography - Scales smoothly between breakpoints */
+.text-fluid-hero {
+  font-size: clamp(2rem, 5vw + 1rem, 3.75rem);
+  line-height: 1.1;
+}
+
+.text-fluid-section {
+  font-size: clamp(1.75rem, 4vw + 0.5rem, 2.5rem);
+  line-height: 1.2;
+}
+
+.text-fluid-body {
+  font-size: clamp(0.875rem, 1.5vw + 0.5rem, 1rem);
+  line-height: 1.6;
+}
+
+/* Mobile-first responsive section spacing */
+.section-padding-sm {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  .section-padding-sm {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding-sm {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+/* Container padding that adapts to screen size */
+.container-padding {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-padding {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-padding {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* Responsive grid gaps */
+.gap-responsive {
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .gap-responsive {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gap-responsive {
+    gap: 2rem;
+  }
+}
+
+/* Touch-friendly minimum tap targets */
+.tap-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+@media (min-width: 640px) {
+  .tap-target {
+    min-height: 48px;
+    min-width: 48px;
+  }
+}
+
+/* Responsive card padding */
+.card-padding {
+  padding: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .card-padding {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-padding {
+    padding: 2rem;
+  }
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive aspect ratios for mockups */
+.aspect-mockup {
+  aspect-ratio: 4 / 3;
+}
+
+@media (min-width: 640px) {
+  .aspect-mockup {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (min-width: 1024px) {
+  .aspect-mockup {
+    aspect-ratio: 16 / 12;
+  }
+}
+
+/* Prevent text overflow on small screens */
+.text-ellipsis-responsive {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+  .text-ellipsis-responsive {
+    white-space: normal;
+  }
+}

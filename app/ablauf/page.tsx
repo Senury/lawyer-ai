@@ -42,9 +42,9 @@ export default function AblaufPage() {
       </section>
 
       {/* Timeline */}
-      <section className="py-24 lg:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="space-y-24">
+      <section className="py-16 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="space-y-16 sm:space-y-20 lg:space-y-24">
             {timelineSteps.map((step, index) => (
               <div key={step.key} className="relative">
                 {/* Connection Line */}
@@ -52,17 +52,17 @@ export default function AblaufPage() {
                   <div className="hidden lg:block absolute left-8 top-24 w-px h-24 bg-[#e8e8e8]"></div>
                 )}
 
-                <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+                <div className={`grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                   <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className={`w-16 h-16 ${step.color} text-white flex items-center justify-center rounded-xl font-serif text-2xl shadow-soft`}>
+                    <div className="flex items-center gap-3 sm:gap-4 mb-4">
+                      <div className={`w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 ${step.color} text-white flex items-center justify-center rounded-lg sm:rounded-xl font-serif text-xl sm:text-2xl shadow-soft flex-shrink-0`}>
                         {t(`timeline.steps.${step.key}.number`)}
                       </div>
-                      <div className={`w-12 h-12 bg-[#fafafa] border border-[#e8e8e8] flex items-center justify-center rounded-lg`}>
-                        <step.icon className="w-6 h-6 text-[#1a1a1a]" />
+                      <div className={`w-10 h-10 sm:w-12 sm:h-12 bg-[#fafafa] border border-[#e8e8e8] flex items-center justify-center rounded-lg flex-shrink-0`}>
+                        <step.icon className="w-5 h-5 sm:w-6 sm:h-6 text-[#1a1a1a]" />
                       </div>
                     </div>
-                    <h2 className="font-serif text-3xl font-medium text-[#1a1a1a] mb-2">{t(`timeline.steps.${step.key}.title`)}</h2>
+                    <h2 className="font-serif text-2xl sm:text-3xl font-medium text-[#1a1a1a] mb-2">{t(`timeline.steps.${step.key}.title`)}</h2>
                     <p className="text-[#6b6b6b] font-medium mb-4">{t(`timeline.steps.${step.key}.subtitle`)}</p>
                     <p className="text-[#6b6b6b] leading-relaxed mb-6">{t(`timeline.steps.${step.key}.description`)}</p>
                     <ul className="space-y-2">
@@ -76,7 +76,7 @@ export default function AblaufPage() {
                   </div>
 
                   <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
-                    <div className="bg-[#faf8f7] p-8 border border-[#e8e8e8] rounded-xl">
+                    <div className="bg-[#faf8f7] p-4 sm:p-6 lg:p-8 border border-[#e8e8e8] rounded-xl">
                       {/* Mockup content based on step */}
                       {index === 0 && <FormMockup />}
                       {index === 1 && <EditorMockup />}
@@ -93,9 +93,9 @@ export default function AblaufPage() {
       </section>
 
       {/* Flexibility Section */}
-      <section className="py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("flexibility.label")}</span>
             <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
               {t("flexibility.title")}
@@ -105,7 +105,7 @@ export default function AblaufPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {flexibilityCards.map((card) => (
               <Card key={card.key} className="bg-white border-[#e8e8e8] rounded-xl">
                 <CardContent className="p-8">
@@ -122,8 +122,8 @@ export default function AblaufPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 lg:py-32 bg-[#1a1a1a] text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#1a1a1a] text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <Settings className="w-16 h-16 text-[#6b6b6b] mx-auto mb-8" />
           <h2 className="font-serif font-medium text-3xl md:text-4xl lg:text-5xl mb-6">
             {t("cta.title")}

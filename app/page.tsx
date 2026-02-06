@@ -147,28 +147,28 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-gradient-to-b from-[#fdfcfb] to-white">
-        <div className="max-w-6xl mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 items-center">
+      <section className="relative pt-28 sm:pt-32 pb-16 sm:pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-gradient-to-b from-[#fdfcfb] to-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12 items-center">
             {/* Left Content */}
-            <div className="flex flex-col justify-center">
-              <div className="mb-6">
-                <span className="pill-badge bg-[#f5f5f5] text-[#6b6b6b] border border-[#e8e8e8]">
+            <div className="flex flex-col justify-center order-2 lg:order-1">
+              <div className="mb-4 sm:mb-6">
+                <span className="pill-badge bg-[#f5f5f5] text-[#6b6b6b] border border-[#e8e8e8] text-xs sm:text-sm">
                   {t("hero.badge")}
                 </span>
               </div>
-              <h1 className="font-serif font-medium text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-[#1a1a1a] mb-6 tracking-tight">
+              <h1 className="font-serif font-medium text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-[#1a1a1a] mb-4 sm:mb-6 tracking-tight">
                 {t("hero.title")}
                 <span className="italic text-[#6b6b6b] block mt-2">{t("hero.subtitle")}</span>
               </h1>
-              <p className="text-base md:text-lg text-[#6b6b6b] mb-8 max-w-md leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg text-[#6b6b6b] mb-6 sm:mb-8 max-w-md leading-relaxed">
                 {t("hero.description")}
               </p>
-              <div className="flex flex-col sm:flex-row items-start gap-4">
-                <Button className="bg-[#1a1a1a] hover:bg-[#2d2d2d] text-white text-sm font-medium h-12 px-6 rounded-full transition-all">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
+                <Button className="bg-[#1a1a1a] hover:bg-[#2d2d2d] text-white text-sm font-medium h-12 px-6 rounded-full transition-all w-full sm:w-auto">
                   {t("hero.ctaPrimary")}
                 </Button>
-                <Link href="/sicherheit/" className="group flex items-center gap-2 text-[#6b6b6b] hover:text-[#1a1a1a] h-12 px-2 transition-colors">
+                <Link href="/sicherheit/" className="group flex items-center justify-center sm:justify-start gap-2 text-[#6b6b6b] hover:text-[#1a1a1a] h-12 px-2 transition-colors">
                   <Shield className="w-4 h-4" />
                   <span className="text-sm font-medium">{t("hero.ctaSecondary")}</span>
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -177,25 +177,25 @@ export default function LandingPage() {
             </div>
 
             {/* Right Content - Floating Mockups */}
-            <div className="relative h-[450px] lg:h-[550px] w-full flex items-center justify-center">
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-gradient-to-br from-[#c9a66b]/10 to-transparent rounded-full blur-3xl"></div>
+            <div className="relative min-h-[350px] sm:min-h-[400px] lg:min-h-[550px] w-full flex items-center justify-center order-1 lg:order-2">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[350px] lg:h-[350px] bg-gradient-to-br from-[#c9a66b]/10 to-transparent rounded-full blur-3xl"></div>
 
-              <div className="relative w-full max-w-sm">
+              <div className="relative w-full max-w-[280px] sm:max-w-sm mx-auto">
                 {/* Main Mockup */}
-                <div className="relative z-10">
+                <div className="relative z-10 scale-90 sm:scale-100">
                   <ClauseLibraryMockup />
                 </div>
 
-                {/* Floating Elements */}
-                <div className="absolute -top-4 -right-4 z-20">
+                {/* Floating Elements - Hidden on smallest screens, shown on sm+ */}
+                <div className="hidden sm:block absolute -top-4 -right-4 lg:-right-8 z-20">
                   <VersionTabsMockup />
                 </div>
 
-                <div className="absolute -bottom-6 -right-8 z-20">
+                <div className="hidden sm:block absolute -bottom-6 -right-4 lg:-right-12 z-20">
                   <AIAssistantMockup />
                 </div>
 
-                <div className="absolute top-1/4 -left-12 z-20">
+                <div className="hidden sm:block absolute top-1/4 -left-8 lg:-left-16 z-20">
                   <FloatingCardMockup
                     title={ct("mockups.status")}
                     content={ct("mockups.draftGenerated")}
@@ -203,7 +203,7 @@ export default function LandingPage() {
                   />
                 </div>
 
-                <div className="absolute bottom-1/4 -right-16 z-20">
+                <div className="hidden lg:block absolute bottom-1/4 -right-16 z-20">
                   <FloatingCardMockup
                     title={ct("mockups.review")}
                     content={ct("mockups.allClausesValid")}
@@ -217,9 +217,9 @@ export default function LandingPage() {
       </section>
 
       {/* Trust Bar */}
-      <section className="py-8 bg-white border-y border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+      <section className="py-6 sm:py-8 bg-white border-y border-[#e8e8e8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 md:gap-12">
             <TrustBadge icon={Shield} label={t("trust.stgb")} />
             <div className="hidden md:block w-px h-4 bg-[#e8e8e8]"></div>
             <TrustBadge icon={Lock} label={t("trust.gdpr")} />
@@ -232,9 +232,9 @@ export default function LandingPage() {
       </section>
 
       {/* Stats Bar */}
-      <section className="py-12 bg-[#faf8f7]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <section className="py-10 sm:py-12 bg-[#faf8f7]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
             <StatCard number={t("stats.timeSaved.value")} label={t("stats.timeSaved.label")} />
             <StatCard number={t("stats.timeComparison.value")} label={t("stats.timeComparison.label")} />
             <StatCard number={t("stats.gdpr.value")} label={t("stats.gdpr.label")} />
@@ -244,9 +244,9 @@ export default function LandingPage() {
       </section>
 
       {/* Problem Section - Pain Point */}
-      <section className="py-24 lg:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-16 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
               <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("problem.label")}</span>
               <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
@@ -313,9 +313,9 @@ export default function LandingPage() {
       </section>
 
       {/* Solution Section */}
-      <section className="py-24 lg:py-32 bg-[#faf8f7]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1 bg-white p-8 border border-[#e8e8e8] shadow-soft">
               <div className="bg-[#fafafa] p-6 border border-[#e8e8e8]">
                 <div className="flex items-center gap-3 mb-6">
@@ -382,8 +382,8 @@ export default function LandingPage() {
       </section>
 
       {/* Feature Grid */}
-      <section className="py-24 lg:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="py-16 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("features.label")}</span>
             <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
@@ -430,9 +430,9 @@ export default function LandingPage() {
       </section>
 
       {/* More than Kaufverträge */}
-      <section className="py-16 lg:py-24 bg-white border-y border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white border-y border-[#e8e8e8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
               <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("documents.label")}</span>
               <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
@@ -486,9 +486,9 @@ export default function LandingPage() {
       </section>
 
       {/* Process Timeline */}
-      <section className="py-24 lg:py-32 bg-[#faf8f7]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("process.label")}</span>
             <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
               {t("process.title")}
@@ -521,8 +521,8 @@ export default function LandingPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="py-24 lg:py-32 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="py-16 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <Card className="bg-[#faf8f7] border-[#e8e8e8] rounded-none">
             <CardContent className="p-8 lg:p-12">
               <div className="flex flex-col items-center text-center">
@@ -575,8 +575,8 @@ export default function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 lg:py-32 bg-white">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+      <section className="py-16 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-serif font-medium text-3xl md:text-4xl lg:text-5xl text-[#1a1a1a] mb-6">
             {t("cta.title")}
           </h2>

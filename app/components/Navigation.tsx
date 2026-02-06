@@ -6,13 +6,13 @@ import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
 // Monogram Logo Component
 function MonogramLogo() {
   return (
-    <div className="relative w-8 h-8 mr-3">
+    <div className="relative w-7 h-7 sm:w-8 sm:h-8 mr-2.5 sm:mr-3 flex-shrink-0">
       {/* Outer rotated square */}
       <div className="absolute inset-0 border border-[#c9a66b] rotate-3 group-hover:rotate-6 transition-transform duration-500 ease-out" />
       {/* Inner rotated square */}
@@ -56,23 +56,23 @@ export function Navigation() {
           : "bg-transparent"
       )}
     >
-      <nav className="max-w-6xl mx-auto px-6">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+      <nav className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
           {/* Logo with monogram and tagline */}
           <Link href="/" className="group flex items-center">
             <MonogramLogo />
             <div className="flex flex-col">
-              <span className="text-xl font-serif font-semibold tracking-tight text-[#1a1a1a] leading-tight">
+              <span className="text-lg sm:text-xl font-serif font-semibold tracking-tight text-[#1a1a1a] leading-tight">
                 {t("brand.name")}
               </span>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-[#9a9a9a] leading-tight">
+              <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#9a9a9a] leading-tight">
                 {t("brand.tagline")}
               </span>
             </div>
           </Link>
 
           {/* Desktop Navigation - Floating Pills */}
-          <div className="hidden lg:flex items-center">
+          <div className="hidden md:flex items-center">
             <div className="flex items-center gap-1 px-2 py-1.5 bg-[#f5f5f5]/50 rounded-full border border-[#e8e8e8]/50">
               {navLinks.map((link) => {
                 const isActive = pathname === link.href;
@@ -102,7 +102,7 @@ export function Navigation() {
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center">
+          <div className="hidden md:flex items-center">
             <Button
               className="bg-[#1a1a1a] hover:bg-[#2d2d2d] text-white rounded-full h-10 px-6 text-sm font-medium transition-all duration-200"
             >
@@ -112,7 +112,7 @@ export function Navigation() {
 
           {/* Mobile Menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild className="lg:hidden">
+            <SheetTrigger asChild className="md:hidden">
               <Button
                 variant="ghost"
                 size="icon"
@@ -125,6 +125,7 @@ export function Navigation() {
               side="right"
               className="w-[300px] bg-[#fdfcfb] border-l border-[#e8e8e8] p-6"
             >
+              <SheetTitle className="sr-only">{t("mobileMenuTitle")}</SheetTitle>
               {/* Mobile Menu Header with Logo */}
               <div className="flex items-center mb-8">
                 <div className="relative w-7 h-7 mr-2.5">

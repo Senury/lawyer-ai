@@ -75,14 +75,14 @@ export default function FAQPage() {
       </section>
 
       {/* Category Tabs */}
-      <section className="py-6 bg-white border-b border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="py-4 sm:py-6 bg-white border-b border-[#e8e8e8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="flex flex-wrap items-center justify-center gap-2">
             {categories.map((category) => (
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
-                className={`px-4 py-2 text-sm font-medium rounded-full transition-colors ${
+                className={`px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-full transition-colors whitespace-nowrap ${
                   activeCategory === category.id
                     ? "bg-[#1a1a1a] text-white"
                     : "bg-[#fafafa] text-[#6b6b6b] hover:bg-[#f5f5f5]"
@@ -96,8 +96,8 @@ export default function FAQPage() {
       </section>
 
       {/* FAQ Accordion */}
-      <section className="py-16 lg:py-24 bg-[#faf8f7]">
-        <div className="max-w-3xl mx-auto px-6">
+      <section className="py-12 sm:py-16 lg:py-24 bg-[#faf8f7]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
           {filteredFaqs.length === 0 ? (
             <div className="text-center py-12">
               <HelpCircle className="w-12 h-12 text-[#9a9a9a] mx-auto mb-4" />
@@ -130,23 +130,23 @@ export default function FAQPage() {
       </section>
 
       {/* Contact CTA Box */}
-      <section className="py-24 lg:py-32 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="py-16 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <Card className="bg-[#1a1a1a] border-0 rounded-xl overflow-hidden">
-            <CardContent className="p-12 text-center">
-              <HelpCircle className="w-16 h-16 text-[#6b6b6b] mx-auto mb-6" />
-              <h2 className="font-serif font-medium text-3xl md:text-4xl text-white mb-4">
+            <CardContent className="p-6 sm:p-8 lg:p-12 text-center">
+              <HelpCircle className="w-12 h-12 sm:w-16 sm:h-16 text-[#6b6b6b] mx-auto mb-4 sm:mb-6" />
+              <h2 className="font-serif font-medium text-2xl sm:text-3xl md:text-4xl text-white mb-4">
                 {t("contact.title")}
               </h2>
-              <p className="text-[#9a9a9a] text-lg mb-8 max-w-xl mx-auto">
+              <p className="text-[#9a9a9a] text-base sm:text-lg mb-6 sm:mb-8 max-w-xl mx-auto">
                 {t("contact.description")}
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button className="bg-white text-[#1a1a1a] hover:bg-[#f5f5f5] h-14 px-8 text-base rounded-full transition-colors">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto">
+                <Button className="bg-white text-[#1a1a1a] hover:bg-[#f5f5f5] h-12 sm:h-14 px-6 sm:px-8 text-sm sm:text-base rounded-full transition-colors w-full sm:w-auto">
                   <Mail className="w-4 h-4 mr-2" />
                   {t("contact.contactButton")}
                 </Button>
-                <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 h-14 px-8 text-base rounded-full transition-colors">
+                <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 h-12 sm:h-14 px-6 sm:px-8 text-sm sm:text-base rounded-full transition-colors w-full sm:w-auto">
                   {t("contact.demoButton")}
                 </Button>
               </div>

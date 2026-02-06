@@ -35,8 +35,8 @@ export default function PreisPage() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <section className="pt-24 pb-16 lg:pt-32 lg:pb-24 bg-gradient-to-b from-[#fdfcfb] to-white">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="pt-24 pb-12 sm:pb-16 lg:pt-32 lg:pb-24 bg-gradient-to-b from-[#fdfcfb] to-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <span className="pill-badge bg-[#f5f5f5] text-[#6b6b6b] border border-[#e8e8e8] mb-6 inline-block">
               {t("hero.badge")}
@@ -52,8 +52,8 @@ export default function PreisPage() {
       </section>
 
       {/* Pricing Toggle & Cards */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           {/* Toggle */}
           <div className="flex items-center justify-center gap-4 mb-12">
             <span className={`text-sm ${!isYearly ? "text-[#1a1a1a] font-medium" : "text-[#6b6b6b]"}`}>
@@ -78,7 +78,7 @@ export default function PreisPage() {
           </div>
 
           {/* Pricing Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {pricingTiers.map((tier) => (
               <Card
                 key={tier.key}
@@ -135,7 +135,7 @@ export default function PreisPage() {
           </div>
 
           {/* Trust Badge */}
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
+          <div className="mt-8 sm:mt-12 flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             <div className="flex items-center gap-2 text-[#6b6b6b]">
               <Shield className="w-4 h-4" />
               <span className="text-xs">{t("trust.stgb")}</span>
@@ -154,7 +154,7 @@ export default function PreisPage() {
 
       {/* Feature Comparison Table */}
       <section className="py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <h2 className="font-serif font-medium text-2xl md:text-3xl text-[#1a1a1a] mb-4">
               {t("comparison.title")}
@@ -164,61 +164,63 @@ export default function PreisPage() {
             </p>
           </div>
 
-          <div className="bg-white border border-[#e8e8e8] rounded-xl overflow-hidden">
-            <div className="grid grid-cols-4 gap-4 p-4 bg-[#fafafa] border-b border-[#e8e8e8] text-sm font-medium text-[#1a1a1a]">
-              <div>{t("comparison.header.feature")}</div>
-              <div className="text-center">{t("comparison.header.pilot")}</div>
-              <div className="text-center">{t("comparison.header.professional")}</div>
-              <div className="text-center">{t("comparison.header.enterprise")}</div>
-            </div>
-
-            {featureComparison.map((row, i) => (
-              <div
-                key={i}
-                className="grid grid-cols-4 gap-4 p-4 border-b border-[#e8e8e8] last:border-0 text-sm">
-                <div className="text-[#1a1a1a]">{t(`comparison.features.${row.key}`)}</div>
-                <div className="text-center text-[#6b6b6b]">
-                  {typeof row.pilot === "boolean" ? (
-                    row.pilot ? (
-                      <Check className="w-4 h-4 text-[#c9a66b] mx-auto" />
-                    ) : (
-                      <span className="text-[#e5e5e5]">—</span>
-                    )
-                  ) : (
-                    row.pilot
-                  )}
-                </div>
-                <div className="text-center text-[#6b6b6b]">
-                  {typeof row.professional === "boolean" ? (
-                    row.professional ? (
-                      <Check className="w-4 h-4 text-[#c9a66b] mx-auto" />
-                    ) : (
-                      <span className="text-[#e5e5e5]">—</span>
-                    )
-                  ) : (
-                    row.professional
-                  )}
-                </div>
-                <div className="text-center text-[#6b6b6b]">
-                  {typeof row.enterprise === "boolean" ? (
-                    row.enterprise ? (
-                      <Check className="w-4 h-4 text-[#c9a66b] mx-auto" />
-                    ) : (
-                      <span className="text-[#e5e5e5]">—</span>
-                    )
-                  ) : (
-                    row.enterprise
-                  )}
-                </div>
+          <div className="bg-white border border-[#e8e8e8] rounded-xl overflow-hidden overflow-x-auto scrollbar-hide">
+            <div className="min-w-[500px]">
+              <div className="grid grid-cols-4 gap-2 sm:gap-4 p-3 sm:p-4 bg-[#fafafa] border-b border-[#e8e8e8] text-xs sm:text-sm font-medium text-[#1a1a1a]">
+                <div className="min-w-[120px]">{t("comparison.header.feature")}</div>
+                <div className="text-center min-w-[80px]">{t("comparison.header.pilot")}</div>
+                <div className="text-center min-w-[100px]">{t("comparison.header.professional")}</div>
+                <div className="text-center min-w-[100px]">{t("comparison.header.enterprise")}</div>
               </div>
-            ))}
+
+              {featureComparison.map((row, i) => (
+                <div
+                  key={i}
+                  className="grid grid-cols-4 gap-2 sm:gap-4 p-3 sm:p-4 border-b border-[#e8e8e8] last:border-0 text-xs sm:text-sm">
+                  <div className="text-[#1a1a1a] min-w-[120px]">{t(`comparison.features.${row.key}`)}</div>
+                  <div className="text-center text-[#6b6b6b] min-w-[80px]">
+                    {typeof row.pilot === "boolean" ? (
+                      row.pilot ? (
+                        <Check className="w-4 h-4 text-[#c9a66b] mx-auto" />
+                      ) : (
+                        <span className="text-[#e5e5e5]">—</span>
+                      )
+                    ) : (
+                      row.pilot
+                    )}
+                  </div>
+                  <div className="text-center text-[#6b6b6b] min-w-[100px]">
+                    {typeof row.professional === "boolean" ? (
+                      row.professional ? (
+                        <Check className="w-4 h-4 text-[#c9a66b] mx-auto" />
+                      ) : (
+                        <span className="text-[#e5e5e5]">—</span>
+                      )
+                    ) : (
+                      row.professional
+                    )}
+                  </div>
+                  <div className="text-center text-[#6b6b6b] min-w-[100px]">
+                    {typeof row.enterprise === "boolean" ? (
+                      row.enterprise ? (
+                        <Check className="w-4 h-4 text-[#c9a66b] mx-auto" />
+                      ) : (
+                        <span className="text-[#e5e5e5]">—</span>
+                      )
+                    ) : (
+                      row.enterprise
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 lg:py-32 bg-white">
-        <div className="max-w-3xl mx-auto px-6">
+      <section className="py-16 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("faq.label")}</span>
             <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a]">
@@ -242,8 +244,8 @@ export default function PreisPage() {
       </section>
 
       {/* Trust Section */}
-      <section className="py-24 lg:py-32 bg-[#faf8f7]">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("trustSection.label")}</span>
             <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
@@ -254,7 +256,7 @@ export default function PreisPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
             {[
               { key: "dataSecurity", icon: Shield },
               { key: "onboarding", icon: Clock },
@@ -280,8 +282,8 @@ export default function PreisPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 lg:py-32 bg-[#1a1a1a] text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#1a1a1a] text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-serif font-medium text-3xl md:text-4xl lg:text-5xl mb-6">
             {t("cta.title")}
           </h2>

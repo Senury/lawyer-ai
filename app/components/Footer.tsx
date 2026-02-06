@@ -10,8 +10,8 @@ export function Footer() {
 
   return (
     <footer className="bg-[#faf8f7] border-t border-[#e8e8e8]">
-      <div className="max-w-6xl mx-auto px-6 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12 lg:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block">
@@ -125,9 +125,9 @@ export function Footer() {
           </div>
         </div>
 
-        <Separator className="my-8 bg-[#e8e8e8]" />
+        <Separator className="my-6 sm:my-8 bg-[#e8e8e8]" />
 
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
           <p className="text-xs text-[#9a9a9a]">
             {t("copyright", { year: currentYear })}
           </p>

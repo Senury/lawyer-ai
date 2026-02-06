@@ -15,7 +15,8 @@
       "process": "Ablauf",
       "faq": "FAQ"
     },
-    "cta": "Demo anfordern"
+    "cta": "Demo anfordern",
+    "mobileMenuTitle": "Navigation"
   },
   "footer": {
     "brand": {
