@@ -1294,5 +1294,23 @@
       "text": "Bei Fragen zu unseren Allgemeinen Geschäftsbedingungen stehen wir Ihnen gerne zur Verfügung.",
       "link": "Kontaktieren Sie uns"
     }
+  },
+  "notFound": {
+    "badge": "Fehler",
+    "title": "Seite nicht gefunden",
+    "description": "Die angeforderte Seite konnte nicht gefunden werden. Möglicherweise wurde sie verschoben, umbenannt oder existiert nicht mehr.",
+    "cta": {
+      "primary": "Zurück zur Startseite",
+      "secondary": "Support kontaktieren"
+    },
+    "quickLinks": {
+      "title": "Oder besuchen Sie"
+    },
+    "links": {
+      "home": "Startseite",
+      "product": "Produkt",
+      "contact": "Kontakt"
+    },
+    "reference": "Aktenzeichen"
   }
 }
