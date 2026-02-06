@@ -82,7 +82,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/kontakt/"
                   className="text-sm text-[#6b6b6b] hover:text-[#1a1a1a] transition-colors"
                 >
                   {t("links.company.contact")}
@@ -99,7 +99,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
+                  href="/impressum/"
                   className="text-sm text-[#6b6b6b] hover:text-[#1a1a1a] transition-colors"
                 >
                   {t("links.legal.imprint")}
@@ -107,7 +107,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/datenschutz/"
                   className="text-sm text-[#6b6b6b] hover:text-[#1a1a1a] transition-colors"
                 >
                   {t("links.legal.privacy")}
@@ -115,7 +115,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/agb/"
                   className="text-sm text-[#6b6b6b] hover:text-[#1a1a1a] transition-colors"
                 >
                   {t("links.legal.terms")}
