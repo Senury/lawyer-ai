@@ -15,7 +15,7 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block">
-              <span className="text-xl font-medium tracking-tight text-[#1a1a1a]">Senury</span>
+              <span className="text-xl font-serif font-semibold tracking-tight text-[#1a1a1a]">Senury</span>
             </Link>
             <p className="mt-4 text-sm text-[#6b6b6b] leading-relaxed">
               {t("brand.description")}

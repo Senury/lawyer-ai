@@ -21,46 +21,148 @@ import {
   Scale,
   Star,
   Gift,
+  Settings,
 } from "lucide-react";
 
 // Enhanced UI Mockup Components
 function WorkspaceMockup() {
   return (
-    <div className="bg-white shadow-elevated border border-[#e8e8e8] rounded-xl overflow-hidden">
-      <div className="bg-[#fafafa] border-b border-[#e8e8e8] p-3 flex items-center gap-2">
-        <div className="flex gap-1.5">
-          <div className="w-2.5 h-2.5 rounded-full bg-[#e5e5e5]"></div>
-          <div className="w-2.5 h-2.5 rounded-full bg-[#e5e5e5]"></div>
-          <div className="w-2.5 h-2.5 rounded-full bg-[#e5e5e5]"></div>
-        </div>
-        <div className="flex-1 text-center">
-          <span className="text-[10px] text-[#9a9a9a]">Senury Workspace</span>
-        </div>
-      </div>
-      <div className="flex h-64">
-        <div className="w-14 bg-[#fafafa] border-r border-[#e8e8e8] flex flex-col items-center py-4 gap-4">
-          <FolderOpen className="w-5 h-5 text-[#9a9a9a]" />
-          <FileText className="w-5 h-5 text-[#1a1a1a]" />
-          <Search className="w-5 h-5 text-[#9a9a9a]" />
-        </div>
-        <div className="flex-1 p-4">
-          <div className="flex items-center justify-between mb-4">
-            <span className="text-sm font-medium text-[#1a1a1a]">
-              Kaufvertrag_Entwurf_v2
-            </span>
-            <div className="flex gap-2">
-              <span className="px-2 py-1 bg-[#c9a66b]/10 text-[#c9a66b] text-[10px] rounded-full font-medium">
-                Aktuell
-              </span>
+    <div className="relative">
+      {/* Main Container with asymmetric layout */}
+      <div className="bg-white shadow-[0_32px_64px_-24px_rgba(0,0,0,0.12)] border border-[#e8e8e8] rounded-2xl overflow-hidden">
+        {/* Header with subtle gradient */}
+        <div className="bg-gradient-to-r from-[#faf8f7] via-white to-[#faf8f7] border-b border-[#e8e8e8] px-4 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="flex gap-1.5">
+              <div className="w-2.5 h-2.5 rounded-full bg-[#c9a66b]/30"></div>
+              <div className="w-2.5 h-2.5 rounded-full bg-[#9a9a9a]/30"></div>
+              <div className="w-2.5 h-2.5 rounded-full bg-[#1a1a1a]/20"></div>
+            </div>
+            <div className="h-4 w-px bg-[#e8e8e8] mx-1"></div>
+            <span className="text-[10px] tracking-wider text-[#9a9a9a] uppercase font-medium">Senury</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-6 h-6 rounded-full bg-[#c9a66b]/10 flex items-center justify-center">
+              <span className="text-[8px] font-serif text-[#c9a66b]">N</span>
             </div>
           </div>
-          <div className="space-y-2">
-            <div className="h-3 bg-[#f5f5f5] rounded w-full"></div>
-            <div className="h-3 bg-[#f5f5f5] rounded w-11/12"></div>
-            <div className="h-3 bg-[#f5f5f5] rounded w-4/5"></div>
-            <div className="h-3 bg-[#e5e5e5] rounded w-full"></div>
-            <div className="h-3 bg-[#f5f5f5] rounded w-5/6"></div>
+        </div>
+
+        <div className="flex h-72">
+          {/* Sidebar - more refined */}
+          <div className="w-16 bg-[#fafafa] border-r border-[#e8e8e8] flex flex-col items-center py-5 gap-5">
+            <div className="w-8 h-8 rounded-lg bg-[#c9a66b]/10 flex items-center justify-center">
+              <FolderOpen className="w-4 h-4 text-[#c9a66b]" />
+            </div>
+            <div className="w-8 h-8 rounded-lg bg-[#1a1a1a] flex items-center justify-center shadow-lg">
+              <FileText className="w-4 h-4 text-white" />
+            </div>
+            <div className="w-8 h-8 rounded-lg hover:bg-[#f5f5f5] flex items-center justify-center transition-colors">
+              <Search className="w-4 h-4 text-[#9a9a9a]" />
+            </div>
+            <div className="mt-auto mb-2">
+              <div className="w-8 h-8 rounded-lg hover:bg-[#f5f5f5] flex items-center justify-center transition-colors">
+                <Settings className="w-4 h-4 text-[#9a9a9a]" />
+              </div>
+            </div>
           </div>
+
+          {/* Main Content Area */}
+          <div className="flex-1 flex flex-col">
+            {/* Document Header */}
+            <div className="px-5 py-4 border-b border-[#e8e8e8] flex items-center justify-between bg-gradient-to-r from-white to-[#fafafa]">
+              <div className="flex items-center gap-3">
+                <span className="text-xs font-serif text-[#1a1a1a] tracking-tight">
+                  Kaufvertrag_Entwurf_v2.urk
+                </span>
+                <span className="px-2 py-0.5 bg-[#c9a66b]/10 text-[#c9a66b] text-[9px] rounded-full font-medium tracking-wide">
+                  AKTUELL
+                </span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></div>
+                <span className="text-[9px] text-[#9a9a9a]">Gespeichert</span>
+              </div>
+            </div>
+
+            {/* Document Content with better typography simulation */}
+            <div className="flex-1 p-5 overflow-hidden">
+              <div className="max-w-lg mx-auto space-y-4">
+                {/* Document title area */}
+                <div className="text-center pb-4 border-b border-[#f0f0f0]">
+                  <div className="h-2 w-24 bg-[#e8e8e8] rounded mx-auto mb-3"></div>
+                  <div className="h-1.5 w-32 bg-[#f5f5f5] rounded mx-auto"></div>
+                </div>
+
+                {/* Paragraph blocks with varying opacity for depth */}
+                <div className="space-y-2.5">
+                  <div className="flex gap-2 items-start">
+                    <div className="w-4 h-4 rounded bg-[#c9a66b]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-[7px] text-[#c9a66b]">§1</span>
+                    </div>
+                    <div className="flex-1 space-y-1.5">
+                      <div className="h-2 bg-[#f0f0f0] rounded w-full"></div>
+                      <div className="h-2 bg-[#f5f5f5] rounded w-11/12"></div>
+                      <div className="h-2 bg-[#f8f8f8] rounded w-4/5"></div>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-2 items-start pt-2">
+                    <div className="w-4 h-4 rounded bg-[#9a9a9a]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-[7px] text-[#9a9a9a]">§2</span>
+                    </div>
+                    <div className="flex-1 space-y-1.5">
+                      <div className="h-2 bg-[#f0f0f0] rounded w-full"></div>
+                      <div className="h-2 bg-[#f5f5f5] rounded w-5/6"></div>
+                      <div className="h-2 bg-[#f8f8f8] rounded w-full"></div>
+                      <div className="h-2 bg-[#f5f5f5] rounded w-3/4"></div>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-2 items-start pt-2">
+                    <div className="w-4 h-4 rounded bg-[#c9a66b]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-[7px] text-[#c9a66b]">§3</span>
+                    </div>
+                    <div className="flex-1 space-y-1.5">
+                      <div className="h-2 bg-[#f5f5f5] rounded w-11/12"></div>
+                      <div className="h-2 bg-[#f8f8f8] rounded w-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom toolbar */}
+            <div className="px-4 py-2 border-t border-[#e8e8e8] bg-[#fafafa] flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <span className="text-[9px] text-[#9a9a9a]">Zeile 142, Spalte 12</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="px-2 py-0.5 bg-green-100 text-green-700 text-[8px] rounded">§203 OK</span>
+                <span className="text-[9px] text-[#9a9a9a]">1.240 Wörter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Floating accent elements */}
+      <div className="absolute -top-4 -right-4 bg-white shadow-lg border border-[#e8e8e8] rounded-xl p-3 animate-in fade-in slide-in-from-right-4 duration-700">
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 rounded-full bg-[#c9a66b]/10 flex items-center justify-center">
+            <Check className="w-4 h-4 text-[#c9a66b]" />
+          </div>
+          <div>
+            <div className="text-[9px] text-[#9a9a9a]">Klausel geprüft</div>
+            <div className="text-[10px] font-medium text-[#1a1a1a]">Auflassung v2.3</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="absolute -bottom-3 -left-3 bg-[#1a1a1a] shadow-xl rounded-lg p-2.5 animate-in fade-in slide-in-from-left-4 duration-700 delay-150">
+        <div className="flex items-center gap-2">
+          <Sparkles className="w-3.5 h-3.5 text-[#c9a66b]" />
+          <span className="text-[9px] text-white/90">KI-Assistenz aktiv</span>
         </div>
       </div>
     </div>
@@ -255,9 +357,9 @@ export default function ProduktPageClient() {
       </section>
 
       {/* Product Screenshot */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-white">
+      <section className="pt-8 pb-16 sm:pt-12 sm:pb-20 lg:pt-16 lg:pb-28 bg-white overflow-visible">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="relative">
+          <div className="relative mt-8 sm:mt-12">
             <WorkspaceMockup />
           </div>
           <p className="text-center text-sm text-[#9a9a9a] mt-6">{t("screenshot.caption")}</p>
