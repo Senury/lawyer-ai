@@ -299,6 +299,214 @@ export default function HomePageClient() {
         </div>
       </section>
 
+      {/* Solution Section */}
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="order-2 lg:order-1 bg-white p-8 border border-[#e8e8e8] shadow-soft">
+              <div className="bg-[#fafafa] p-6 border border-[#e8e8e8]">
+                <div className="flex items-center gap-3 mb-6">
+                  <Zap className="w-5 h-5 text-[#c9a66b]" />
+                  <span className="font-medium text-[#1a1a1a]">
+                    {t("solution.chart.title")}
+                  </span>
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span className="text-[#6b6b6b]">
+                        {t("solution.chart.upload")}
+                      </span>
+                      <span className="text-[#1a1a1a] font-medium">
+                        5 {ct("timeUnits.minutes")}
+                      </span>
+                    </div>
+                    <div className="h-2 bg-[#f5f5f5] rounded-full">
+                      <div className="h-2 bg-[#c9a66b] rounded-full w-[25%]"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span className="text-[#6b6b6b]">
+                        {t("solution.chart.aiDraft")}
+                      </span>
+                      <span className="text-[#1a1a1a] font-medium">
+                        5 {ct("timeUnits.minutes")}
+                      </span>
+                    </div>
+                    <div className="h-2 bg-[#f5f5f5] rounded-full">
+                      <div className="h-2 bg-[#c9a66b] rounded-full w-[25%]"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span className="text-[#6b6b6b]">
+                        {t("solution.chart.yourReview")}
+                      </span>
+                      <span className="text-[#1a1a1a] font-medium">
+                        10 {ct("timeUnits.minutes")}
+                      </span>
+                    </div>
+                    <div className="h-2 bg-[#f5f5f5] rounded-full">
+                      <div className="h-2 bg-[#c9a66b] rounded-full w-[50%]"></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 pt-4 border-t border-[#e8e8e8]">
+                  <div className="flex justify-between items-center">
+                    <span className="text-[#6b6b6b]">
+                      {t("solution.chart.total")}
+                    </span>
+                    <span className="text-xl font-serif font-medium text-[#c9a66b]">
+                      ~20 {ct("timeUnits.minutes")}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="order-1 lg:order-2">
+              <span className="text-xs font-semibold uppercase tracking-widest text-[#c9a66b] mb-4 block">
+                {t("solution.label")}
+              </span>
+              <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
+                {t("solution.title")}
+              </h2>
+              <p className="text-lg text-[#6b6b6b] mb-8 leading-relaxed">
+                {t("solution.description")}
+              </p>
+              <ul className="space-y-4">
+                {[0, 1, 2, 3].map((i) => (
+                  <li key={i} className="flex items-center gap-3 text-[#1a1a1a]">
+                    <Check className="w-5 h-5 text-[#c9a66b]" strokeWidth={1.5} />
+                    <span>{t(`solution.benefits.${i}`)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+{/* More than Kaufverträge */}
+      <section className="py-12 sm:py-16 lg:py-24 bg-white border-y border-[#e8e8e8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+            <div>
+              <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">
+                {t("documents.label")}
+              </span>
+              <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
+                {t("documents.title")}
+              </h2>
+              <p className="text-lg text-[#6b6b6b] mb-6 leading-relaxed">
+                {t("documents.description")}
+              </p>
+              <ul className="space-y-3">
+                {[0, 1, 2, 3].map((i) => (
+                  <li key={i} className="flex items-center gap-3 text-[#1a1a1a]">
+                    <Scale className="w-4 h-4 text-[#c9a66b]" />
+                    <span>{t(`documents.types.${i}`)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-[#faf8f7] p-8 border border-[#e8e8e8] rounded-xl">
+              <div className="space-y-4">
+                <div className="p-4 bg-white border border-[#e8e8e8] rounded-lg flex items-center gap-4">
+                  <div className="w-10 h-10 bg-[#c9a66b]/10 flex items-center justify-center rounded-lg">
+                    <FileText className="w-5 h-5 text-[#c9a66b]" />
+                  </div>
+                  <div>
+                    <div className="font-medium text-[#1a1a1a]">
+                      {t("documents.status.purchaseContract.name")}
+                    </div>
+                    <div className="text-sm text-[#6b6b6b]">
+                      {t("documents.status.purchaseContract.status")}
+                    </div>
+                  </div>
+                </div>
+                <div className="p-4 bg-white border border-[#e8e8e8] rounded-lg flex items-center gap-4">
+                  <div className="w-10 h-10 bg-[#6b6b6b]/10 flex items-center justify-center rounded-lg">
+                    <Star className="w-5 h-5 text-[#6b6b6b]" />
+                  </div>
+                  <div>
+                    <div className="font-medium text-[#1a1a1a]">
+                      {t("documents.status.gift.name")}
+                    </div>
+                    <div className="text-sm text-[#6b6b6b]">
+                      {t("documents.status.gift.status")}
+                    </div>
+                  </div>
+                </div>
+                <div className="p-4 bg-white border border-[#e8e8e8] rounded-lg flex items-center gap-4">
+                  <div className="w-10 h-10 bg-[#9a9a9a]/10 flex items-center justify-center rounded-lg">
+                    <MessageSquare className="w-5 h-5 text-[#9a9a9a]" />
+                  </div>
+                  <div>
+                    <div className="font-medium text-[#1a1a1a]">
+                      {t("documents.status.transfer.name")}
+                    </div>
+                    <div className="text-sm text-[#6b6b6b]">
+                      {t("documents.status.transfer.status")}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Feature Grid */}
+      <section className="py-16 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">
+              {t("features.label")}
+            </span>
+            <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
+              {t("features.title")}
+            </h2>
+            <p className="text-[#6b6b6b] text-lg max-w-2xl mx-auto">
+              {t("features.description")}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#e8e8e8]">
+            <FeatureCard
+              icon={TextCursorInput}
+              title={t("features.items.intelligentCapture.title")}
+              description={t("features.items.intelligentCapture.description")}
+            />
+            <FeatureCard
+              icon={FileText}
+              title={t("features.items.aiDrafting.title")}
+              description={t("features.items.aiDrafting.description")}
+            />
+            <FeatureCard
+              icon={Search}
+              title={t("features.items.aiResearch.title")}
+              description={t("features.items.aiResearch.description")}
+            />
+            <FeatureCard
+              icon={BookOpen}
+              title={t("features.items.clauseLibrary.title")}
+              description={t("features.items.clauseLibrary.description")}
+            />
+            <FeatureCard
+              icon={Users}
+              title={t("features.items.collaboration.title")}
+              description={t("features.items.collaboration.description")}
+            />
+            <FeatureCard
+              icon={LayoutGrid}
+              title={t("features.items.integration.title")}
+              description={t("features.items.integration.description")}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Security Section */}
       <section className="relative py-16 sm:py-24 lg:py-32 bg-white overflow-hidden">
         {/* Subtle shield outline decoration */}
@@ -407,214 +615,7 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      {/* Solution Section */}
-      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="order-2 lg:order-1 bg-white p-8 border border-[#e8e8e8] shadow-soft">
-              <div className="bg-[#fafafa] p-6 border border-[#e8e8e8]">
-                <div className="flex items-center gap-3 mb-6">
-                  <Zap className="w-5 h-5 text-[#c9a66b]" />
-                  <span className="font-medium text-[#1a1a1a]">
-                    {t("solution.chart.title")}
-                  </span>
-                </div>
-                <div className="space-y-4">
-                  <div>
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="text-[#6b6b6b]">
-                        {t("solution.chart.upload")}
-                      </span>
-                      <span className="text-[#1a1a1a] font-medium">
-                        5 {ct("timeUnits.minutes")}
-                      </span>
-                    </div>
-                    <div className="h-2 bg-[#f5f5f5] rounded-full">
-                      <div className="h-2 bg-[#c9a66b] rounded-full w-[25%]"></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="text-[#6b6b6b]">
-                        {t("solution.chart.aiDraft")}
-                      </span>
-                      <span className="text-[#1a1a1a] font-medium">
-                        5 {ct("timeUnits.minutes")}
-                      </span>
-                    </div>
-                    <div className="h-2 bg-[#f5f5f5] rounded-full">
-                      <div className="h-2 bg-[#c9a66b] rounded-full w-[25%]"></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="text-[#6b6b6b]">
-                        {t("solution.chart.yourReview")}
-                      </span>
-                      <span className="text-[#1a1a1a] font-medium">
-                        10 {ct("timeUnits.minutes")}
-                      </span>
-                    </div>
-                    <div className="h-2 bg-[#f5f5f5] rounded-full">
-                      <div className="h-2 bg-[#c9a66b] rounded-full w-[50%]"></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-6 pt-4 border-t border-[#e8e8e8]">
-                  <div className="flex justify-between items-center">
-                    <span className="text-[#6b6b6b]">
-                      {t("solution.chart.total")}
-                    </span>
-                    <span className="text-xl font-serif font-medium text-[#c9a66b]">
-                      ~20 {ct("timeUnits.minutes")}
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="order-1 lg:order-2">
-              <span className="text-xs font-semibold uppercase tracking-widest text-[#c9a66b] mb-4 block">
-                {t("solution.label")}
-              </span>
-              <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
-                {t("solution.title")}
-              </h2>
-              <p className="text-lg text-[#6b6b6b] mb-8 leading-relaxed">
-                {t("solution.description")}
-              </p>
-              <ul className="space-y-4">
-                {[0, 1, 2, 3].map((i) => (
-                  <li key={i} className="flex items-center gap-3 text-[#1a1a1a]">
-                    <Check className="w-5 h-5 text-[#c9a66b]" strokeWidth={1.5} />
-                    <span>{t(`solution.benefits.${i}`)}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Feature Grid */}
-      <section className="py-16 sm:py-24 lg:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-16">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">
-              {t("features.label")}
-            </span>
-            <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
-              {t("features.title")}
-            </h2>
-            <p className="text-[#6b6b6b] text-lg max-w-2xl mx-auto">
-              {t("features.description")}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#e8e8e8]">
-            <FeatureCard
-              icon={TextCursorInput}
-              title={t("features.items.intelligentCapture.title")}
-              description={t("features.items.intelligentCapture.description")}
-            />
-            <FeatureCard
-              icon={FileText}
-              title={t("features.items.aiDrafting.title")}
-              description={t("features.items.aiDrafting.description")}
-            />
-            <FeatureCard
-              icon={Search}
-              title={t("features.items.aiResearch.title")}
-              description={t("features.items.aiResearch.description")}
-            />
-            <FeatureCard
-              icon={BookOpen}
-              title={t("features.items.clauseLibrary.title")}
-              description={t("features.items.clauseLibrary.description")}
-            />
-            <FeatureCard
-              icon={Users}
-              title={t("features.items.collaboration.title")}
-              description={t("features.items.collaboration.description")}
-            />
-            <FeatureCard
-              icon={LayoutGrid}
-              title={t("features.items.integration.title")}
-              description={t("features.items.integration.description")}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* More than Kaufverträge */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-white border-y border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
-            <div>
-              <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">
-                {t("documents.label")}
-              </span>
-              <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
-                {t("documents.title")}
-              </h2>
-              <p className="text-lg text-[#6b6b6b] mb-6 leading-relaxed">
-                {t("documents.description")}
-              </p>
-              <ul className="space-y-3">
-                {[0, 1, 2, 3].map((i) => (
-                  <li key={i} className="flex items-center gap-3 text-[#1a1a1a]">
-                    <Scale className="w-4 h-4 text-[#c9a66b]" />
-                    <span>{t(`documents.types.${i}`)}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-[#faf8f7] p-8 border border-[#e8e8e8] rounded-xl">
-              <div className="space-y-4">
-                <div className="p-4 bg-white border border-[#e8e8e8] rounded-lg flex items-center gap-4">
-                  <div className="w-10 h-10 bg-[#c9a66b]/10 flex items-center justify-center rounded-lg">
-                    <FileText className="w-5 h-5 text-[#c9a66b]" />
-                  </div>
-                  <div>
-                    <div className="font-medium text-[#1a1a1a]">
-                      {t("documents.status.purchaseContract.name")}
-                    </div>
-                    <div className="text-sm text-[#6b6b6b]">
-                      {t("documents.status.purchaseContract.status")}
-                    </div>
-                  </div>
-                </div>
-                <div className="p-4 bg-white border border-[#e8e8e8] rounded-lg flex items-center gap-4">
-                  <div className="w-10 h-10 bg-[#6b6b6b]/10 flex items-center justify-center rounded-lg">
-                    <Star className="w-5 h-5 text-[#6b6b6b]" />
-                  </div>
-                  <div>
-                    <div className="font-medium text-[#1a1a1a]">
-                      {t("documents.status.gift.name")}
-                    </div>
-                    <div className="text-sm text-[#6b6b6b]">
-                      {t("documents.status.gift.status")}
-                    </div>
-                  </div>
-                </div>
-                <div className="p-4 bg-white border border-[#e8e8e8] rounded-lg flex items-center gap-4">
-                  <div className="w-10 h-10 bg-[#9a9a9a]/10 flex items-center justify-center rounded-lg">
-                    <MessageSquare className="w-5 h-5 text-[#9a9a9a]" />
-                  </div>
-                  <div>
-                    <div className="font-medium text-[#1a1a1a]">
-                      {t("documents.status.transfer.name")}
-                    </div>
-                    <div className="text-sm text-[#6b6b6b]">
-                      {t("documents.status.transfer.status")}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Process Timeline */}
       <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7]">

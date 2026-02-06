@@ -102,13 +102,13 @@
     },
     "solution": {
       "label": "Die Lösung",
-      "title": "Schnell, Produktiv & Fehlerfrei",
+      "title": "Vom Auftrag bis zur Beurkundung in Minuten",
       "description": "Stellen Sie Immobilienverträge in Minuten fertig. Laden Sie vorliegende Sachunterlagen und Kundendokumente hoch. Senury extrahiert automatisch alle relevanten Daten, prüft sie auf Vollständigkeit und erstellt den Entwurf Paragraph für Paragraph. Sie prüfen und finalisieren.",
       "benefits": [
         "Automatische Extraktion aus vorliegenden Unterlagen",
-        "Intelligente Validierung der strukturierten Daten",
-        "KI-gestützte Texterstellung Absatz für Absatz",
-        "Fachkundige Prüfung vor der Beurkundung"
+        "Automatische Prüfung auf Vollständigkeit & Plausibilität",
+        "KI-gestützte Texterstellung Paragraph für Paragraph",
+        "Notarielle Prüfung vor der Beurkundung"
       ],
       "chart": {
         "title": "Mit Senury",
@@ -120,19 +120,19 @@
     },
     "features": {
       "label": "Funktionen",
-      "title": "Die Komplettlösung für Ihr Notariat",
-      "description": "Effiziente Kaufverträge und vieles mehr. Von der Erfassung über die Recherche bis zum fertigen Entwurf.",
+      "title": "Zeitknappheit ist Vergangenheit",
+      "description": "Ihr digitaler Notarassistent. Routineaufgaben werden schnell, präzise und verlässlich erledigt. Kein Fachkräftemangel mehr, sondern Entlastung und Raum für Wachstum.",
       "items": {
         "intelligentCapture": {
           "title": "Intelligente Erfassung",
           "description": "Strukturierte Datenerfassung für Kaufverträge und andere Urkunden. Mit automatischen Plausibilitätsprüfungen."
         },
         "aiDrafting": {
-          "title": "KI-gestütztes Drafting",
-          "description": "Kaufverträge in Minuten – und Unterstützung für Schenkungen, Übertragungen und weitere Urkunden."
+          "title": "Urkunden Entwurf",
+          "description": "Immobilien Kaufverträge in Minuten, sowie Schenkungs- und Eheverträge. Basierend auf Ihren Vorlagen." 
         },
         "aiResearch": {
-          "title": "KI-Recherche",
+          "title": "Recherche",
           "description": "Chat-basierte Rechtsrecherche mit präzisen, fundierten Antworten aus erstklassigen juristischen Datenquellen."
         },
         "clauseLibrary": {
@@ -141,22 +141,22 @@
         },
         "collaboration": {
           "title": "Team-Kollaboration",
-          "description": "Arbeiten Sie gemeinsam an Entwürfen. Kommentare und Änderungen in Echtzeit."
+          "description": "Arbeiten Sie gemeinsam an Entwürfen. Kommentare und Änderungen in Echtzeit. Behalten Sie eine klare Übersicht, wer woran gearbeitet hat."
         },
         "integration": {
           "title": "Nahtlose Integration",
-          "description": "Word- und Outlook-Add-ins für Ihren gewohnten Workflow. Importieren Sie Ihre Vorlagen."
+          "description": "Word und Outlook Anbindung für Ihren gewohnten Workflow. Direkt bearbeiten und importieren."
         }
       }
     },
     "documents": {
       "label": "Urkunden",
-      "title": "Mehr als nur Kaufverträge",
-      "description": "Während Kaufverträge unser Hauptfokus bleiben, unterstützt Senury auch bei weiteren urkundlichen Beurkundungen – von Schenkungen bis zu Grundstücksübertragungen.",
+      "title": "Nicht nur Kaufverträge",
+      "description": "Neben Immobilienverträgen, unterstützten wir Sie bei weiteren Beurkundungen :",
       "types": [
         "Kaufverträge (Grundstücke, Wohnungseigentum)",
         "Schenkungsverträge",
-        "Grundstücksübertragungen",
+        "Eheverträge",
         "Weitere Urkunden (in Vorbereitung)"
       ],
       "status": {
@@ -169,7 +169,7 @@
           "status": "Verfügbar"
         },
         "transfer": {
-          "name": "Übertragung",
+          "name": "Ehevertrag",
           "status": "Verfügbar"
         }
       }
@@ -305,7 +305,7 @@
         },
         "integrations": {
           "title": "Integrationen",
-          "description": "Word- und Outlook-Add-ins für Ihren gewohnten Workflow."
+          "description": "Word und Outlook Anbindung für Ihren gewohnten Workflow. Direkt bearbeiten und importieren."
         },
         "control": {
           "title": "Kontrolle",
