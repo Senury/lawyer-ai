@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
@@ -298,91 +299,110 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      {/* Problem Section - Pain Point */}
-      <section className="py-16 sm:py-24 lg:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div>
-              <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">
-                {t("problem.label")}
-              </span>
-              <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
-                {t("problem.title")}
-              </h2>
-              <p className="text-lg text-[#6b6b6b] mb-8 leading-relaxed">
-                {t("problem.description")}
+      {/* Security Section */}
+      <section className="relative py-16 sm:py-24 lg:py-32 bg-white overflow-hidden">
+        {/* Subtle shield outline decoration */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] opacity-[0.02] hidden lg:block">
+          <svg viewBox="0 0 100 100" fill="none" stroke="#1a1a1a" strokeWidth="0.5">
+            <path d="M50 5 L90 25 V55 C90 75 50 95 50 95 C50 95 10 75 10 55 V25 L50 5Z" />
+          </svg>
+        </div>
+
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 lg:mb-16">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">
+              Sicherheit & Compliance
+            </span>
+            <h2 className="font-serif font-medium text-3xl md:text-4xl lg:text-5xl text-[#1a1a1a] mb-4">
+              Vertrauen durch Transparenz
+            </h2>
+            <p className="text-[#6b6b6b] text-lg max-w-2xl mx-auto">
+              Ihre Mandatsdaten verdienen höchsten Schutz. Unsere Sicherheitsarchitektur ist von Grund auf für die Anforderungen des Notariats entwickelt.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
+            {/* ISO 27001 */}
+            <div className="group bg-[#faf8f7] border border-[#e8e8e8] p-6 lg:p-8 hover:border-[#c9a66b]/30 transition-all duration-300">
+              <div className="aspect-[4/3] relative mb-6 overflow-hidden">
+                <Image
+                  src="/security/ISO_27001.png"
+                  alt="ISO 27001 Zertifizierung"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-white border border-[#e8e8e8] flex items-center justify-center">
+                  <Check className="w-5 h-5 text-[#c9a66b]" strokeWidth={1.5} />
+                </div>
+                <h3 className="font-serif text-xl font-medium text-[#1a1a1a]">
+                  ISO 27001
+                </h3>
+              </div>
+              <p className="text-sm text-[#6b6b6b] leading-relaxed">
+                Unsere Prozesse und Systeme orientieren sich an ISO-27001-Standards. Das Zertifikat kann bei Bedarf nachgewiesen werden.
               </p>
-              <ul className="space-y-4">
-                {[0, 1, 2, 3].map((i) => (
-                  <li key={i} className="flex items-center gap-3 text-[#1a1a1a]">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#9a9a9a]" />
-                    <span>{t(`problem.painPoints.${i}`)}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
 
-            <div className="bg-[#faf8f7] p-8 border border-[#e8e8e8]">
-              <div className="bg-white p-6 shadow-soft">
-                <div className="flex items-center gap-3 mb-6">
-                  <Clock className="w-5 h-5 text-[#9a9a9a]" />
-                  <span className="font-medium text-[#1a1a1a]">
-                    {t("problem.chart.title")}
-                  </span>
-                </div>
-                <div className="space-y-4">
-                  <div>
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="text-[#6b6b6b]">
-                        {t("problem.chart.dataEntry")}
-                      </span>
-                      <span className="text-[#1a1a1a] font-medium">
-                        45 {ct("timeUnits.minutes")}
-                      </span>
-                    </div>
-                    <div className="h-2 bg-[#f5f5f5] rounded-full">
-                      <div className="h-2 bg-[#9a9a9a] rounded-full w-[60%]"></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="text-[#6b6b6b]">
-                        {t("problem.chart.drafting")}
-                      </span>
-                      <span className="text-[#1a1a1a] font-medium">
-                        2.5 {ct("timeUnits.hours")}
-                      </span>
-                    </div>
-                    <div className="h-2 bg-[#f5f5f5] rounded-full">
-                      <div className="h-2 bg-[#9a9a9a] rounded-full w-[90%]"></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="text-[#6b6b6b]">
-                        {t("problem.chart.corrections")}
-                      </span>
-                      <span className="text-[#1a1a1a] font-medium">
-                        1 {ct("timeUnits.hours")}
-                      </span>
-                    </div>
-                    <div className="h-2 bg-[#f5f5f5] rounded-full">
-                      <div className="h-2 bg-[#9a9a9a] rounded-full w-[40%]"></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-6 pt-4 border-t border-[#e8e8e8]">
-                  <div className="flex justify-between items-center">
-                    <span className="text-[#6b6b6b]">
-                      {t("problem.chart.total")}
-                    </span>
-                    <span className="text-xl font-serif font-medium text-[#1a1a1a]">
-                      ~4 {ct("timeUnits.hours")}
-                    </span>
-                  </div>
-                </div>
+            {/* §203 StGB */}
+            <div className="group bg-[#faf8f7] border border-[#e8e8e8] p-6 lg:p-8 hover:border-[#c9a66b]/30 transition-all duration-300">
+              <div className="aspect-[4/3] relative mb-6 overflow-hidden">
+                <Image
+                  src="/security/StGB.jpg"
+                  alt="§203 StGB Berufsgeheimnis"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
               </div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-white border border-[#e8e8e8] flex items-center justify-center">
+                  <Shield className="w-5 h-5 text-[#c9a66b]" strokeWidth={1.5} />
+                </div>
+                <h3 className="font-serif text-xl font-medium text-[#1a1a1a]">
+                  § 203 StGB
+                </h3>
+              </div>
+              <p className="text-sm text-[#6b6b6b] leading-relaxed">
+                Abschluss berufsrechtlicher Verschwiegenheitsverpflichtungen, sobald Mandatsdaten verarbeitet werden.
+              </p>
             </div>
+
+            {/* DSGVO */}
+            <div className="group bg-[#faf8f7] border border-[#e8e8e8] p-6 lg:p-8 hover:border-[#c9a66b]/30 transition-all duration-300">
+              <div className="aspect-[4/3] relative mb-6 overflow-hidden">
+                <Image
+                  src="/security/DSGVO.webp"
+                  alt="DSGVO Datenschutz"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-white border border-[#e8e8e8] flex items-center justify-center">
+                  <Lock className="w-5 h-5 text-[#c9a66b]" strokeWidth={1.5} />
+                </div>
+                <h3 className="font-serif text-xl font-medium text-[#1a1a1a]">
+                  DSGVO Sicherheit
+                </h3>
+              </div>
+              <p className="text-sm text-[#6b6b6b] leading-relaxed">
+                Hosting Ihres Accounts in ISO-27001-zertifizierten Rechenzentren in Deutschland mit C5-Testat. DSGVO- und berufsrechtskonform.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/sicherheit/"
+              className="group inline-flex items-center gap-2 text-[#1a1a1a] hover:text-[#c9a66b] transition-colors"
+            >
+              <span className="font-medium">Mehr zur Sicherheit</span>
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </Link>
           </div>
         </div>
       </section>
