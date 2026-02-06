@@ -67,9 +67,9 @@ export default function DatenschutzPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
             {/* Sidebar Navigation - Sticky on Desktop */}
             <div className="lg:col-span-4 xl:col-span-3">
-              <div className="lg:sticky lg:top-28 lg:h-[calc(100vh-8rem)]">
-                <Card className="bg-[#faf8f7] border-[#e8e8e8] rounded-xl overflow-hidden h-full">
-                  <CardContent className="p-0 h-full overflow-y-auto">
+              <div className="lg:sticky lg:top-28">
+                <Card className="bg-[#faf8f7] border-[#e8e8e8] rounded-xl overflow-hidden">
+                  <CardContent className="p-0">
                     <nav className="divide-y divide-[#e8e8e8]">
                       {sections.map((section) => (
                         <Link
