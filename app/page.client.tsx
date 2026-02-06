@@ -218,7 +218,7 @@ export default function HomePageClient() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative pt-28 sm:pt-32 pb-16 sm:pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-gradient-to-b from-[#fdfcfb] to-white">
+      <section className="relative pt-20 sm:pt-24 pb-20 sm:pb-24 lg:pt-32 lg:pb-32 bg-gradient-to-b from-[#fdfcfb] to-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12 items-center">
             {/* Left Content */}
@@ -255,7 +255,7 @@ export default function HomePageClient() {
             </div>
 
             {/* Right Content - Floating Mockups */}
-            <div className="relative min-h-[350px] sm:min-h-[400px] lg:min-h-[550px] w-full flex items-center justify-center order-1 lg:order-2">
+            <div className="relative min-h-[380px] sm:min-h-[450px] lg:min-h-[580px] w-full flex items-center justify-center order-1 lg:order-2 py-6">
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[350px] lg:h-[350px] bg-gradient-to-br from-[#c9a66b]/10 to-transparent rounded-full blur-3xl"></div>
 
               <div className="relative w-full max-w-[280px] sm:max-w-sm mx-auto">
