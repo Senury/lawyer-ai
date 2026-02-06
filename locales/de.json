@@ -51,7 +51,7 @@
   },
   "home": {
     "hero": {
-      "badge": "Jetzt verfügbar — Made in Germany",
+      "badge": "Jetzt verfügbar — Hosting in Deutschland",
       "title": "Urkunden in Minuten.",
       "subtitle": "Ihre Komplettlösung für das Notariat.",
       "description": "Laden Sie vorliegende Unterlagen hoch, lassen Sie Daten extrahieren, prüfen Sie den Entwurf – mit unterstützender KI, die Ihnen die volle Kontrolle lässt.",
@@ -102,8 +102,8 @@
     },
     "solution": {
       "label": "Die Lösung",
-      "title": "Von Dokumenten zum Entwurf in Minuten",
-      "description": "Laden Sie vorliegende Sachunterlagen und Kundendokumente hoch. Senury extrahiert automatisch alle relevanten Daten, prüft sie auf Vollständigkeit und erstellt den Vertrag Absatz für Absatz. Sie prüfen und finalisieren.",
+      "title": "Schnell, Produktiv & Fehlerfrei",
+      "description": "Stellen Sie Immobilienverträge in Minuten fertig. Laden Sie vorliegende Sachunterlagen und Kundendokumente hoch. Senury extrahiert automatisch alle relevanten Daten, prüft sie auf Vollständigkeit und erstellt den Entwurf Paragraph für Paragraph. Sie prüfen und finalisieren.",
       "benefits": [
         "Automatische Extraktion aus vorliegenden Unterlagen",
         "Intelligente Validierung der strukturierten Daten",
