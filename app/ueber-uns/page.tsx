@@ -48,21 +48,22 @@ export default function AboutPage() {
     <div className="min-h-screen bg-[#fdfcfb]">
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-24 bg-gradient-to-b from-[#fdfcfb] to-white overflow-hidden">
-        {/* Three vertical pillars - representing the three founders */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 hidden lg:flex items-end gap-3 opacity-[0.04]">
-          <div className="w-2 h-48 bg-[#1a1a1a] rounded-t-sm" />
-          <div className="w-2 h-64 bg-[#1a1a1a] rounded-t-sm" />
-          <div className="w-2 h-56 bg-[#1a1a1a] rounded-t-sm" />
-        </div>
-
-        {/* Copper accent line */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1px] h-32 bg-gradient-to-b from-transparent via-[#c9a66b]/30 to-transparent hidden lg:block" />
+        {/* Subtle decorative element - single arc suggesting connection */}
+        <svg className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-[0.03] hidden lg:block" width="400" height="100" viewBox="0 0 400 100" fill="none">
+          <path d="M0,100 Q200,0 400,100" stroke="#1a1a1a" strokeWidth="1"/>
+        </svg>
 
         <div className="relative max-w-6xl mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="pill-badge bg-[#f5f5f5] text-[#6b6b6b] border border-[#e8e8e8] mb-6 inline-block">
-              Über uns
-            </span>
+            {/* Refined pill badge with copper accent */}
+            <div className="inline-flex items-center gap-3 mb-8">
+              <div className="w-8 h-px bg-[#c9a66b]/40" />
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-[#e8e8e8] text-xs font-medium text-[#6b6b6b] rounded-full shadow-sm">
+                <span className="w-1.5 h-1.5 bg-[#c9a66b] rounded-full animate-pulse" />
+                Über uns
+              </span>
+              <div className="w-8 h-px bg-[#c9a66b]/40" />
+            </div>
 
             <h1 className="font-serif font-medium text-4xl md:text-5xl lg:text-6xl text-[#1a1a1a] mb-6 tracking-tight">
               Das Team hinter Senury
