@@ -16,7 +16,12 @@ const teamMembers = [
       webp: "/about/jun.webp",
       fallback: "/about/jun.jpeg",
     },
-    bio: "Strategische Vision trifft auf operative Exzellenz. Mit fundierter Erfahrung aus dem Private-Equity-Bereich entwickelt Jun die Unternehmensstrategie und sorgt dafür, dass große Ideen in messbare Ergebnisse überführt werden.",
+    education: "Studiert Mathematik, Wirtschaft und Programmieren in Utrecht",
+    bio: [
+      "Für mich ist es ein großes Glück mit Notaren zu arbeiten. Ich selbst komme aus einer Notarenfamilie in Blankenese. Daher ist dies ein Teil meiner Kindheit. Etwas, das damals fern und unverständlich war, ist jetzt Ambition und Interesse. Es bringt mich näher an meine Familie, an mein Team, aber auch an mich selbst. Und genau so hoffe ich, dass es mich näher an Sie bringt – an Notare, mit denen wir gemeinsam etwas verändern wollen.",
+      "Was ist Senury für mich?",
+      "Ein Restaurant mit guter Qualität, aber noch besseren Preisen, wo dir Leitungswasser kostenlos angeboten wird, wo die Bedienung Spaß am Job hat und dich herzlich empfängt. Das ist Senury für uns. Etwas Reales, Veränderndes. Was Notare entlastet und zufriedenstellt."
+    ],
     number: "01",
   },
   {
@@ -113,11 +118,32 @@ export default function AboutPage() {
                       <h2 className="font-serif text-3xl lg:text-4xl font-medium text-[#1a1a1a]">
                         {member.name}
                       </h2>
+                      {"education" in member && member.education && (
+                        <p className="mt-2 text-xs text-[#9a9a9a]">
+                          {member.education}
+                        </p>
+                      )}
                     </div>
                     <div className={`w-12 h-px bg-[#e8e8e8] ${index % 2 === 1 ? "lg:ml-auto" : ""}`} />
-                    <p className="text-[#6b6b6b] leading-relaxed">
-                      {member.bio}
-                    </p>
+                    <div className="space-y-4">
+                      {Array.isArray(member.bio) ? (
+                        <>
+                          <p className="text-[#6b6b6b] leading-relaxed">
+                            {member.bio[0]}
+                          </p>
+                          <h3 className="font-serif text-xl text-[#1a1a1a] mt-6 mb-2">
+                            {member.bio[1]}
+                          </h3>
+                          <p className="text-[#6b6b6b] leading-relaxed">
+                            {member.bio[2]}
+                          </p>
+                        </>
+                      ) : (
+                        <p className="text-[#6b6b6b] leading-relaxed">
+                          {member.bio}
+                        </p>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -141,7 +167,7 @@ export default function AboutPage() {
           </span>
 
           <blockquote className="relative font-serif text-2xl sm:text-3xl lg:text-4xl text-white leading-relaxed">
-            Wir glauben daran, dass Technologie den Menschen dienen soll – nicht umgekehrt. Senury ist unser Beitrag zu einer Zukunft, in der Notare ihre Expertise dort einbringen, wo sie am wertvollsten ist.
+            Wir glauben daran, dass Kundenzufriedenheit und Qualität der Schlüssel zum Erfolg ist.
           </blockquote>
 
           <div className="mt-12 flex items-center justify-center gap-4">
