@@ -26,24 +26,34 @@ const teamMembers = [
   },
   {
     name: "Johan Kawamura",
-    role: "Co-Founder & Technologie",
+    role: "Co-Founder & Softwareentwicklung",
     image: {
       avif: "/about/johan.avif",
       webp: "/about/johan.webp",
       fallback: "/about/johan.avif",
     },
-    bio: "Technologie als Handwerkszeug. Seit seinem fünfzehnten Lebensjahr programmiert Johan mit dem Anspruch, komplexe Systeme verständlich und nutzbar zu machen. Seine Expertise in Künstlicher Intelligenz bildet das technische Fundament von Senury.",
+    education: "Studiert Bioinformatik in Berlin",
+    bio: [
+      "Technologie als Handwerkszeug. Seit meinem fünfzehnten Lebensjahr programmiere ich mit dem Anspruch, komplexe Systeme verständlich und nutzbar zu machen. Meine Expertise in Künstlicher Intelligenz bildet das technische Fundament von Senury.",
+      "Was ist Senury für mich?",
+      "Placeholder"
+    ],
     number: "02",
   },
   {
     name: "Tom Pilgram",
-    role: "Co-Founder & KI-Entwicklung",
+    role: "Co-Founder & Systemdesign",
     image: {
       avif: "/about/tom.avif",
       webp: "/about/tom.webp",
       fallback: "/about/tom.webp",
     },
-    bio: "Theorie und Praxis im Einklang. Toms intensive Auseinandersetzung mit den Grundlagen der KI während seines Studiums fließt direkt in die Entwicklung von Senury ein. Er verbindet akademische Tiefe mit unternehmerischer Umsetzungsstärke.",
+    education: "Studiert Mathematik in Hagen",
+    bio: [
+      "Ich komme aus der Technik und baue Dinge am liebsten dort, wo sie wirklich gebraucht werden. Die Arbeit mit Notaren hat mir schnell gezeigt, wie viel Verantwortung, Präzision und Konzentration dieser Beruf täglich verlangt und wie wenig Raum für unnötige Reibung bleibt.",
+      "Was ist Senury für mich?",
+      "Placeholder"
+    ],
     number: "03",
   },
 ];
