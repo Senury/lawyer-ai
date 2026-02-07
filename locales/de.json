@@ -51,7 +51,7 @@
   },
   "home": {
     "hero": {
-      "badge": "Jetzt verfügbar — Hosting in Deutschland",
+      "badge": "Mit KI-Unterstützung",
       "title": "Komplettlösung",
       "subtitle": "für Ihr Notariat",
       "description": "Senury gibt Sicherheit, Zeitersparnis und rechtliche Fehlerfreiheit.",
@@ -145,7 +145,7 @@
         },
         "integration": {
           "title": "Nahtlose Integration",
-          "description": "Word und Outlook Anbindung für Ihren gewohnten Workflow. Direkt bearbeiten und importieren."
+          "description": "Microsoft 365 Anbindung für Ihren gewohnten Workflow. Direkt bearbeiten und importieren."
         }
       }
     },
@@ -203,15 +203,17 @@
     },
     "testimonial": {
       "quote": "Senury hat unseren Workflow fundamental verändert. Was früher Stunden gedauert hat, erledigen wir jetzt in unter einer Stunde – bei gleichbleibender Qualität und voller Kontrolle.",
-      "author": "Notar aus Bayern",
-      "role": "Pilot-Kunde seit 2024"
+      "author": "Notar aus Berlin",
+      "role": "Pilot-Kunde seit 2025"
     },
     "integrations": {
       "label": "Integriert mit Ihren Tools",
+      "title": "Passend zu Ihrem Workflow",
+      "description": "Senury integriert sich nahtlos in Ihre bestehende Arbeitsumgebung. Arbeiten Sie dort weiter, wo Sie sich wohlfühlen.",
       "items": {
         "word": "Microsoft Word",
         "outlook": "Microsoft Outlook",
-        "xnotar": "XNotar"
+        "azure": "Microsoft Azure"
       }
     },
     "cta": {
@@ -305,7 +307,7 @@
         },
         "integrations": {
           "title": "Integrationen",
-          "description": "Word und Outlook Anbindung für Ihren gewohnten Workflow. Direkt bearbeiten und importieren."
+          "description": "Microsoft 365 Anbindung für Ihren gewohnten Workflow. Direkt bearbeiten und importieren."
         },
         "control": {
           "title": "Kontrolle",
@@ -360,9 +362,9 @@
       }
     },
     "integrations": {
-      "label": "Integrationen",
-      "title": "Nahtlose Integration in Ihre Arbeitsumgebung",
-      "description": "Senury fügt sich in Ihren bestehenden Workflow ein – ohne disruptives Umlernen.",
+      "label": "Integriert mit Ihren Tools",
+      "title": "Passend zu Ihrem Workflow",
+      "description": "Senury integriert sich nahtlos in Ihre bestehende Arbeitsumgebung. Arbeiten Sie dort weiter, wo Sie sich wohlfühlen.",
       "word": {
         "title": "Word Add-In",
         "description": "Nutzen Sie Senury direkt in Microsoft Word. Importieren und exportieren Sie Dokumente nahtlos. Arbeiten Sie in der gewohnten Umgebung – mit Unterstützung von Senury im Hintergrund."
