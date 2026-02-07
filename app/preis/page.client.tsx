@@ -35,7 +35,7 @@ export default function PreisPageClient() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <section className="relative pt-24 pb-8 sm:pb-10 lg:pt-32 lg:pb-12 overflow-hidden">
+      <section className="relative pt-24 pb-8 sm:pb-10 lg:pt-32 lg:pb-12 bg-gradient-to-b from-[#fdfcfb] to-white overflow-hidden">
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-3 mb-6">

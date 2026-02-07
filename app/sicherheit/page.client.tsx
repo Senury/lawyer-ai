@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
-import { Shield, Lock, Eye, Database, FileCheck, Download, CheckCircle, Server, Fingerprint, FileText, Globe, Clock, Award } from "lucide-react";
+import { Shield, Lock, Eye, Database, FileCheck, Download, CheckCircle, Server, Fingerprint, Globe, Clock } from "lucide-react";
 
 export default function SicherheitPageClient() {
   const t = useTranslations("security");
@@ -15,13 +15,6 @@ export default function SicherheitPageClient() {
     { key: "uptime", icon: Clock },
     { key: "locations", icon: Server },
     { key: "exclusive", icon: Globe },
-  ];
-
-  const certifications = [
-    { key: "stgb", icon: Shield },
-    { key: "gdpr", icon: Lock },
-    { key: "iso", icon: FileCheck },
-    { key: "bsi", icon: Server },
   ];
 
   const complianceCards = [
@@ -69,33 +62,24 @@ export default function SicherheitPageClient() {
         </div>
       </section>
 
-      {/* Stats Row */}
-      <section className="py-10 sm:py-12 bg-[#faf8f7] border-y border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
-            {stats.map((stat) => (
-              <div key={stat.key} className="text-center">
-                <div className="font-serif text-3xl md:text-4xl font-medium text-[#1a1a1a] mb-1 tracking-tight">
-                  {t(`stats.${stat.key}.value`)}
+      {/* Stats */}
+      <section className="py-16 sm:py-20 bg-white border-b border-[#e8e8e8]">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="flex flex-wrap justify-center lg:justify-between gap-8 lg:gap-4">
+            {[
+              { value: "256", unit: "Bit", label: "AES-Verschlüsselung" },
+              { value: "TLS", unit: "1.3", label: "bei Übertragung" },
+              { value: "2", unit: "", label: "Redundante Standorte" },
+              { value: "DE", unit: "", label: "Exklusiv Deutschland" },
+            ].map((stat, index) => (
+              <div key={index} className="text-center min-w-[140px]">
+                <div className="font-serif text-5xl sm:text-6xl font-light text-[#1a1a1a] tracking-tight tabular-nums">
+                  {stat.value}
+                  <span className="text-xl text-[#c9a66b] ml-1">{stat.unit}</span>
                 </div>
-                <div className="text-xs text-[#6b6b6b]">{t(`stats.${stat.key}.label`)}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Trust Badges */}
-      <section className="py-10 sm:py-12 bg-white border-b border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
-            {certifications.map((cert) => (
-              <div key={cert.key} className="text-center">
-                <div className="w-12 h-12 bg-[#fafafa] border border-[#e8e8e8] flex items-center justify-center mx-auto mb-3 rounded-lg">
-                  <cert.icon className="w-6 h-6 text-[#1a1a1a]" />
+                <div className="mt-3 text-[11px] text-[#9a9a9a] uppercase tracking-[0.15em]">
+                  {stat.label}
                 </div>
-                <div className="font-medium text-[#1a1a1a]">{t(`certifications.${cert.key}.title`)}</div>
-                <div className="text-xs text-[#6b6b6b]">{t(`certifications.${cert.key}.description`)}</div>
               </div>
             ))}
           </div>
@@ -103,7 +87,7 @@ export default function SicherheitPageClient() {
       </section>
 
       {/* Compliance Cards */}
-      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7]">
+      <section className="py-16 sm:py-24 lg:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10 sm:mb-12">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("compliance.label")}</span>
@@ -133,7 +117,7 @@ export default function SicherheitPageClient() {
       </section>
 
       {/* Technical Details */}
-      <section className="py-16 sm:py-24 lg:py-32 bg-white">
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12 sm:mb-16">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("technical.label")}</span>
@@ -166,7 +150,7 @@ export default function SicherheitPageClient() {
       </section>
 
       {/* Data Location */}
-      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
+      <section className="py-16 sm:py-24 lg:py-32 bg-white border-y border-[#e8e8e8]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
@@ -207,16 +191,16 @@ export default function SicherheitPageClient() {
       </section>
 
       {/* Downloads */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+      <section className="py-12 sm:py-14 bg-gradient-to-br from-[#faf8f7] via-white to-[#f5f0eb] relative overflow-hidden border-y border-[#e8e8e8]">
+        {/* Soft radial glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#c9a66b]/5 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 relative">
           <div className="text-center mb-6 sm:mb-8">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("downloads.label")}</span>
-            <h2 className="font-serif font-medium text-2xl md:text-3xl text-[#1a1a1a] mb-4">
+            <h2 className="font-serif font-medium text-2xl md:text-3xl text-[#1a1a1a]">
               {t("downloads.title")}
             </h2>
-            <p className="text-[#6b6b6b]">
-              {t("downloads.description")}
-            </p>
           </div>
 
           <div className="space-y-4">
