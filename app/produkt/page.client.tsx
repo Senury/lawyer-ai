@@ -344,7 +344,7 @@ export default function ProduktPageClient() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* 0. Hero Section */}
       <section className="relative pt-24 pb-12 sm:pb-16 lg:pt-32 lg:pb-24 bg-gradient-to-b from-[#fdfcfb] to-white overflow-hidden">
         {/* Subtle document lines - suggests text/contract */}
         <div className="absolute inset-0 opacity-[0.02] hidden lg:block" style={{
@@ -371,47 +371,7 @@ export default function ProduktPageClient() {
         </div>
       </section>
 
-      {/* Product Screenshot */}
-      <section className="pt-8 pb-16 sm:pt-12 sm:pb-20 lg:pt-16 lg:pb-28 bg-white overflow-visible">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="relative mt-8 sm:mt-12">
-            <WorkspaceMockup />
-          </div>
-          <p className="text-center text-sm text-[#9a9a9a] mt-6">{t("screenshot.caption")}</p>
-        </div>
-      </section>
-
-      {/* Feature 1: Vorgangsverwaltung - Text Left, Mockup Right */}
-      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div>
-              <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">
-                {t("features.caseManagement.label")}
-              </span>
-              <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
-                {t("features.caseManagement.title")}
-              </h2>
-              <p className="text-[#6b6b6b] text-lg leading-relaxed mb-8">
-                {t("features.caseManagement.description")}
-              </p>
-              <ul className="space-y-3">
-                {[0, 1, 2, 3, 4].map((i) => (
-                  <li key={i} className="flex items-center gap-3 text-[#1a1a1a]">
-                    <Check className="w-5 h-5 text-[#c9a66b]" strokeWidth={1.5} />
-                    <span>{t(`features.caseManagement.benefits.${i}`)}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-white p-8 border border-[#e8e8e8] shadow-soft rounded-xl">
-              <VorgangListMockup />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Feature 2: KI-Drafting - Mockup Left, Text Right */}
+      {/* 1. Entwürfe in Minuten (KI-Drafting) - White Background */}
       <section className="py-16 sm:py-24 lg:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -447,45 +407,12 @@ export default function ProduktPageClient() {
         </div>
       </section>
 
-      {/* Feature 3: Recherche - Text Left, Mockup Right */}
+      {/* 2. Strukturiert von Anfang an (Intake/Data Capture) - Cream Background */}
       <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
               <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">
-                {t("features.aiResearch.label")}
-              </span>
-              <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
-                {t("features.aiResearch.title")}
-              </h2>
-              <p className="text-[#6b6b6b] text-lg leading-relaxed mb-8">
-                {t("features.aiResearch.description")}
-              </p>
-              <ul className="space-y-3">
-                {[0, 1, 2, 3].map((i) => (
-                  <li key={i} className="flex items-center gap-3 text-[#1a1a1a]">
-                    <Check className="w-5 h-5 text-[#c9a66b]" strokeWidth={1.5} />
-                    <span>{t(`features.aiResearch.benefits.${i}`)}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-white p-8 border border-[#e8e8e8] shadow-soft rounded-xl">
-              <AIChatMockup />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Feature 4: Intake - Mockup Left, Text Right */}
-      <section className="py-16 sm:py-24 lg:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="order-2 lg:order-1 bg-[#faf8f7] p-8 border border-[#e8e8e8] rounded-xl">
-              <FormMockup />
-            </div>
-            <div className="order-1 lg:order-2">
-              <span className="text-xs font-semibold uppercase tracking-widest text-[#c9a66b] mb-4 block">
                 {t("features.dataCapture.label")}
               </span>
               <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
@@ -503,11 +430,132 @@ export default function ProduktPageClient() {
                 ))}
               </ul>
             </div>
+            <div className="bg-white p-8 border border-[#e8e8e8] shadow-soft rounded-xl">
+              <FormMockup />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Feature Detail Grid */}
+      {/* 3. Behalten Sie den Überblick (Vorgangsverwaltung) - White Background */}
+      <section className="py-16 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="order-2 lg:order-1 bg-[#faf8f7] p-8 border border-[#e8e8e8] shadow-soft rounded-xl">
+              <VorgangListMockup />
+            </div>
+            <div className="order-1 lg:order-2">
+              <span className="text-xs font-semibold uppercase tracking-widest text-[#c9a66b] mb-4 block">
+                {t("features.caseManagement.label")}
+              </span>
+              <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
+                {t("features.caseManagement.title")}
+              </h2>
+              <p className="text-[#6b6b6b] text-lg leading-relaxed mb-8">
+                {t("features.caseManagement.description")}
+              </p>
+              <ul className="space-y-3">
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <li key={i} className="flex items-center gap-3 text-[#1a1a1a]">
+                    <Check className="w-5 h-5 text-[#c9a66b]" strokeWidth={1.5} />
+                    <span>{t(`features.caseManagement.benefits.${i}`)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Immobilienkaufverträge und mehr (Document Types) - Cream Background */}
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">
+              {t("documentTypes.label")}
+            </span>
+            <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
+              {t("documentTypes.title")}
+            </h2>
+            <p className="text-[#6b6b6b] text-lg max-w-2xl mx-auto">
+              {t("documentTypes.description")}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            {[
+              { key: "purchaseContract", icon: FileText },
+              { key: "gift", icon: Gift },
+              { key: "transfer", icon: Scale },
+              { key: "more", icon: Star },
+            ].map((doc) => (
+              <Card
+                key={doc.key}
+                className="bg-white border-[#e8e8e8] rounded-xl overflow-hidden"
+              >
+                <CardContent className="p-6">
+                  <div className="w-12 h-12 bg-[#faf8f7] border border-[#e8e8e8] flex items-center justify-center rounded-lg mb-4">
+                    <doc.icon className="w-6 h-6 text-[#1a1a1a]" />
+                  </div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <h3 className="font-serif text-lg font-medium text-[#1a1a1a]">
+                      {t(`documentTypes.types.${doc.key}.title`)}
+                    </h3>
+                  </div>
+                  <span
+                    className={`text-[10px] px-2 py-0.5 rounded-full ${
+                      t(`documentTypes.types.${doc.key}.status`) ===
+                      "Vollständig"
+                        ? "bg-[#c9a66b]/10 text-[#c9a66b]"
+                        : t(`documentTypes.types.${doc.key}.status`) ===
+                            "Verfügbar"
+                          ? "bg-[#6b6b6b]/10 text-[#6b6b6b]"
+                          : "bg-[#e5e5e5] text-[#9a9a9a]"
+                    }`}
+                  >
+                    {t(`documentTypes.types.${doc.key}.status`)}
+                  </span>
+                  <p className="text-[#6b6b6b] text-sm leading-relaxed mt-3">
+                    {t(`documentTypes.types.${doc.key}.description`)}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Chat-basierte Rechtsrecherche (Recherche) - White Background */}
+      <section className="py-16 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="order-2 lg:order-1 bg-[#faf8f7] p-8 border border-[#e8e8e8] shadow-soft rounded-xl">
+              <AIChatMockup />
+            </div>
+            <div className="order-1 lg:order-2">
+              <span className="text-xs font-semibold uppercase tracking-widest text-[#c9a66b] mb-4 block">
+                {t("features.aiResearch.label")}
+              </span>
+              <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-6">
+                {t("features.aiResearch.title")}
+              </h2>
+              <p className="text-[#6b6b6b] text-lg leading-relaxed mb-8">
+                {t("features.aiResearch.description")}
+              </p>
+              <ul className="space-y-3">
+                {[0, 1, 2, 3].map((i) => (
+                  <li key={i} className="flex items-center gap-3 text-[#1a1a1a]">
+                    <Check className="w-5 h-5 text-[#c9a66b]" strokeWidth={1.5} />
+                    <span>{t(`features.aiResearch.benefits.${i}`)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Alles, was Sie brauchen (Feature Detail Grid) - Cream Background */}
       <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12 sm:mb-16">
@@ -557,66 +605,8 @@ export default function ProduktPageClient() {
         </div>
       </section>
 
-      {/* Document Types Section */}
+      {/* 7. Sicherheit auf Notariats-Niveau (Security) - White Background */}
       <section className="py-16 sm:py-24 lg:py-32 bg-white border-y border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12 sm:mb-16">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">
-              {t("documentTypes.label")}
-            </span>
-            <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
-              {t("documentTypes.title")}
-            </h2>
-            <p className="text-[#6b6b6b] text-lg max-w-2xl mx-auto">
-              {t("documentTypes.description")}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {[
-              { key: "purchaseContract", icon: FileText },
-              { key: "gift", icon: Gift },
-              { key: "transfer", icon: Scale },
-              { key: "more", icon: Star },
-            ].map((doc) => (
-              <Card
-                key={doc.key}
-                className="bg-[#faf8f7] border-[#e8e8e8] rounded-xl overflow-hidden"
-              >
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-white border border-[#e8e8e8] flex items-center justify-center rounded-lg mb-4">
-                    <doc.icon className="w-6 h-6 text-[#1a1a1a]" />
-                  </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="font-serif text-lg font-medium text-[#1a1a1a]">
-                      {t(`documentTypes.types.${doc.key}.title`)}
-                    </h3>
-                  </div>
-                  <span
-                    className={`text-[10px] px-2 py-0.5 rounded-full ${
-                      t(`documentTypes.types.${doc.key}.status`) ===
-                      "Vollständig"
-                        ? "bg-[#c9a66b]/10 text-[#c9a66b]"
-                        : t(`documentTypes.types.${doc.key}.status`) ===
-                            "Verfügbar"
-                          ? "bg-[#6b6b6b]/10 text-[#6b6b6b]"
-                          : "bg-[#e5e5e5] text-[#9a9a9a]"
-                    }`}
-                  >
-                    {t(`documentTypes.types.${doc.key}.status`)}
-                  </span>
-                  <p className="text-[#6b6b6b] text-sm leading-relaxed mt-3">
-                    {t(`documentTypes.types.${doc.key}.description`)}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Security Section */}
-      <section className="py-16 sm:py-24 lg:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12 sm:mb-16">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">
@@ -657,8 +647,8 @@ export default function ProduktPageClient() {
         </div>
       </section>
 
-      {/* Integrations */}
-      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
+      {/* 8. Nahtlose Integration (Integrations) - Cream Background */}
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12 sm:mb-16">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">
@@ -716,7 +706,7 @@ export default function ProduktPageClient() {
         </div>
       </section>
 
-      {/* Disclaimer */}
+      {/* Disclaimer - White Background */}
       <section className="py-12 sm:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="bg-[#faf8f7] border border-[#e8e8e8] p-4 sm:p-6 flex flex-col sm:flex-row gap-3 sm:gap-4 rounded-lg">
@@ -729,7 +719,7 @@ export default function ProduktPageClient() {
         </div>
       </section>
 
-      {/* Final CTA */}
+      {/* Final CTA - Charcoal Background */}
       <section className="py-16 sm:py-24 lg:py-32 bg-[#1a1a1a] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-serif font-medium text-3xl md:text-4xl lg:text-5xl mb-6">

@@ -754,6 +754,17 @@ export default function HomePageClient() {
               description={t("process.steps.review.description")}
             />
           </div>
+
+          {/* CTA to full process page */}
+          <div className="mt-16 text-center">
+            <Link
+              href="/ablauf/"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#1a1a1a] text-white text-sm font-medium rounded-full hover:bg-[#2d2d2d] transition-colors"
+            >
+              {t("process.cta")}
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 

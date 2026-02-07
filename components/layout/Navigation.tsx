@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { Menu } from "lucide-react";
+import { Menu, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
@@ -28,6 +28,7 @@ function MonogramLogo() {
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
   const pathname = usePathname();
   const t = useTranslations("navigation");
 
@@ -39,6 +40,15 @@ export function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = () => setMoreOpen(false);
+    if (moreOpen) {
+      document.addEventListener("click", handleClickOutside);
+      return () => document.removeEventListener("click", handleClickOutside);
+    }
+  }, [moreOpen]);
+
   const navLinks = [
     { href: "/produkt/", label: t("links.product") },
     { href: "/preis/", label: t("links.pricing") },
@@ -47,6 +57,11 @@ export function Navigation() {
     { href: "/ueber-uns/", label: t("links.about") },
     { href: "/kontakt/", label: t("links.contact") },
   ];
+
+  // Primary links for compact view (md to lg)
+  const primaryLinks = navLinks.slice(0, 4);
+  // Secondary links shown in "More" dropdown
+  const secondaryLinks = navLinks.slice(4);
 
   return (
     <header
@@ -72,8 +87,8 @@ export function Navigation() {
             </div>
           </Link>
 
-          {/* Desktop Navigation - Floating Pills */}
-          <div className="hidden md:flex items-center">
+          {/* Full Desktop Navigation - lg and up */}
+          <div className="hidden lg:flex items-center">
             <div className="flex items-center gap-1 px-2 py-1.5 bg-[#f5f5f5]/50 rounded-full border border-[#e8e8e8]/50">
               {navLinks.map((link) => {
                 const isActive = pathname === link.href;
@@ -82,7 +97,7 @@ export function Navigation() {
                     key={link.href}
                     href={link.href}
                     className={cn(
-                      "relative px-4 py-1.5 text-sm transition-all duration-300 rounded-full",
+                      "relative px-4 py-1.5 text-sm transition-all duration-300 rounded-full whitespace-nowrap",
                       isActive
                         ? "text-[#1a1a1a] font-medium"
                         : "text-[#6b6b6b] hover:text-[#1a1a1a]"
@@ -102,11 +117,86 @@ export function Navigation() {
             </div>
           </div>
 
+          {/* Compact Navigation - md to lg range */}
+          <div className="hidden md:flex lg:hidden items-center">
+            <div className="flex items-center gap-1 px-2 py-1.5 bg-[#f5f5f5]/50 rounded-full border border-[#e8e8e8]/50">
+              {primaryLinks.map((link) => {
+                const isActive = pathname === link.href;
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={cn(
+                      "relative px-3 py-1.5 text-sm transition-all duration-300 rounded-full whitespace-nowrap",
+                      isActive
+                        ? "text-[#1a1a1a] font-medium"
+                        : "text-[#6b6b6b] hover:text-[#1a1a1a]"
+                    )}
+                  >
+                    {isActive && (
+                      <span className="absolute inset-0 bg-white rounded-full shadow-sm border border-[#e8e8e8]" />
+                    )}
+                    <span className="relative z-10">{link.label}</span>
+                    {isActive && (
+                      <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1 h-1 bg-[#c9a66b] rounded-full" />
+                    )}
+                  </Link>
+                );
+              })}
+              {/* More Dropdown */}
+              <div className="relative">
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setMoreOpen(!moreOpen);
+                  }}
+                  className={cn(
+                    "relative px-3 py-1.5 text-sm transition-all duration-300 rounded-full flex items-center gap-1 whitespace-nowrap",
+                    secondaryLinks.some(l => pathname === l.href)
+                      ? "text-[#1a1a1a] font-medium"
+                      : "text-[#6b6b6b] hover:text-[#1a1a1a]"
+                  )}
+                >
+                  {secondaryLinks.some(l => pathname === l.href) && (
+                    <span className="absolute inset-0 bg-white rounded-full shadow-sm border border-[#e8e8e8]" />
+                  )}
+                  <span className="relative z-10">{t("more")}</span>
+                  <ChevronDown className={cn("relative z-10 w-3.5 h-3.5 transition-transform", moreOpen && "rotate-180")} />
+                  {secondaryLinks.some(l => pathname === l.href) && (
+                    <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1 h-1 bg-[#c9a66b] rounded-full" />
+                  )}
+                </button>
+                {moreOpen && (
+                  <div className="absolute top-full right-0 mt-2 py-2 bg-white rounded-xl shadow-lg border border-[#e8e8e8] min-w-[160px]">
+                    {secondaryLinks.map((link) => {
+                      const isActive = pathname === link.href;
+                      return (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          onClick={() => setMoreOpen(false)}
+                          className={cn(
+                            "block px-4 py-2 text-sm transition-colors",
+                            isActive
+                              ? "text-[#1a1a1a] font-medium bg-[#faf8f7]"
+                              : "text-[#6b6b6b] hover:text-[#1a1a1a] hover:bg-[#fafafa]"
+                          )}
+                        >
+                          {link.label}
+                        </Link>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center">
             <Link href="/demo/">
               <Button
-                className="bg-[#1a1a1a] hover:bg-[#2d2d2d] text-white rounded-full h-10 px-6 text-sm font-medium transition-all duration-200"
+                className="bg-[#1a1a1a] hover:bg-[#2d2d2d] text-white rounded-full h-10 px-6 text-sm font-medium transition-all duration-200 whitespace-nowrap"
               >
                 {t("cta")}
               </Button>
