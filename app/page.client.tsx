@@ -241,6 +241,7 @@ export default function HomePageClient() {
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-[#6b6b6b] mb-6 sm:mb-8 max-w-md leading-relaxed">
                 {t("hero.description")}
+                <span className="font-semibold text-[#1a1a1a]">{t("hero.descriptionHighlight")}</span>.
               </p>
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
                 <Button className="bg-[#1a1a1a] hover:bg-[#2d2d2d] text-white text-sm font-medium h-12 px-6 rounded-full transition-all w-full sm:w-auto" asChild>
@@ -417,13 +418,11 @@ export default function HomePageClient() {
               <p className="text-lg text-[#6b6b6b] mb-8 leading-relaxed">
                 {t("documents.description")}
               </p>
-              <ul className="space-y-4">
+              <ul className="space-y-3">
                 {[0, 1, 2, 3].map((i) => (
-                  <li key={i} className="flex items-center gap-4 text-[#1a1a1a]">
-                    <div className="w-8 h-8 bg-[#faf8f7] border border-[#e8e8e8] flex items-center justify-center rounded-lg">
-                      <Scale className="w-4 h-4 text-[#c9a66b]" />
-                    </div>
-                    <span className="text-base">{t(`documents.types.${i}`)}</span>
+                  <li key={i} className="flex items-center gap-3 text-[#1a1a1a]">
+                    <Scale className="w-4 h-4 text-[#c9a66b]" />
+                    <span>{t(`documents.types.${i}`)}</span>
                   </li>
                 ))}
               </ul>
@@ -622,19 +621,19 @@ export default function HomePageClient() {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12 lg:mb-16">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">
-              Sicherheit & Compliance
+              {t("securitySection.label")}
             </span>
             <h2 className="font-serif font-medium text-3xl md:text-4xl lg:text-5xl text-[#1a1a1a] mb-4">
-              Vertrauen durch Transparenz
+              {t("securitySection.title")}
             </h2>
             <p className="text-[#6b6b6b] text-lg max-w-2xl mx-auto">
-              Ihre Mandatsdaten verdienen höchsten Schutz. Unsere Sicherheitsarchitektur ist von Grund auf für die Anforderungen des Notariats entwickelt.
+              {t("securitySection.description")}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
             {/* ISO 27001 */}
-            <div className="group bg-[#faf8f7] border border-[#e8e8e8] p-6 lg:p-8 hover:border-[#c9a66b]/30 transition-all duration-300">
+            <div className="group bg-[#e5e5e5] border border-[#e8e8e8] p-6 lg:p-8 hover:border-[#c9a66b]/30 transition-all duration-300">
               <div className="aspect-[4/3] relative mb-6 overflow-hidden">
                 <Image
                   src="/security/ISO_27001.png"
@@ -649,16 +648,16 @@ export default function HomePageClient() {
                   <Check className="w-5 h-5 text-[#c9a66b]" strokeWidth={1.5} />
                 </div>
                 <h3 className="font-serif text-xl font-medium text-[#1a1a1a]">
-                  ISO 27001
+                  {t("securitySection.cards.iso.title")}
                 </h3>
               </div>
               <p className="text-sm text-[#6b6b6b] leading-relaxed">
-                Unsere Prozesse und Systeme orientieren sich an ISO-27001-Standards. Das Zertifikat kann bei Bedarf nachgewiesen werden.
+                {t("securitySection.cards.iso.description")}
               </p>
             </div>
 
             {/* §203 StGB */}
-            <div className="group bg-[#faf8f7] border border-[#e8e8e8] p-6 lg:p-8 hover:border-[#c9a66b]/30 transition-all duration-300">
+            <div className="group bg-[#e5e5e5] border border-[#e8e8e8] p-6 lg:p-8 hover:border-[#c9a66b]/30 transition-all duration-300">
               <div className="aspect-[4/3] relative mb-6 overflow-hidden">
                 <Image
                   src="/security/StGB.jpg"
@@ -673,16 +672,16 @@ export default function HomePageClient() {
                   <Shield className="w-5 h-5 text-[#c9a66b]" strokeWidth={1.5} />
                 </div>
                 <h3 className="font-serif text-xl font-medium text-[#1a1a1a]">
-                  § 203 StGB
+                  {t("securitySection.cards.stgb.title")}
                 </h3>
               </div>
               <p className="text-sm text-[#6b6b6b] leading-relaxed">
-                Abschluss berufsrechtlicher Verschwiegenheitsverpflichtungen, sobald Mandatsdaten verarbeitet werden.
+                {t("securitySection.cards.stgb.description")}
               </p>
             </div>
 
             {/* DSGVO */}
-            <div className="group bg-[#faf8f7] border border-[#e8e8e8] p-6 lg:p-8 hover:border-[#c9a66b]/30 transition-all duration-300">
+            <div className="group bg-[#e5e5e5] border border-[#e8e8e8] p-6 lg:p-8 hover:border-[#c9a66b]/30 transition-all duration-300">
               <div className="aspect-[4/3] relative mb-6 overflow-hidden">
                 <Image
                   src="/security/DSGVO.webp"
@@ -697,11 +696,11 @@ export default function HomePageClient() {
                   <Lock className="w-5 h-5 text-[#c9a66b]" strokeWidth={1.5} />
                 </div>
                 <h3 className="font-serif text-xl font-medium text-[#1a1a1a]">
-                  DSGVO Sicherheit
+                  {t("securitySection.cards.gdpr.title")}
                 </h3>
               </div>
               <p className="text-sm text-[#6b6b6b] leading-relaxed">
-                Hosting Ihres Accounts in ISO-27001-zertifizierten Rechenzentren in Deutschland mit C5-Testat. DSGVO- und berufsrechtskonform.
+                {t("securitySection.cards.gdpr.description")}
               </p>
             </div>
           </div>
@@ -711,7 +710,7 @@ export default function HomePageClient() {
               href="/sicherheit/"
               className="group inline-flex items-center gap-2 text-[#1a1a1a] hover:text-[#c9a66b] transition-colors"
             >
-              <span className="font-medium">Mehr zur Sicherheit</span>
+              <span className="font-medium">{t("securitySection.link")}</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
@@ -770,7 +769,7 @@ export default function HomePageClient() {
           <div className="flex flex-col items-center text-center">
             {/* Large decorative quote mark */}
             <div className="text-[#c9a66b]/20 font-serif text-[120px] leading-none mb-2 select-none">
-              "
+              &ldquo;
             </div>
 
             {/* Quote */}

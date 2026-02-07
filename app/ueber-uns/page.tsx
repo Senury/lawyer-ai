@@ -138,7 +138,7 @@ export default function AboutPage() {
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           {/* Large quote mark */}
           <span className="block font-serif text-[10rem] lg:text-[14rem] font-medium text-[#c9a66b]/20 leading-none -mb-20 lg:-mb-32">
-            "
+            &ldquo;
           </span>
 
           <blockquote className="relative font-serif text-2xl sm:text-3xl lg:text-4xl text-white leading-relaxed">
