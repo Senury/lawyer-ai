@@ -34,9 +34,9 @@ const teamMembers = [
     },
     education: "Studiert Bioinformatik in Berlin",
     bio: [
-      "Technologie als Handwerkszeug. Seit meinem fünfzehnten Lebensjahr programmiere ich mit dem Anspruch, komplexe Systeme verständlich und nutzbar zu machen. Meine Expertise in Künstlicher Intelligenz bildet das technische Fundament von Senury.",
+      "Meine Arbeit mit Notaren hat mir eine besondere Form von Respekt beigebracht. Hier geht es nicht um Tempo oder Effekte, sondern um Verlässlichkeit über Jahre hinweg. Entscheidungen müssen nachvollziehbar bleiben, Abläufe stabil, Ergebnisse eindeutig. Genau diese Konsequenz prägt meine Arbeit. Technik darf hier nichts versprechen, was sie nicht dauerhaft einlösen kann.",
       "Was ist Senury für mich?",
-      "Placeholder"
+      "Senury ist für mich wie eine gut geschriebene Urkunde. Klar, reduziert und ohne Spielereien. Alles hat Gewicht, alles ist bewusst gesetzt. Sie schafft Sicherheit, ohne sich in den Vordergrund zu drängen genau so soll Senury Notare unterstützen: leise, verlässlich und mit Respekt vor ihrer Arbeit."
     ],
     number: "02",
   },
@@ -52,7 +52,7 @@ const teamMembers = [
     bio: [
       "Ich komme aus der Technik und baue Dinge am liebsten dort, wo sie wirklich gebraucht werden. Die Arbeit mit Notaren hat mir schnell gezeigt, wie viel Verantwortung, Präzision und Konzentration dieser Beruf täglich verlangt und wie wenig Raum für unnötige Reibung bleibt.",
       "Was ist Senury für mich?",
-      "Placeholder"
+      "Senury ist eine Kokosnuss. Außen robust und schützend, innen zeigt sie sich weich, anpassungsfähig und überraschend vielseitig. Jede Schicht hat ihren Sinn, nichts ist überflüssig. Alles ist nutzbar und auf das wesentliche reduziert."
     ],
     number: "03",
   },
