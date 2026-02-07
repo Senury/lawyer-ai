@@ -15,7 +15,7 @@
         "label": "Uptime-Garantie"
       },
       "locations": {
-        "value": "3",
+        "value": "2",
         "label": "Redundante Standorte"
       },
       "exclusive": {
@@ -89,7 +89,7 @@
     "hosting": {
       "label": "Hosting",
       "title": "Ihre Daten bleiben in Deutschland",
-      "description": "Alle Senury-Server stehen in ISO 27001-zertifizierten deutschen Rechenzentren. Wir arbeiten ausschließlich mit deutschen Cloud-Providern zusammen. Keine Datenweitergabe an Dritte, keine Verarbeitung außerhalb der EU.",
+      "description": "Alle Senury-Server werden in ISO-27001-zertifizierten Rechenzentren innerhalb der Europäischen Union betrieben. Sämtliche eingesetzten Cloud- und Infrastruktur-Dienstleister sind vertraglich zur Wahrung des Berufsgeheimnisses nach § 203 StGB verpflichtet. Die Verarbeitung erfolgt ausschließlich auf Grundlage von Auftragsverarbeitungsverträgen gemäß DSGVO.",
       "benefits": [
         "Exklusiv deutsche Server-Standorte",
         "ISO 27001-zertifizierte Rechenzentren",
@@ -102,15 +102,15 @@
           "label": "Exklusiv Deutschland"
         },
         "uptime": {
-          "value": "99.9%",
-          "label": "Uptime-Garantie"
+          "value": "TLS 1.3",
+          "label": "bei Übertragung"
         },
         "encryption": {
           "value": "256",
           "label": "Bit AES-Verschlüsselung"
         },
         "locations": {
-          "value": "3",
+          "value": "2",
           "label": "Redundante Standorte"
         }
       }

@@ -127,8 +127,8 @@ export default function ImpressumPageClient() {
                           </div>
                           <div className="flex items-center gap-2">
                             <Mail className="w-4 h-4 text-[#c9a66b]" />
-                            <a href="mailto:accounts@senury.com" className="text-[#c9a66b] hover:text-[#1a1a1a] transition-colors">
-                              accounts@senury.com
+                            <a href="mailto:info@senury.com" className="text-[#c9a66b] hover:text-[#1a1a1a] transition-colors">
+                              info@senury.com
                             </a>
                           </div>
                         </div>

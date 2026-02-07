@@ -145,7 +145,7 @@ export default function DatenschutzPageClient() {
                             <p>
                               {t("sections.verantwortlicher.emailLabel")}:{" "}
                               <a
-                                href="mailto:datenschutz@senury.de"
+                                href="mailto:info@senury.com"
                                 className="text-[#c9a66b] hover:underline"
                               >
                                 {t("sections.verantwortlicher.email")}
@@ -186,7 +186,7 @@ export default function DatenschutzPageClient() {
                           <p>
                             {t("sections.datenschutzbeauftragter.emailLabel")}:{" "}
                             <a
-                              href="mailto:dpo@senury.de"
+                              href="mailto:info@senury.com"
                               className="text-[#c9a66b] hover:underline"
                             >
                               {t("sections.datenschutzbeauftragter.email")}
@@ -470,12 +470,12 @@ export default function DatenschutzPageClient() {
                           <p className="pt-2">
                             {t("sections.beschwerde.websiteLabel")}:{" "}
                             <a
-                              href="https://www.bfdi.bund.de"
+                              href="https://datenschutz-hamburg.de/"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="text-[#c9a66b] hover:underline"
                             >
-                              www.bfdi.bund.de
+                              https://datenschutz-hamburg.de/
                             </a>
                           </p>
                         </address>
