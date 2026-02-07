@@ -1,0 +1,148 @@
+{
+  "pricing": {
+    "hero": {
+      "badge": "Transparente Preise",
+      "title": "Preise für jedes Notariat",
+      "description": "Keine versteckten Kosten, keine Überraschungen. Wählen Sie das Paket, das zu Ihrem Volumen passt. Alle Preise zzgl. MwSt."
+    },
+    "toggle": {
+      "monthly": "Monatlich",
+      "yearly": "Jährlich",
+      "save": "10% sparen"
+    },
+    "tiers": {
+      "pilot": {
+        "name": "Pilot",
+        "description": "Ideal für kleine Notariate, die Senury testen möchten",
+        "priceMonthly": "499",
+        "priceYearly": "449",
+        "cta": "Anfragen",
+        "features": [
+          "Bis zu 50 Vorgänge/Monat",
+          "5 benutzerdefinierte Vorlagen",
+          "E-Mail Support (24h Antwortzeit)",
+          "Standard-Klauselbibliothek",
+          "Export: DOCX & PDF",
+          "§203 StGB-konforme Infrastruktur"
+        ]
+      },
+      "professional": {
+        "name": "Professional",
+        "description": "Das optimale Paket für etablierte Notariate",
+        "priceMonthly": "899",
+        "priceYearly": "809",
+        "cta": "Anfragen",
+        "popular": "Beliebteste Wahl",
+        "features": [
+          "Bis zu 200 Vorgänge/Monat",
+          "20 benutzerdefinierte Vorlagen",
+          "Priorisierter Support (4h Antwortzeit)",
+          "Erweiterte Klauselbibliothek",
+          "Word & Outlook Add-Ins",
+          "Team-Kollaboration",
+          "Versionsvergleich & Audit-Log",
+          "Persönliches Onboarding"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "Maßgeschneiderte Lösungen für große Kanzleien",
+        "price": "Auf Anfrage",
+        "cta": "Kontaktieren",
+        "features": [
+          "Unbegrenzte Vorgänge",
+          "Unbegrenzte Vorlagen",
+          "Dedizierter Account Manager",
+          "API-Zugang für Integrationen",
+          "Custom Onboarding & Schulung",
+          "SLA-Garantie (99,9% Uptime)",
+          "24/7 Prioritäts-Support",
+          "On-Premise Hosting möglich"
+        ]
+      }
+    },
+    "trust": {
+      "stgb": "§203 StGB-konform",
+      "gdpr": "DSGVO-konform",
+      "hosting": "Hosting in Deutschland"
+    },
+    "comparison": {
+      "title": "Funktionsübersicht",
+      "description": "Alle Funktionen im direkten Vergleich",
+      "header": {
+        "feature": "Funktion",
+        "pilot": "Pilot",
+        "professional": "Professional",
+        "enterprise": "Enterprise"
+      },
+      "features": {
+        "casesPerMonth": "Vorgänge/Monat",
+        "templates": "Benutzerdefinierte Vorlagen",
+        "wordAddIn": "Word Add-In",
+        "outlookAddIn": "Outlook Add-In",
+        "collaboration": "Team-Kollaboration",
+        "versionCompare": "Versionsvergleich",
+        "auditLog": "Audit-Log",
+        "apiAccess": "API-Zugang",
+        "onPremise": "On-Premise Hosting",
+        "supportResponse": "Support-Antwortzeit"
+      },
+      "values": {
+        "unlimited": "Unbegrenzt",
+        "yes": "Ja",
+        "no": "Nein"
+      }
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Häufig gestellte Fragen",
+      "items": {
+        "roi": {
+          "question": "Wie schnell ist der ROI bei Senury?",
+          "answer": "Die meisten Kunden berichten von Zeitersparnissen von 30-50% bei der Entwurfserstellung. Bei durchschnittlich 20 Kaufverträgen pro Monat amortisiert sich die Investition typischerweise innerhalb von 3 Monaten."
+        },
+        "changePackage": {
+          "question": "Kann ich später das Paket wechseln?",
+          "answer": "Ja, Sie können jederzeit zwischen den Paketen upgraden oder downgraden. Änderungen werden zum nächsten Abrechnungszyklus wirksam."
+        },
+        "contractDuration": {
+          "question": "Wie lange läuft der Vertrag?",
+          "answer": "Alle Pakete haben eine Mindestlaufzeit von 12 Monaten mit anschließender automatischer Verlängerung. Kündigungsfrist: 3 Monate zum Vertragsende."
+        },
+        "limitExceeded": {
+          "question": "Was passiert bei Überschreitung des Vorgangslimits?",
+          "answer": "Sie erhalten eine Benachrichtigung bei 80% und 95% Ihres Limits. Zusätzliche Vorgänge können einzeln gebucht werden oder Sie upgraden Ihr Paket."
+        }
+      }
+    },
+    "trustSection": {
+      "label": "Vertrauen",
+      "title": "Warum Notare Senury vertrauen",
+      "description": "Sicherheit, Transparenz und Kontrolle stehen bei uns an erster Stelle.",
+      "items": {
+        "dataSecurity": {
+          "question": "Ist meine Daten sicher?",
+          "answer": "Alle Daten werden ausschließlich in ISO 27001-zertifizierten deutschen Rechenzentren gespeichert. Ende-zu-Ende Verschlüsselung inklusive. AVV auf Wunsch sofort verfügbar."
+        },
+        "onboarding": {
+          "question": "Wie lange dauert die Einführung?",
+          "answer": "Die meisten Kunden sind nach 2-4 Wochen produktiv. Wir begleiten Sie persönlich durch das Onboarding, importieren Ihre Vorlagen und schulen Ihr Team."
+        },
+        "cancellation": {
+          "question": "Kann ich kündigen?",
+          "answer": "Selbstverständlich. Mit einer Kündigungsfrist von 3 Monaten zum Vertragsende. Ihre Daten können jederzeit im Standardformat exportiert werden. Keine versteckten Klauseln."
+        },
+        "trial": {
+          "question": "Gibt es eine Testphase?",
+          "answer": "Ja, alle Pakete können 30 Tage kostenlos getestet werden. Keine Kreditkarte erforderlich. Persönliche Onboarding-Begleitung inklusive."
+        }
+      }
+    },
+    "cta": {
+      "title": "Noch unsicher?",
+      "description": "Vereinbaren Sie eine unverbindliche Demo. Wir zeigen Ihnen Senury anhand echter Beispiele aus Ihrem Notariat – und beantworten alle Ihre Fragen.",
+      "button": "Kostenlose Demo vereinbaren",
+      "faqLink": "Weitere Fragen?"
+    }
+  }
+}

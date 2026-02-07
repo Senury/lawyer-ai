@@ -1,0 +1,114 @@
+{
+  "agb": {
+    "hero": {
+      "badge": "Rechtliche Grundlagen",
+      "title": "Allgemeine Geschäftsbedingungen",
+      "description": "Die nachfolgenden Allgemeinen Geschäftsbedingungen regeln das Vertragsverhältnis zwischen Senury UG und unseren Geschäftskunden.",
+      "lastUpdated": "Stand: Februar 2025"
+    },
+    "sidebar": {
+      "title": "Inhaltsverzeichnis"
+    },
+    "introduction": "Die Senury UG (haftungsbeschränkt), nachfolgend 'Senury' genannt, erbringt Dienstleistungen im Bereich der Softwareentwicklung und Bereitstellung von Software-as-a-Service (SaaS) Lösungen für Notare und Notariate. Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge, Lieferungen und Leistungen zwischen Senury und ihren Geschäftskunden.",
+    "sections": {
+      "geltungsbereich": {
+        "title": "§1 Geltungsbereich",
+        "p1": "Diese Allgemeinen Geschäftsbedingungen gelten für alle Geschäftsbeziehungen zwischen der Senury UG (haftungsbeschränkt) und ihren Kunden. Sie gelten ausschließlich für Geschäftskunden im Sinne des § 14 BGB.",
+        "p2": "Abweichende, entgegenstehende oder ergänzende Allgemeine Geschäftsbedingungen des Kunden werden nicht Vertragsbestandteil, es sei denn, ihrer Geltung wurde ausdrücklich schriftlich zugestimmt.",
+        "note": {
+          "title": "Hinweis",
+          "text": "Diese AGB gelten ausschließlich für B2B-Geschäftsbeziehungen. Verbraucher im Sinne des § 13 BGB sind von der Nutzung unserer Dienstleistungen ausgeschlossen."
+        }
+      },
+      "vertragsschluss": {
+        "title": "§2 Vertragsschluss",
+        "p1": "Der Vertrag zwischen Senury und dem Kunden kommt wie folgt zustande:",
+        "steps": [
+          "Der Kunde wählt auf unserer Website den gewünschten Tarif aus und gibt seine Daten ein.",
+          "Der Kunde sendet eine Bestellung durch Klicken des Buttons 'Verbindlich bestellen' ab.",
+          "Senury bestätigt den Zugang der Bestellung unverzüglich per E-Mail (Zugangsbestätigung).",
+          "Senury nimmt das Angebot durch ausdrückliche Annahmeerklärung oder durch Bereitstellung der Software an."
+        ]
+      },
+      "preise": {
+        "title": "§3 Preise",
+        "p1": "Alle Preise verstehen sich zuzüglich der gesetzlichen Umsatzsteuer. Die Preise sind in Euro angegeben.",
+        "p2": "Senury behält sich das Recht vor, die Preise mit einer angemessenen Frist zu ändern. Preiserhöhungen werden dem Kunden mindestens 30 Tage vor Inkrafttreten mitgeteilt.",
+        "pricing": {
+          "title": "Preismodelle",
+          "items": [
+            "Monatliche Abrechnung mit monatlicher Kündigungsmöglichkeit",
+            "Jährliche Abrechnung mit 12-monatiger Mindestlaufzeit",
+            "Preise pro Notar-Sitz, unabhängig von der Anzahl der Nutzer"
+          ]
+        }
+      },
+      "zahlung": {
+        "title": "§4 Zahlungsbedingungen",
+        "p1": "Die Zahlung erfolgt per SEPA-Lastschrift oder Überweisung. Bei monatlicher Abrechnung wird der Betrag am ersten Werktag des Monats eingezogen. Bei jährlicher Abrechnung erfolgt die Abbuchung zu Vertragsbeginn.",
+        "methods": [
+          "SEPA-Lastschrift",
+          "Überweisung",
+          "Kreditkarte"
+        ]
+      },
+      "widerruf": {
+        "title": "§5 Widerrufsrecht",
+        "p1": "Da es sich bei unseren Dienstleistungen ausschließlich um B2B-Geschäfte handelt, besteht kein Widerrufsrecht nach § 355 BGB. Eine Kündigung ist nach den Regelungen des § 9 dieser AGB möglich.",
+        "model": {
+          "title": "Muster-Widerrufsformular",
+          "recipient": "An: Senury UG (haftungsbeschränkt)",
+          "address": "Musterstraße 1, 80333 München",
+          "text": "Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über den Kauf der folgenden Waren (*)/die Erbringung der folgenden Dienstleistung (*)"
+        }
+      },
+      "nutzung": {
+        "title": "§6 Nutzungsrechte und Pflichten",
+        "p1": "Senury räumt dem Kunden ein nicht ausschließliches, nicht übertragbares Recht ein, die Software während der Vertragslaufzeit zu nutzen. Der Kunde verpflichtet sich:",
+        "obligations": [
+          "Die Software nur im Rahmen der vereinbarten Nutzung zu verwenden",
+          "Zugangsdaten vertraulich zu behandeln und nicht an Dritte weiterzugeben",
+          "Keine Maßnahmen zu ergreifen, die die Funktionalität der Software beeinträchtigen",
+          "Bei Sicherheitsvorfällen Senury unverzüglich zu informieren"
+        ]
+      },
+      "haftung": {
+        "title": "§7 Haftung",
+        "p1": "Senury haftet unbeschränkt für Vorsatz und grobe Fahrlässigkeit sowie für die Verletzung des Lebens, des Körpers oder der Gesundheit.",
+        "p2": "Bei leichter Fahrlässigkeit haftet Senury nur bei der Verletzung wesentlicher Vertragspflichten (Kardinalpflichten). Die Haftung ist auf den vertragstypischen, vorhersehbaren Schaden begrenzt.",
+        "exclusion": {
+          "title": "Haftungsausschluss",
+          "items": [
+            "Für Datenverluste, soweit dieser durch angemessene Datensicherung vermeidbar gewesen wäre",
+            "Für Schäden, die auf höhere Gewalt oder technische Störungen im Internet zurückzuführen sind",
+            "Für die Richtigkeit von KI-generierten Inhalten (Prüfungspflicht liegt beim Nutzer)"
+          ]
+        }
+      },
+      "laufzeit": {
+        "title": "§8 Vertragslaufzeit und Kündigung",
+        "p1": "Der Vertrag wird auf unbestimmte Zeit geschlossen und kann von beiden Parteien unter Einhaltung einer Frist von 30 Tagen zum Monatsende gekündigt werden.",
+        "p2": "Das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt unberührt. Ein wichtiger Grund liegt insbesondere vor bei Verstößen gegen diese AGB oder bei Zahlungsverzug von mehr als 30 Tagen.",
+        "notice": {
+          "title": "Kündigungsfrist",
+          "text": "30 Tage zum Monatsende"
+        },
+        "termination": {
+          "title": "Außerordentliche Kündigung",
+          "text": "Bei Verstoß gegen AGB oder Zahlungsverzug >30 Tage"
+        }
+      },
+      "schlussbestimmungen": {
+        "title": "§9 Schlussbestimmungen",
+        "p1": "Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts.",
+        "p2": "Gerichtsstand für alle Streitigkeiten aus diesem Vertrag ist München, sofern der Kunde Kaufmann ist.",
+        "p3": "Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, bleibt der Vertrag im Übrigen wirksam. Die unwirksame Bestimmung wird durch eine wirksame ersetzt, die dem wirtschaftlichen Zweck am nächsten kommt."
+      }
+    },
+    "final": {
+      "title": "Fragen zu unseren AGB?",
+      "text": "Bei Fragen zu unseren Allgemeinen Geschäftsbedingungen stehen wir Ihnen gerne zur Verfügung.",
+      "link": "Kontaktieren Sie uns"
+    }
+  }
+}

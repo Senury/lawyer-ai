@@ -1,0 +1,93 @@
+{
+  "process": {
+    "hero": {
+      "badge": "Prozess",
+      "title": "Vier Schritte zur fertigen Urkunde",
+      "description": "Senury unterstützt Sie durch den gesamten Erstellungsprozess – von der Dokumentenerfassung bis zur finalen Prüfung. Sie behalten stets die volle Kontrolle."
+    },
+    "timeline": {
+      "steps": {
+        "intake": {
+          "number": "01",
+          "title": "Erfassung",
+          "subtitle": "Dokumente hochladen",
+          "description": "Laden Sie vorliegende Sachunterlagen und Kundendokumente bequem hoch. Senury erkennt automatisch die Dokumententypen und bereitet die Daten für die Extraktion vor.",
+          "features": [
+            "Drag-and-Drop Upload",
+            "Automatische Dokumentenerkennung",
+            "Sichere AES-256-Verschlüsselung"
+          ]
+        },
+        "extraction": {
+          "number": "02",
+          "title": "Extraktion",
+          "subtitle": "Daten extrahieren",
+          "description": "Die KI extrahiert automatisch alle relevanten Daten aus Ihren Dokumenten. Pflichtfelder werden validiert, Unstimmigkeiten markiert – für eine fehlerfreie Grundlage.",
+          "features": [
+            "KI-gestützte Texterkennung",
+            "Echtzeit-Validierung",
+            "Plausibilitätsprüfung"
+          ]
+        },
+        "drafting": {
+          "number": "03",
+          "title": "Drafting",
+          "subtitle": "KI-Entwurf erstellen",
+          "description": "Basierend auf den extrahierten Daten und Ihren bewährten Vorlagen erstellt Senury einen strukturierten Vertragsentwurf. Jede Klausel wird einzeln generiert und kann nachvollzogen werden.",
+          "features": [
+            "Template-basierte Generierung",
+            "Rechtsnorm-Referenzen",
+            "Nachvollziehbare Entwurfshistorie"
+          ]
+        },
+        "review": {
+          "number": "04",
+          "title": "Review",
+          "subtitle": "Prüfen & finalisieren",
+          "description": "Sie prüfen den Entwurf auf inhaltliche Richtigkeit und Vollständigkeit. Alle Änderungen werden dokumentiert. Nach Ihrer Freigabe steht die Urkunde zur Beurkundung bereit.",
+          "features": [
+            "Integrierter Prüfmodus",
+            "Vollständigkeits-Checkliste",
+            "Freigabe-Workflow"
+          ]
+        },
+        "export": {
+          "number": "05",
+          "title": "Export",
+          "subtitle": "Automatisierte Nachbereitung",
+          "description": "Nach der Beurkundung werden alle erforderlichen Schritte automatisch dokumentiert und angebunden an Ihre bestehenden Systeme.",
+          "features": [
+            "XNotar Integration",
+            "Automatische Protokolle",
+            "Audit-Trail"
+          ]
+        }
+      }
+    },
+    "flexibility": {
+      "label": "Flexibilität",
+      "title": "Flexibel wie Ihre Kanzlei",
+      "description": "Senury passt sich Ihren etablierten Prozessen an – nicht umgekehrt.",
+      "cards": {
+        "templates": {
+          "title": "Kanzlei-Vorlagen",
+          "description": "Importieren Sie Ihre bewährten Word-Vorlagen. Senury erkennt Strukturen und Klauseln automatisch."
+        },
+        "clauses": {
+          "title": "Dynamische Textbausteine",
+          "description": "Definieren Sie bedingte Klauseln und Textbausteine, die je nach Sachverhalt automatisch eingebunden werden."
+        },
+        "workflows": {
+          "title": "Individuelle Workflows",
+          "description": "Passen Sie den Prozess an Ihre Kanzlei-Struktur an. Verschiedene Workflows für verschiedene Urkundentypen."
+        }
+      }
+    },
+    "cta": {
+      "title": "Bereit für effizientere Prozesse?",
+      "description": "Vereinbaren Sie eine Demo und erfahren Sie, wie Senury speziell in Ihrem Notariat eingesetzt werden kann.",
+      "button": "Demo anfordern",
+      "footer": "Keine Verpflichtung · Persönliche Beratung · 30-tägige Testphase"
+    }
+  }
+}
