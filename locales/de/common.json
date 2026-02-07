@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "title": "Senury | KI-gestützte Notariatssoftware",
+    "description": "Senury hilft Notaren und Mitarbeitenden bei der effizienten Erstellung von Kaufverträgen und weiteren Urkunden. Unterstützend, nicht ersetzend."
+  },
+  "navigation": {
+    "brand": {
+      "name": "Senury",
+      "tagline": "Notariatssoftware"
+    },
+    "links": {
+      "product": "Produkt",
+      "pricing": "Preis",
+      "security": "Sicherheit",
+      "process": "Ablauf",
+      "faq": "FAQ",
+      "about": "Über uns",
+      "contact": "Kontakt"
+    },
+    "cta": "Demo anfordern",
+    "mobileMenuTitle": "Navigation"
+  },
+  "footer": {
+    "brand": {
+      "description": "KI-gestützte Software für Notare. Effizient, sicher und unterstützend.",
+      "badge": "Hosting in Deutschland"
+    },
+    "links": {
+      "product": {
+        "title": "Produkt",
+        "features": "Funktionen",
+        "pricing": "Preise",
+        "process": "Ablauf"
+      },
+      "company": {
+        "title": "Unternehmen",
+        "about": "Über uns",
+        "security": "Sicherheit",
+        "faq": "FAQ",
+        "contact": "Kontakt"
+      },
+      "legal": {
+        "title": "Rechtliches",
+        "imprint": "Impressum",
+        "privacy": "Datenschutz",
+        "terms": "AGB"
+      }
+    },
+    "copyright": "© {year} Senury. Alle Rechte vorbehalten.",
+    "tagline": "Mit Sorgfalt für den deutschen Notarstand entwickelt."
+  },
+  "common": {
+    "buttons": {
+      "demo": "Demo anfordern",
+      "contact": "Kontakt aufnehmen",
+      "learnMore": "Mehr erfahren"
+    },
+    "timeUnits": {
+      "minutes": "Min",
+      "hours": "Std"
+    },
+    "status": {
+      "available": "Verfügbar",
+      "fullySupported": "Vollständig unterstützt",
+      "inPlanning": "In Planung",
+      "complete": "Vollständig"
+    },
+    "values": {
+      "unlimited": "Unbegrenzt",
+      "yes": "Ja",
+      "no": "Nein"
+    },
+    "mockups": {
+      "clauseLibrary": "Klauselbibliothek",
+      "aiAssistant": "KI-Assistent",
+      "generatedIn": "Generiert in 2.3s",
+      "apply": "Übernehmen",
+      "draft": "Entwurf",
+      "compare": "Vergleich",
+      "final": "Final",
+      "status": "Status",
+      "draftGenerated": "Entwurf v2.1 generiert",
+      "review": "Prüfung",
+      "allClausesValid": "Alle Klauseln validiert",
+      "workspace": "Senury Workspace",
+      "current": "Aktuell",
+      "cases": "Vorgänge",
+      "activeCases": "12 aktive",
+      "editor": "Editor",
+      "data": "Daten",
+      "preview": "Vorschau",
+      "dataCapture": "Datenerfassung",
+      "sellerName": "Name Verkäufer",
+      "buyerName": "Name Käufer",
+      "allFieldsFilled": "Alle Pflichtfelder ausgefüllt",
+      "purchasePrice": "Kaufpreis",
+      "propertySize": "Grundstücksgröße",
+      "collaboration": "Kollaboration",
+      "checkPurchasePrice": "Bitte Kaufpreis prüfen",
+      "clauseAdjusted": "Grundschuld-Klausel angepasst",
+      "completenessCheck": "Vollständigkeits-Check",
+      "partiesComplete": "Parteien vollständig",
+      "priceDefined": "Kaufpreis definiert",
+      "paymentTerms": "Zahlungsmodalitäten",
+      "conveyance": "Auflassung",
+      "completionDoc": "Vollzugsdokumentation",
+      "notarizationComplete": "Beurkundung abgeschlossen"
+    }
+  }
+}

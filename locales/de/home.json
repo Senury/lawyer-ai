@@ -1,0 +1,198 @@
+{
+  "home": {
+    "hero": {
+      "badge": "Mit KI-Unterstützung",
+      "title": "Komplettlösung",
+      "subtitle": "für Ihr Notariat",
+      "description": "Senury gibt ",
+      "descriptionHighlight": "Sicherheit, Zeitersparnis und rechtliche Fehlerfreiheit",
+      "ctaPrimary": "Senury Demo vereinbaren",
+      "ctaSecondary": "Sicherheits-Whitepaper"
+    },
+    "trust": {
+      "stgb": "§203 StGB-konform",
+      "gdpr": "DSGVO-konform",
+      "iso": "ISO 27001",
+      "madeInGermany": "Hosting in Deutschland"
+    },
+    "stats": {
+      "timeSaved": {
+        "value": "75%",
+        "label": "weniger Zeit für Entwürfe"
+      },
+      "timeComparison": {
+        "value": "30 Min",
+        "label": "statt 4 Stunden"
+      },
+      "gdpr": {
+        "value": "100%",
+        "label": "DSGVO-konform"
+      },
+      "stgb": {
+        "value": "§203",
+        "label": "StGB-konform"
+      }
+    },
+    "problem": {
+      "label": "Das Problem",
+      "title": "Stundenlange manuelle Datenerfassung?",
+      "description": "Die vorliegenden Unterlagen sind umfangreich – und nun beginnt die mühsame Arbeit: Daten per Hand übertragen, strukturieren, Querschnitte prüfen. Stunden vergehen, bevor Sie mit der inhaltlichen Arbeit beginnen können.",
+      "painPoints": [
+        "Manuelle Extraktion aus vorliegenden Dokumenten",
+        "Risiko von Übertragungsfehlern bei komplexen Daten",
+        "Zeitverlust statt inhaltlicher Prüfung",
+        "Compliance-Druck durch §203 StGB"
+      ],
+      "chart": {
+        "title": "Zeitaufwand pro Kaufvertrag",
+        "dataEntry": "Datenerfassung",
+        "drafting": "Entwurfsarbeit",
+        "corrections": "Korrekturen",
+        "total": "Gesamt"
+      }
+    },
+    "solution": {
+      "label": "Die Lösung",
+      "title": "Vom Auftrag bis zur Beurkundung in Minuten",
+      "description": "Stellen Sie Immobilienkaufverträge in Minuten fertig. Laden Sie vorliegende Sachunterlagen und Kundendokumente hoch. Senury extrahiert automatisch alle relevanten Daten, prüft sie auf Vollständigkeit und erstellt den Entwurf Paragraph für Paragraph. Sie prüfen und finalisieren.",
+      "benefits": [
+        "Automatische Extraktion aus vorliegenden Unterlagen",
+        "Automatische Prüfung auf Vollständigkeit & Plausibilität",
+        "KI-gestützte Vertragsentwürfe Paragraph für Paragraph",
+        "Notarielle Prüfung vor der Beurkundung"
+      ],
+      "chart": {
+        "title": "Mit Senury",
+        "upload": "Dokumente hochladen",
+        "aiDraft": "KI-Entwurf",
+        "yourReview": "Ihre Prüfung",
+        "total": "Gesamt"
+      }
+    },
+    "features": {
+      "label": "Funktionen",
+      "title": "Zeitknappheit ist Vergangenheit",
+      "description": "Ihr digitaler Notarassistent. Routineaufgaben werden schnell, präzise und verlässlich erledigt. Kein Fachkräftemangel mehr, sondern Entlastung und Raum für Wachstum.",
+      "items": {
+        "intelligentCapture": {
+          "title": "Intelligente Erfassung",
+          "description": "Strukturierte Datenerfassung für Kaufverträge und andere Urkunden. Mit automatischen Plausibilitätsprüfungen."
+        },
+        "aiDrafting": {
+          "title": "Urkunden Entwurf",
+          "description": "Immobilien Kaufverträge in Minuten, sowie Schenkungs- und Eheverträge. Basierend auf Ihren Vorlagen."
+        },
+        "aiResearch": {
+          "title": "Recherche",
+          "description": "Chat-basierte Rechtsrecherche mit präzisen, fundierten Antworten aus erstklassigen juristischen Datenquellen."
+        },
+        "clauseLibrary": {
+          "title": "Klauselverwaltung",
+          "description": "Verwalten Sie Ihre bewährten Klauseln zentral. Kontextbewusste Vorschläge inklusive."
+        },
+        "collaboration": {
+          "title": "Team-Kollaboration",
+          "description": "Arbeiten Sie gemeinsam an Entwürfen. Kommentare und Änderungen in Echtzeit. Sehen Sie, wer woran arbeitet."
+        },
+        "integration": {
+          "title": "Nahtlose Integration",
+          "description": "Microsoft 365 Anbindung für Ihren gewohnten Workflow. Direkt bearbeiten und importieren."
+        }
+      }
+    },
+    "documents": {
+      "label": "Urkunden",
+      "title": "Unsere Arbeitsgebiete",
+      "description": "Neben Immobilienkaufverträgen, unterstützten wir Sie bei weiteren Beurkundungen :",
+      "types": [
+        "Immobilien Kaufverträge",
+        "Schenkungsverträge",
+        "Eheverträge",
+        "Weitere Urkunden (in Vorbereitung)"
+      ],
+      "status": {
+        "purchaseContract": {
+          "name": "Kaufvertrag",
+          "status": "Vollständig unterstützt"
+        },
+        "gift": {
+          "name": "Schenkung",
+          "status": "Verfügbar"
+        },
+        "transfer": {
+          "name": "Ehevertrag",
+          "status": "Verfügbar"
+        }
+      }
+    },
+    "process": {
+      "label": "Ablauf",
+      "title": "So funktioniert Senury",
+      "description": "Vom Upload bis zur Beurkundung – vier klare Schritte",
+      "steps": {
+        "upload": {
+          "number": "1",
+          "title": "Dokumente hochladen",
+          "description": "Laden Sie vorliegende Sachunterlagen und Kundendokumente hoch. Weitere Dokumente können ergänzt werden."
+        },
+        "extract": {
+          "number": "2",
+          "title": "Daten extrahieren",
+          "description": "Die KI erkennt und extrahiert automatisch alle relevanten Informationen und prüft auf Vollständigkeit und Plausibilität."
+        },
+        "draft": {
+          "number": "3",
+          "title": "KI schreibt den Entwurf",
+          "description": "Senury generiert die Urkunde Pragraph für Paragraph, basierend auf Ihren bewährten Klauseln und Vorlagen."
+        },
+        "review": {
+          "number": "4",
+          "title": "Prüfen & beurkunden",
+          "description": "Sie überprüfen den Entwurf inhaltlich, nehmen Korrekturen vor und finalisieren zur Beurkundung."
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Senury hat unseren Workflow fundamental verändert. Was früher Stunden gedauert hat, erledigen wir jetzt in unter einer Stunde – bei gleichbleibender Qualität und voller Kontrolle.",
+      "author": "Notar aus Berlin",
+      "role": "Pilot-Kunde seit 2025"
+    },
+    "integrations": {
+      "label": "Integriert mit Ihren Tools",
+      "title": "Passend zu Ihrem Workflow",
+      "description": "Senury integriert sich nahtlos in Ihre bestehende Arbeitsumgebung. Arbeiten Sie dort weiter, wo Sie sich wohlfühlen.",
+      "items": {
+        "word": "Microsoft Word",
+        "outlook": "Microsoft Outlook",
+        "azure": "Microsoft Azure"
+      }
+    },
+    "cta": {
+      "title": "Zeit sparen. Qualität sichern. Sicherheit halten.",
+      "description": "Vereinbaren Sie eine unverbindliche Demo und erfahren Sie, wie es ist, mit Senury zusammenzuarbeiten.",
+      "primary": "Kostenlose Demo vereinbaren",
+      "secondary": "Preise ansehen",
+      "footer": "30-tägige Testphase · Keine Kreditkarte erforderlich · Persönliche Onboarding-Begleitung"
+    },
+    "securitySection": {
+      "label": "Sicherheit & Compliance",
+      "title": "Vertrauen durch Transparenz",
+      "description": "Ihre Mandatsdaten verdienen höchsten Schutz. Unsere Sicherheitsarchitektur ist von Grund auf für die Anforderungen des Notariats entwickelt.",
+      "link": "Mehr zur Sicherheit",
+      "cards": {
+        "iso": {
+          "title": "ISO 27001",
+          "description": "Senury arbeitet nach den Standards der ISO 27001. Das Zertifikat kann bei Bedarf nachgewiesen werden."
+        },
+        "stgb": {
+          "title": "§ 203 StGB",
+          "description": "Abschluss berufsrechtlicher Verschwiegenheitsverpflichtungen, sofort bei Beginn der Zusammenarbeit mit Senury."
+        },
+        "gdpr": {
+          "title": "DSGVO Sicherheit",
+          "description": "Hosting Ihres Accounts in ISO-27001-zertifizierten Rechenzentren in Deutschland."
+        }
+      }
+    }
+  }
+}

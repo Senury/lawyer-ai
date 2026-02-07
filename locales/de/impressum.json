@@ -1,0 +1,54 @@
+{
+  "impressum": {
+    "hero": {
+      "badge": "Rechtliche Informationen",
+      "title": "Impressum",
+      "description": "Angaben gemäß § 5 TMG und verantwortlich für den Inhalt nach § 55 Abs. 2 RStV."
+    },
+    "company": {
+      "title": "Unternehmensangaben",
+      "nameLabel": "Firma",
+      "name": "Senury UG",
+      "legalForm": "(haftungsbeschränkt)",
+      "addressLabel": "Sitz",
+      "street": "Musterstraße 1",
+      "city": "80333 München",
+      "emailLabel": "E-Mail",
+      "email": "info@senury.de",
+      "phoneLabel": "Telefon",
+      "phone": "+49 89 12345678"
+    },
+    "registration": {
+      "title": "Handelsregister",
+      "courtLabel": "Registergericht",
+      "court": "Amtsgericht München",
+      "numberLabel": "Registernummer",
+      "number": "HRB 123456",
+      "vatLabel": "USt-IdNr.",
+      "vatId": "DE123456789"
+    },
+    "management": {
+      "title": "Geschäftsführung",
+      "description": "Vertretungsberechtigte Geschäftsführer:",
+      "persons": [
+        "Max Mustermann"
+      ]
+    },
+    "contentResponsibility": {
+      "title": "Verantwortlich für den Inhalt",
+      "description": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:",
+      "name": "Max Mustermann",
+      "address": "Senury UG, Musterstraße 1, 80333 München"
+    },
+    "disputeResolution": {
+      "title": "EU-Streitschlichtung",
+      "text": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit. Diese Plattform ist erreichbar unter:",
+      "link": "Zur OS-Plattform"
+    },
+    "links": {
+      "title": "Rechtliche Hinweise",
+      "privacy": "Datenschutzerklärung",
+      "terms": "Allgemeine Geschäftsbedingungen"
+    }
+  }
+}

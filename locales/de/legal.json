@@ -1,0 +1,16 @@
+{
+  "legal": {
+    "disclaimer": {
+      "title": "Rechtlicher Hinweis",
+      "text": "Diese Informationen stellen keine Rechtsberatung dar."
+    },
+    "copyright": "© {year} Senury. Alle Rechte vorbehalten.",
+    "trademark": "Senury ist ein eingetragenes Warenzeichen.",
+    "governingLaw": "Dieser Vertrag unterliegt dem Recht der Bundesrepublik Deutschland.",
+    "jurisdiction": "Gerichtsstand ist München.",
+    "liability": {
+      "title": "Haftungsausschluss",
+      "text": "Senury haftet nur für Vorsatz und grobe Fahrlässigkeit."
+    }
+  }
+}

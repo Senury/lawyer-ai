@@ -1,0 +1,60 @@
+{
+  "faq": {
+    "hero": {
+      "badge": "FAQ",
+      "title": "Häufig gestellte Fragen",
+      "description": "Antworten auf die wichtigsten Fragen zu Senury, Sicherheit und Implementierung."
+    },
+    "search": {
+      "placeholder": "Fragen durchsuchen..."
+    },
+    "categories": {
+      "all": "Alle",
+      "pricing": "Preise",
+      "security": "Sicherheit",
+      "technical": "Technik",
+      "product": "Produkt"
+    },
+    "noResults": "Keine Fragen gefunden.",
+    "items": {
+      "notar": {
+        "question": "Ersetzt Senury den Notar?",
+        "answer": "Nein. Senury ist ein unterstützendes Werkzeug für Notare und deren Mitarbeitende. Die Software übernimmt repetitive Aufgaben bei der Entwurfserstellung, die inhaltliche Prüfung und die Verantwortung für die Richtigkeit bleibt stets beim Notar. Alle KI-generierten Inhalte müssen vor Verwendung sorgfältig geprüft werden."
+      },
+      "stgb": {
+        "question": "Ist die Software konform mit §203 StGB?",
+        "answer": "Ja. Senury wurde speziell für den §203-StGB-Kontext entwickelt. Alle Mitarbeiter unterliegen strengen Vertraulichkeitsvereinbarungen. Die Daten werden ausschließlich in ISO 27001-zertifizierten deutschen Rechenzentren verarbeitet. Wir stellen Auftragsverarbeitungsverträge (AVV) zur Verfügung und unterstützen bei der Einhaltung aller relevanten Compliance-Anforderungen."
+      },
+      "vorlagen": {
+        "question": "Können wir unsere eigenen Vorlagen nutzen?",
+        "answer": "Absolut. Senury ist darauf ausgelegt, Ihre bestehenden Word-Vorlagen zu importieren und zu verstehen. Die Software erkennt automatisch Strukturen, Platzhalter und Klauseln. Sie können beliebig viele eigene Vorlagen hinterlegen und nach Bedarf auswählen. Der Import-Service ist im Standard-Paket inklusive."
+      },
+      "export": {
+        "question": "Welche Exportformate werden unterstützt?",
+        "answer": "Senury unterstützt DOCX (Microsoft Word) als primäres Exportformat für weitere Bearbeitung. Zusätzlich können Dokumente als PDF/A für die Archivierung exportiert werden. Für die Integration in bestehende Notariatssysteme stehen XML-Schnittstellen für gängige Systeme wie TriNotar, NOVO und XNotar zur Verfügung."
+      },
+      "pilot": {
+        "question": "Wie lange dauert die Pilotphase?",
+        "answer": "Wir empfehlen eine Pilotphase von 4-8 Wochen, um Senury in Ihrem Arbeitsalltag testen zu können. In dieser Zeit unterstützen wir Sie bei der Einrichtung Ihrer Vorlagen und Workflows. Der Vertrag kann mit einer Kündigungsfrist von 3 Monaten zum Vertragsende beendet werden."
+      },
+      "daten": {
+        "question": "Wo werden die Daten gespeichert?",
+        "answer": "Alle Daten werden ausschließlich in ISO 27001-zertifizierten deutschen Rechenzentren gespeichert. Wir arbeiten mit deutschen Cloud-Anbietern zusammen, die die höchsten Sicherheitsstandards erfüllen. Geo-Redundanz sorgt für maximale Verfügbarkeit. Für Enterprise-Kunden ist auch On-Premise-Hosting möglich."
+      },
+      "preiswechsel": {
+        "question": "Kann ich später das Paket wechseln?",
+        "answer": "Ja, Sie können jederzeit zwischen den Paketen upgraden oder downgraden. Änderungen werden zum nächsten Abrechnungszyklus wirksam. Bei einem Upgrade können Sie sofort die neuen Funktionen nutzen."
+      },
+      "integration": {
+        "question": "Funktioniert Senury mit XNotar?",
+        "answer": "Ja, Senury bietet eine direkte Integration mit XNotar. Nach der Beurkundung können relevante Daten automatisch an XNotar übergeben werden. Zusätzlich unterstützen wir Exportformate, die mit den meisten Notariatssystemen kompatibel sind."
+      }
+    },
+    "contact": {
+      "title": "Noch Fragen?",
+      "description": "Unser Team steht Ihnen für alle Fragen zur Verfügung. Vereinbaren Sie einen unverbindlichen Termin.",
+      "contactButton": "Kontakt aufnehmen",
+      "demoButton": "Demo anfordern"
+    }
+  }
+}

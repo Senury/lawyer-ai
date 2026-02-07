@@ -1,0 +1,148 @@
+{
+  "security": {
+    "hero": {
+      "badge": "Sicherheit",
+      "title": "Sicherheit auf Notariats-Niveau",
+      "description": "Ihre Mandantendaten verdienen höchsten Schutz. Senury wurde von Grund auf mit Blick auf §203 StGB, DSGVO und ISO 27001 entwickelt. Made in Germany, hosted in Germany."
+    },
+    "stats": {
+      "encryption": {
+        "value": "256",
+        "label": "Bit AES-Verschlüsselung"
+      },
+      "uptime": {
+        "value": "99.9%",
+        "label": "Uptime-Garantie"
+      },
+      "locations": {
+        "value": "3",
+        "label": "Redundante Standorte"
+      },
+      "exclusive": {
+        "value": "DE",
+        "label": "Exklusiv Deutschland"
+      }
+    },
+    "certifications": {
+      "stgb": {
+        "title": "§203 StGB",
+        "description": "Berufsgeheimnis-konform"
+      },
+      "gdpr": {
+        "title": "DSGVO",
+        "description": "EU-Datenschutzverordnung"
+      },
+      "iso": {
+        "title": "ISO 27001",
+        "description": "Informationssicherheit"
+      },
+      "bsi": {
+        "title": "BSI",
+        "description": "Grundschutz-orientiert"
+      }
+    },
+    "compliance": {
+      "label": "Compliance",
+      "title": "Compliance für den Notarberuf",
+      "description": "Entwickelt für die strengen Anforderungen des deutschen Notarstands.",
+      "cards": {
+        "stgb": {
+          "title": "§203 StGB",
+          "subtitle": "Berufsgeheimnis-konform",
+          "description": "Senury ist speziell für den §203-StGB-Kontext konzipiert. Alle Mitarbeiter unterliegen strengen Vertraulichkeitsvereinbarungen. Prozesse sind auf Verschwiegenheit ausgerichtet."
+        },
+        "gdpr": {
+          "title": "DSGVO & Hosting",
+          "subtitle": "Deutsche Rechenzentren",
+          "description": "Alle Daten werden ausschließlich in ISO 27001-zertifizierten deutschen Rechenzentren gespeichert. Auftragsverarbeitungsverträge (AVV) stehen jederzeit zur Verfügung."
+        },
+        "iso": {
+          "title": "ISO 27001",
+          "subtitle": "Internationale Standards",
+          "description": "Unsere Infrastruktur und Prozesse sind an den ISO 27001 Standard angelehnt. Jährliche Audits und Penetrationstests durch unabhängige Experten."
+        }
+      }
+    },
+    "technical": {
+      "label": "Technik",
+      "title": "Technische Sicherheitsdetails",
+      "description": "Sicherheit ist kein Feature – sie ist das Fundament unserer Architektur.",
+      "features": {
+        "encryption": {
+          "title": "End-to-End Verschlüsselung",
+          "description": "Alle Daten werden mit AES-256 verschlüsselt – sowohl im Transit (TLS 1.3) als auch im Ruhezustand. Ihre Mandantendaten sind jederzeit geschützt."
+        },
+        "rbac": {
+          "title": "RBAC & 2-Faktor-Authentifizierung",
+          "description": "Rollenbasierte Zugriffssteuerung mit granularen Berechtigungen. Zusätzlich verpflichtendes 2FA für alle Accounts – keine Ausnahmen."
+        },
+        "audit": {
+          "title": "Audit-Logs & Versionierung",
+          "description": "Lückenlose Protokollierung aller Systemzugriffe und Datenänderungen. Nachvollziehbarkeit auf Knopfdruck für Compliance-Prüfungen."
+        },
+        "redundancy": {
+          "title": "Geo-Redundanz",
+          "description": "Ihre Daten werden in Echtzeit an mehreren geografisch getrennten Standorten in Deutschland gespiegelt. Maximale Verfügbarkeit, keine Datenverluste."
+        }
+      }
+    },
+    "hosting": {
+      "label": "Hosting",
+      "title": "Ihre Daten bleiben in Deutschland",
+      "description": "Alle Senury-Server stehen in ISO 27001-zertifizierten deutschen Rechenzentren. Wir arbeiten ausschließlich mit deutschen Cloud-Providern zusammen. Keine Datenweitergabe an Dritte, keine Verarbeitung außerhalb der EU.",
+      "benefits": [
+        "Exklusiv deutsche Server-Standorte",
+        "ISO 27001-zertifizierte Rechenzentren",
+        "Keine Datenweitergabe an Dritte",
+        "Geo-Redundanz innerhalb Deutschlands"
+      ],
+      "stats": {
+        "exclusive": {
+          "value": "DE",
+          "label": "Exklusiv Deutschland"
+        },
+        "uptime": {
+          "value": "99.9%",
+          "label": "Uptime-Garantie"
+        },
+        "encryption": {
+          "value": "256",
+          "label": "Bit AES-Verschlüsselung"
+        },
+        "locations": {
+          "value": "3",
+          "label": "Redundante Standorte"
+        }
+      }
+    },
+    "downloads": {
+      "label": "Downloads",
+      "title": "Dokumente zum Download",
+      "description": "Alle Unterlagen für Ihre Compliance-Prüfung und IT-Sicherheit.",
+      "items": {
+        "toms": {
+          "name": "Technische und organisatorische Maßnahmen (TOMs)",
+          "size": "PDF, 1.2 MB",
+          "desc": "Detaillierte Beschreibung aller Sicherheitsmaßnahmen"
+        },
+        "avv": {
+          "name": "Auftragsverarbeitungsvertrag (AVV)",
+          "size": "PDF, 0.8 MB",
+          "desc": "Standard-AVV für Ihre Unterlagen"
+        },
+        "whitepaper": {
+          "name": "Sicherheits-Whitepaper",
+          "size": "PDF, 2.4 MB",
+          "desc": "Umfassende Dokumentation unserer Security-Architektur"
+        }
+      },
+      "downloadButton": "Download"
+    },
+    "cta": {
+      "title": "Vertrauen durch Transparenz",
+      "description": "Haben Sie spezifische Sicherheitsanforderungen oder Compliance-Fragen? Unser Team berät Sie gerne in einem persönlichen Gespräch.",
+      "primary": "Sicherheitsberatung anfragen",
+      "secondary": "Technische Dokumentation"
+    }
+  }
+}
