@@ -29,7 +29,6 @@ export default function FAQPageClient() {
     { id: "pilot", category: "preis", icon: Clock },
     { id: "daten", category: "sicherheit", icon: Database },
     { id: "preiswechsel", category: "preis", icon: Scale },
-    { id: "integration", category: "technik", icon: FileText },
   ];
 
   const filteredFaqs = faqs.filter((faq) => {

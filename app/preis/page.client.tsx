@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, HelpCircle, Shield, Clock, Scale, ArrowRight, Star, Lock, Server } from "lucide-react";
 import Link from "next/link";
 
@@ -222,33 +221,8 @@ export default function PreisPageClient() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-16 sm:py-24 lg:py-32 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("faq.label")}</span>
-            <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a]">
-              {t("faq.title")}
-            </h2>
-          </div>
-
-          <Accordion type="single" collapsible className="w-full">
-            {["roi", "changePackage", "contractDuration", "limitExceeded"].map((key) => (
-              <AccordionItem key={key} value={key} className="border-b border-[#e8e8e8]">
-                <AccordionTrigger className="text-left text-[#1a1a1a] hover:no-underline py-6">
-                  {t(`faq.items.${key}.question`)}
-                </AccordionTrigger>
-                <AccordionContent className="text-[#6b6b6b] pb-6">
-                  {t(`faq.items.${key}.answer`)}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </section>
-
       {/* Trust Section */}
-      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7]">
+      <section className="py-16 sm:py-24 lg:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">{t("trustSection.label")}</span>
