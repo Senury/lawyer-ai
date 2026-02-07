@@ -58,8 +58,7 @@ export default function AboutPage() {
             {/* Refined pill badge with copper accent */}
             <div className="inline-flex items-center gap-3 mb-8">
               <div className="w-8 h-px bg-[#c9a66b]/40" />
-              <span className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-[#e8e8e8] text-xs font-medium text-[#6b6b6b] rounded-full shadow-sm">
-                <span className="w-1.5 h-1.5 bg-[#c9a66b] rounded-full animate-pulse" />
+              <span className="inline-flex items-center px-4 py-2 bg-white border border-[#e8e8e8] text-xs font-medium text-[#6b6b6b] rounded-full shadow-sm">
                 Über uns
               </span>
               <div className="w-8 h-px bg-[#c9a66b]/40" />

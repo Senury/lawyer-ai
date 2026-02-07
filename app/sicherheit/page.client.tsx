@@ -52,9 +52,13 @@ export default function SicherheitPageClient() {
 
         <div className="relative max-w-6xl mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="pill-badge bg-[#f5f5f5] text-[#6b6b6b] border border-[#e8e8e8] mb-6 inline-block">
-              {t("hero.badge")}
-            </span>
+            <div className="inline-flex items-center gap-3 mb-6">
+              <div className="w-8 h-px bg-[#c9a66b]/40" />
+              <span className="inline-flex items-center px-4 py-2 bg-white border border-[#e8e8e8] text-xs font-medium text-[#6b6b6b] rounded-full shadow-sm">
+                {t("hero.badge")}
+              </span>
+              <div className="w-8 h-px bg-[#c9a66b]/40" />
+            </div>
             <h1 className="font-serif font-medium text-4xl md:text-5xl lg:text-6xl text-[#1a1a1a] mb-6 tracking-tight">
               {t("hero.title")}
             </h1>
