@@ -80,7 +80,7 @@ function WorkspaceMockup() {
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#c9a66b] animate-pulse"></div>
+                <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></div>
                 <span className="text-[9px] text-[#9a9a9a]">Gespeichert</span>
               </div>
             </div>
