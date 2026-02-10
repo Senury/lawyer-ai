@@ -676,13 +676,7 @@ export default function ProduktPageClient() {
             <Card className="bg-white border-[#e8e8e8] rounded-none">
               <CardContent className="p-8">
                 <div className="w-12 h-12 bg-[#fafafa] border border-[#e8e8e8] flex items-center justify-center rounded-lg mb-6">
-                  <Image
-                    src="/icons/microsoft-word-icon.svg"
-                    alt="Microsoft Word"
-                    width={24}
-                    height={24}
-                    className="w-6 h-6"
-                  />
+                  <FileText className="w-6 h-6 text-[#1a1a1a]" />
                 </div>
                 <h3 className="font-serif text-xl font-medium text-[#1a1a1a] mb-3">
                   {t("integrations.word.title")}
@@ -696,13 +690,7 @@ export default function ProduktPageClient() {
             <Card className="bg-white border-[#e8e8e8] rounded-none">
               <CardContent className="p-8">
                 <div className="w-12 h-12 bg-[#fafafa] border border-[#e8e8e8] flex items-center justify-center rounded-lg mb-6">
-                  <Image
-                    src="/icons/microsoft-outlook-icon.svg"
-                    alt="Microsoft Outlook"
-                    width={24}
-                    height={24}
-                    className="w-6 h-6"
-                  />
+                  <Mail className="w-6 h-6 text-[#1a1a1a]" />
                 </div>
                 <h3 className="font-serif text-xl font-medium text-[#1a1a1a] mb-3">
                   {t("integrations.outlook.title")}
