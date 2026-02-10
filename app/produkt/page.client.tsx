@@ -581,10 +581,10 @@ export default function ProduktPageClient() {
             ].map((doc) => (
               <Card
                 key={doc.key}
-                className="bg-white border-[#e8e8e8] rounded-xl overflow-hidden"
+                className="bg-[#faf8f7] border-[#e8e8e8] rounded-xl overflow-hidden"
               >
                 <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-[#faf8f7] border border-[#e8e8e8] flex items-center justify-center rounded-lg mb-4">
+                  <div className="w-12 h-12 bg-white border border-[#e8e8e8] flex items-center justify-center rounded-lg mb-4">
                     <doc.icon className="w-6 h-6 text-[#1a1a1a]" />
                   </div>
                   <div className="flex items-center gap-2 mb-2">
