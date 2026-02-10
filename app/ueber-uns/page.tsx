@@ -84,7 +84,7 @@ export default function AboutPage() {
             </h1>
 
             <p className="text-lg text-[#6b6b6b] leading-relaxed max-w-2xl mx-auto">
-              Lernen Sie die drei Gründer kennen, die mit Leidenschaft für Präzision die Zukunft des Notariats gestalten.
+            Hinter Senury steht ein interdisziplinäres Gründerteam mit Erfahrung in Softwareentwicklung, Strategie und notariatsnahen Arbeitsprozessen.
             </p>
           </div>
         </div>
