@@ -507,8 +507,58 @@ export default function ProduktPageClient() {
         </div>
       </section>
 
-      {/* 4. Immobilienkaufverträge und mehr (Document Types) - Cream Background */}
-      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7] border-y border-[#e8e8e8]">
+      {/* Feature Detail Grid */}
+      <section className="py-16 sm:py-24 lg:py-32 bg-[#faf8f7]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">
+              {t("detailGrid.label")}
+            </span>
+            <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#1a1a1a] mb-4">
+              {t("detailGrid.title")}
+            </h2>
+            <p className="text-[#6b6b6b] text-lg max-w-2xl mx-auto">
+              {t("detailGrid.description")}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#e8e8e8]">
+            <FeatureDetailCard
+              icon={FolderOpen}
+              title={t("detailGrid.items.caseManagement.title")}
+              description={t("detailGrid.items.caseManagement.description")}
+            />
+            <FeatureDetailCard
+              icon={FileText}
+              title={t("detailGrid.items.aiDrafting.title")}
+              description={t("detailGrid.items.aiDrafting.description")}
+            />
+            <FeatureDetailCard
+              icon={BookOpen}
+              title={t("detailGrid.items.clauseLibrary.title")}
+              description={t("detailGrid.items.clauseLibrary.description")}
+            />
+            <FeatureDetailCard
+              icon={Search}
+              title={t("detailGrid.items.research.title")}
+              description={t("detailGrid.items.research.description")}
+            />
+            <FeatureDetailCard
+              icon={Zap}
+              title={t("detailGrid.items.integrations.title")}
+              description={t("detailGrid.items.integrations.description")}
+            />
+            <FeatureDetailCard
+              icon={GitCompare}
+              title={t("detailGrid.items.control.title")}
+              description={t("detailGrid.items.control.description")}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Document Types Section */}
+      <section className="py-16 sm:py-24 lg:py-32 bg-white border-y border-[#e8e8e8]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12 sm:mb-16">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#9a9a9a] mb-4 block">
