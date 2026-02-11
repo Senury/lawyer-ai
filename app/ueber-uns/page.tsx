@@ -16,43 +16,43 @@ const teamMembers = [
       webp: "/about/jun.webp",
       fallback: "/about/jun.jpeg",
     },
-    education: "Student der Mathematik, Wirtschaft und Programmieren in Utrecht",
+    education: "Student der Mathematik, Wirtschaft und Programmierung in Utrecht",
     bio: [
-      "Für mich ist es ein großes Glück, mit Notaren zusammenzuarbeiten. Ich selbst komme aus einer Notarsfamilie in Blankenese. Daher ist dies ein Teil meiner Kindheit. Etwas, das damals fern und unverständlich war, ist jetzt Ambition und Interesse. Es bringt mich näher an meine Familie, an mein Team, aber auch an mich selbst. Und genau so hoffe ich, dass es mich näher an Sie bringt. An Notare, mit denen wir gemeinsam etwas verändern wollen.",
-      "Was ist Senury für mich?",
-      "Ein Restaurant mit guter Qualität, aber noch besseren Preisen; wo dir Leitungswasser kostenlos angeboten wird, wo die Bedienung Spaß am Job hat und dich herzlich empfängt. Das ist Senury für mich. Etwas Reales, Veränderndes. Etwas, das Notare entlastet und zufriedenstellt."
+      "Jun verantwortet die strategische Ausrichtung von Senury und die enge Zusammenarbeit mit Notariaten. Er studiert Mathematik, Wirtschaft und Programmieren in Utrecht und verbindet analytisches Denken mit einem tiefen Verständnis für notarielle Arbeitsweisen.",
+      "Aufgewachsen in einer Notarsfamilie kennt er die Abläufe, Herausforderungen und den hohen Anspruch an Präzision aus erster Hand. Dieses Verständnis prägt die Entwicklung von Senury: klare Prozesse, verlässliche Ergebnisse und spürbare Entlastung im Kanzleialltag.",
+      "Sein Ziel ist es, gemeinsam mit Notaren Software zu schaffen, die unterstützt – ohne den Anspruch, die Verantwortung oder die Sorgfalt des Berufs zu verändern."
     ],
     number: "01",
   },
   {
     name: "Johan Kawamura",
-    role: "Co-Founder & Softwareentwicklung",
+    role: "Co-founder & KI-Entwicklung",
     image: {
       avif: "/about/johan.avif",
       webp: "/about/johan.webp",
       fallback: "/about/johan.avif",
     },
-    education: "Studiert Bioinformatik in Berlin",
+    education: "Student der Bioinformatik in Berlin",
     bio: [
-      "Schon seit meiner Jugend begeistert mich das Programmieren. Als ich mit 14 mein erstes eigenes Videospiel entwickelte, spürte ich zum ersten Mal dieses besondere Adrenalin ein Gefühl, das mich bis heute bei jeder neuen Zeile Code begleitet. Heute arbeite ich gemeinsam mit zwei weiteren Personen an einer echten Software mit realem Nutzen. Besonders fasziniert mich Künstliche Intelligenz und zu sehen, wie unser Modell beginnt, Sprache zu verstehen und schließlich ganze Verträge zu verfassen. Mit Senury erfülle ich mir den Traum, eine eigene Software zu bauen, die Menschen wirklich hilft.",
-      "Was ist Senury für mich?",
-      "Senury ist für mich wie eine gut geschriebene Urkunde. Klar, reduziert und ohne Spielereien. Alles hat Gewicht, alles ist bewusst gesetzt. Sie schafft Sicherheit, ohne sich in den Vordergrund zu drängen genau so soll Senury Notare unterstützen: leise, verlässlich und mit Respekt vor ihrer Arbeit."
+      "Johan entwickelt die KI-Systeme von Senury. Schon seit seiner Jugend begeistert ihn das Programmieren – als er mit 14 sein erstes Videospiel entwickelte, spürte er das Adrenalin, das ihn bis heute bei jeder neuen Zeile Code begleitet.",
+      "Er studiert Bioinformatik in Berlin und verbindet seine technische Leidenschaft mit dem Ziel, Software zu bauen, die Menschen wirklich hilft. Besonders fasziniert ihn zu sehen, wie ihre Modelle beginnen, Sprache zu verstehen und schließlich ganze Verträge zu verfassen.",
+      "Juristische Präzision lässt sich nicht erraten. Er baut KI, die nachvollziehbar bleibt, auch bei komplexen Fragen."
     ],
     number: "02",
   },
   {
     name: "Tom Pilgram",
-    role: "Co-Founder & Systemdesign",
+    role: "Co-founder & Softwareentwicklung",
     image: {
       avif: "/about/tom.avif",
       webp: "/about/tom.webp",
       fallback: "/about/tom.webp",
     },
-    education: "Studiert Mathematik in Hagen",
+    education: "Student der Mathematik in Hagen",
     bio: [
-      "Ich komme aus der Technik und baue Dinge am liebsten dort, wo sie wirklich gebraucht werden. Die Arbeit mit Notaren hat mir schnell gezeigt, wie viel Verantwortung, Präzision und Konzentration dieser Beruf täglich verlangt und wie wenig Raum für unnötige Reibung bleibt.",
-      "Was ist Senury für mich?",
-      "Senury ist eine Kokosnuss. Außen robust und schützend, innen zeigt sie sich weich, anpassungsfähig und überraschend vielseitig. Jede Schicht hat ihren Sinn, nichts ist überflüssig. Alles ist nutzbar und auf das wesentliche reduziert."
+      "Tom verantwortet die technische Architektur und Backend-Entwicklung von Senury. Mathematik hat ihn gelehrt, in Strukturen zu denken. Stabil, leistungsfähig, sauber.",
+      "Die Arbeit mit Notaren zeigt täglich, dass Zuverlässigkeit Pflicht ist. Wenn das System versagt, steht der Vorgang. Das bestimmt seine Entscheidungen. Bewährte Technologien, klare Schnittstellen, keine Experimente.",
+      "Sein Maßstab ist simpel. Wenn Notare über die Technik nachdenken müssen, hat er seinen Job nicht richtig gemacht."
     ],
     number: "03",
   },
@@ -103,7 +103,7 @@ export default function AboutPage() {
               >
                 {/* Image */}
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                  <div className={`relative aspect-[4/5] max-w-sm mx-auto ${index % 2 === 1 ? "lg:ml-auto" : "lg:mr-auto"} rounded-xl overflow-hidden bg-[#faf8f7]`}>
+                  <div className={`relative aspect-[4/5] max-w-sm mx-auto ${index % 2 === 1 ? "lg:ml-auto" : "lg:mr-auto"} overflow-hidden bg-[#faf8f7]`}>
                     <picture>
                       <source srcSet={member.image.avif} type="image/avif" />
                       <source srcSet={member.image.webp} type="image/webp" />
@@ -120,7 +120,7 @@ export default function AboutPage() {
 
                 {/* Content */}
                 <div className={`${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                  <div className={`space-y-4 ${index % 2 === 1 ? "lg:text-right lg:ml-auto" : ""} max-w-lg`}>
+                  <div className={`space-y-4 text-center ${index % 2 === 1 ? "lg:text-right lg:ml-auto" : "lg:text-left"} max-w-lg mx-auto lg:mx-0`}>
                     <div>
                       <span className="text-xs font-semibold uppercase tracking-widest text-[#c9a66b] mb-2 block">
                         {member.role}
@@ -134,25 +134,13 @@ export default function AboutPage() {
                         </p>
                       )}
                     </div>
-                    <div className={`w-12 h-px bg-[#e8e8e8] ${index % 2 === 1 ? "lg:ml-auto" : ""}`} />
+                    <div className={`w-12 h-px bg-[#e8e8e8] mx-auto ${index % 2 === 1 ? "lg:ml-auto lg:mr-0" : "lg:mx-0"}`} />
                     <div className="space-y-4">
-                      {Array.isArray(member.bio) ? (
-                        <>
-                          <p className="text-[#6b6b6b] leading-relaxed">
-                            {member.bio[0]}
-                          </p>
-                          <h3 className="font-serif text-xl text-[#1a1a1a] mt-6 mb-2">
-                            {member.bio[1]}
-                          </h3>
-                          <p className="text-[#6b6b6b] leading-relaxed">
-                            {member.bio[2]}
-                          </p>
-                        </>
-                      ) : (
-                        <p className="text-[#6b6b6b] leading-relaxed">
-                          {member.bio}
+                      {member.bio.map((paragraph, idx) => (
+                        <p key={idx} className="text-[#6b6b6b] leading-relaxed">
+                          {paragraph}
                         </p>
-                      )}
+                      ))}
                     </div>
                   </div>
                 </div>
