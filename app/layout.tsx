@@ -89,9 +89,8 @@ export const metadata: Metadata = {
   category: "technology",
   classification: "Legal Technology",
   icons: {
-    icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-    ],
+    icon: "/favicon.png",
+    apple: "/apple-touch-icon.png",
   },
 };
 
