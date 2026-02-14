@@ -111,7 +111,7 @@ export default function AboutPage() {
                         src={member.image.fallback}
                         alt={member.name}
                         fill
-                        className="object-cover"
+                        className="object-cover object-top"
                         sizes="(max-width: 1024px) 100vw, 50vw"
                       />
                     </picture>
