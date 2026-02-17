@@ -635,13 +635,17 @@ export default function HomePageClient() {
             {/* ISO 27001 */}
             <div className="group bg-[#e5e5e5] border border-[#e8e8e8] p-4 sm:p-5 hover:border-[#c9a66b]/30 transition-all duration-300 flex flex-row sm:flex-col gap-4 sm:gap-0">
               <div className="w-20 h-20 sm:w-full sm:aspect-[4/3] sm:h-auto relative flex-shrink-0 overflow-hidden">
-                <Image
-                  src="/security/ISO_27001.png"
-                  alt="ISO 27001 Zertifizierung"
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 640px) 80px, (max-width: 1024px) 50vw, 33vw"
-                />
+                <picture>
+                  <source srcSet="/security/ISO_27001.webp" type="image/webp" />
+                  <Image
+                    src="/security/ISO_27001.png"
+                    alt="ISO 27001 Zertifizierung"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 640px) 80px, (max-width: 1024px) 50vw, 33vw"
+                    loading="lazy"
+                  />
+                </picture>
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
@@ -661,13 +665,17 @@ export default function HomePageClient() {
             {/* §203 StGB */}
             <div className="group bg-[#e5e5e5] border border-[#e8e8e8] p-4 sm:p-5 hover:border-[#c9a66b]/30 transition-all duration-300 flex flex-row sm:flex-col gap-4 sm:gap-0">
               <div className="w-20 h-20 sm:w-full sm:aspect-[4/3] sm:h-auto relative flex-shrink-0 overflow-hidden">
-                <Image
-                  src="/security/StGB.jpg"
-                  alt="§203 StGB Berufsgeheimnis"
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 640px) 80px, (max-width: 1024px) 50vw, 33vw"
-                />
+                <picture>
+                  <source srcSet="/security/StGB.webp" type="image/webp" />
+                  <Image
+                    src="/security/StGB.jpg"
+                    alt="§203 StGB Berufsgeheimnis"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 640px) 80px, (max-width: 1024px) 50vw, 33vw"
+                    loading="lazy"
+                  />
+                </picture>
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
@@ -693,6 +701,7 @@ export default function HomePageClient() {
                   fill
                   className="object-contain"
                   sizes="(max-width: 640px) 80px, (max-width: 1024px) 50vw, 33vw"
+                  loading="lazy"
                 />
               </div>
               <div className="flex-1">
