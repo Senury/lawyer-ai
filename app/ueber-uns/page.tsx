@@ -117,6 +117,7 @@ export default function AboutPage() {
                         fill
                         className="object-cover object-top"
                         sizes="(max-width: 1024px) 100vw, 50vw"
+                        loading="lazy"
                       />
                     </picture>
                   </div>
