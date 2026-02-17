@@ -631,77 +631,83 @@ export default function HomePageClient() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12 max-w-md sm:max-w-none mx-auto">
             {/* ISO 27001 */}
-            <div className="group bg-[#e5e5e5] border border-[#e8e8e8] p-6 lg:p-8 hover:border-[#c9a66b]/30 transition-all duration-300">
-              <div className="aspect-[4/3] relative mb-6 overflow-hidden">
+            <div className="group bg-[#e5e5e5] border border-[#e8e8e8] p-4 sm:p-5 lg:p-6 hover:border-[#c9a66b]/30 transition-all duration-300 flex flex-row sm:flex-col gap-4 sm:gap-0">
+              <div className="w-20 h-20 sm:w-full sm:aspect-[4/3] sm:h-auto relative flex-shrink-0 overflow-hidden">
                 <Image
                   src="/security/ISO_27001.png"
                   alt="ISO 27001 Zertifizierung"
                   fill
                   className="object-contain"
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 640px) 80px, (max-width: 768px) 100vw, 33vw"
                 />
               </div>
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-10 h-10 bg-white border border-[#e8e8e8] flex items-center justify-center">
-                  <Check className="w-5 h-5 text-[#c9a66b]" strokeWidth={1.5} />
+              <div className="flex-1">
+                <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
+                  <div className="w-8 h-8 sm:w-9 sm:h-9 bg-white border border-[#e8e8e8] flex items-center justify-center flex-shrink-0">
+                    <Check className="w-4 h-4 sm:w-[18px] sm:h-[18px] text-[#c9a66b]" strokeWidth={1.5} />
+                  </div>
+                  <h3 className="font-serif text-base sm:text-lg font-medium text-[#1a1a1a]">
+                    {t("securitySection.cards.iso.title")}
+                  </h3>
                 </div>
-                <h3 className="font-serif text-xl font-medium text-[#1a1a1a]">
-                  {t("securitySection.cards.iso.title")}
-                </h3>
+                <p className="text-xs sm:text-sm text-[#6b6b6b] leading-relaxed">
+                  {t("securitySection.cards.iso.description")}
+                </p>
               </div>
-              <p className="text-sm text-[#6b6b6b] leading-relaxed">
-                {t("securitySection.cards.iso.description")}
-              </p>
             </div>
 
             {/* §203 StGB */}
-            <div className="group bg-[#e5e5e5] border border-[#e8e8e8] p-6 lg:p-8 hover:border-[#c9a66b]/30 transition-all duration-300">
-              <div className="aspect-[4/3] relative mb-6 overflow-hidden">
+            <div className="group bg-[#e5e5e5] border border-[#e8e8e8] p-4 sm:p-5 lg:p-6 hover:border-[#c9a66b]/30 transition-all duration-300 flex flex-row sm:flex-col gap-4 sm:gap-0">
+              <div className="w-20 h-20 sm:w-full sm:aspect-[4/3] sm:h-auto relative flex-shrink-0 overflow-hidden">
                 <Image
                   src="/security/StGB.jpg"
                   alt="§203 StGB Berufsgeheimnis"
                   fill
                   className="object-contain"
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 640px) 80px, (max-width: 768px) 100vw, 33vw"
                 />
               </div>
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-10 h-10 bg-white border border-[#e8e8e8] flex items-center justify-center">
-                  <Shield className="w-5 h-5 text-[#c9a66b]" strokeWidth={1.5} />
+              <div className="flex-1">
+                <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
+                  <div className="w-8 h-8 sm:w-9 sm:h-9 bg-white border border-[#e8e8e8] flex items-center justify-center flex-shrink-0">
+                    <Shield className="w-4 h-4 sm:w-[18px] sm:h-[18px] text-[#c9a66b]" strokeWidth={1.5} />
+                  </div>
+                  <h3 className="font-serif text-base sm:text-lg font-medium text-[#1a1a1a]">
+                    {t("securitySection.cards.stgb.title")}
+                  </h3>
                 </div>
-                <h3 className="font-serif text-xl font-medium text-[#1a1a1a]">
-                  {t("securitySection.cards.stgb.title")}
-                </h3>
+                <p className="text-xs sm:text-sm text-[#6b6b6b] leading-relaxed">
+                  {t("securitySection.cards.stgb.description")}
+                </p>
               </div>
-              <p className="text-sm text-[#6b6b6b] leading-relaxed">
-                {t("securitySection.cards.stgb.description")}
-              </p>
             </div>
 
             {/* DSGVO */}
-            <div className="group bg-[#e5e5e5] border border-[#e8e8e8] p-6 lg:p-8 hover:border-[#c9a66b]/30 transition-all duration-300">
-              <div className="aspect-[4/3] relative mb-6 overflow-hidden">
+            <div className="group bg-[#e5e5e5] border border-[#e8e8e8] p-4 sm:p-5 lg:p-6 hover:border-[#c9a66b]/30 transition-all duration-300 flex flex-row sm:flex-col gap-4 sm:gap-0">
+              <div className="w-20 h-20 sm:w-full sm:aspect-[4/3] sm:h-auto relative flex-shrink-0 overflow-hidden">
                 <Image
                   src="/security/DSGVO.webp"
                   alt="DSGVO Datenschutz"
                   fill
                   className="object-contain"
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 640px) 80px, (max-width: 768px) 100vw, 33vw"
                 />
               </div>
-              <div className="flex items-center gap-4 mb-5">
-                <div className="w-10 h-10 bg-white border border-[#e8e8e8] flex items-center justify-center">
-                  <Lock className="w-5 h-5 text-[#c9a66b]" strokeWidth={1.5} />
+              <div className="flex-1">
+                <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
+                  <div className="w-8 h-8 sm:w-9 sm:h-9 bg-white border border-[#e8e8e8] flex items-center justify-center flex-shrink-0">
+                    <Lock className="w-4 h-4 sm:w-[18px] sm:h-[18px] text-[#c9a66b]" strokeWidth={1.5} />
+                  </div>
+                  <h3 className="font-serif text-base sm:text-lg font-medium text-[#1a1a1a]">
+                    {t("securitySection.cards.gdpr.title")}
+                  </h3>
                 </div>
-                <h3 className="font-serif text-xl font-medium text-[#1a1a1a]">
-                  {t("securitySection.cards.gdpr.title")}
-                </h3>
+                <p className="text-xs sm:text-sm text-[#6b6b6b] leading-relaxed">
+                  {t("securitySection.cards.gdpr.description")}
+                </p>
               </div>
-              <p className="text-sm text-[#6b6b6b] leading-relaxed">
-                {t("securitySection.cards.gdpr.description")}
-              </p>
             </div>
           </div>
 
