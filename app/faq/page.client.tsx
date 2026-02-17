@@ -66,15 +66,15 @@ export default function FAQPageClient() {
 
       {/* Search */}
       <section className="py-8 bg-white border-b border-[#e8e8e8]">
-        <div className="max-w-2xl mx-auto px-6">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <div className="relative">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#9a9a9a]" />
+            <Search className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#9a9a9a]" />
             <input
               type="text"
               placeholder={t("search.placeholder")}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full h-12 pl-12 pr-4 bg-[#fafafa] border border-[#e8e8e8] rounded-full text-[#1a1a1a] placeholder:text-[#9a9a9a] focus:outline-none focus:border-[#1a1a1a] transition-colors"
+              className="w-full h-12 pl-10 sm:pl-12 pr-3 sm:pr-4 bg-[#fafafa] border border-[#e8e8e8] rounded-full text-[#1a1a1a] placeholder:text-[#9a9a9a] focus:outline-none focus:border-[#1a1a1a] transition-colors"
             />
           </div>
         </div>
@@ -83,12 +83,12 @@ export default function FAQPageClient() {
       {/* Category Tabs */}
       <section className="py-4 sm:py-6 bg-white border-b border-[#e8e8e8]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="flex flex-wrap items-center justify-center gap-2">
+          <div className="flex flex-nowrap sm:flex-wrap items-center justify-center gap-2 overflow-x-auto pb-2 sm:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0">
             {categories.map((category) => (
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
-                className={`px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-full transition-colors whitespace-nowrap ${
+                className={`px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium rounded-full transition-colors whitespace-nowrap ${
                   activeCategory === category.id
                     ? "bg-[#1a1a1a] text-white"
                     : "bg-[#fafafa] text-[#6b6b6b] hover:bg-[#f5f5f5]"
@@ -119,13 +119,13 @@ export default function FAQPageClient() {
                 >
                   <AccordionTrigger className="text-left text-[#1a1a1a] hover:no-underline py-6 px-6">
                     <div className="flex items-center gap-4">
-                      <div className="w-10 h-10 bg-[#fafafa] border border-[#e8e8e8] flex items-center justify-center flex-shrink-0 rounded-lg">
-                        <faq.icon className="w-5 h-5 text-[#1a1a1a]" />
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#fafafa] border border-[#e8e8e8] flex items-center justify-center flex-shrink-0 rounded-lg">
+                        <faq.icon className="w-4 h-4 sm:w-5 sm:h-5 text-[#1a1a1a]" />
                       </div>
                       <span className="font-medium">{t(`items.${faq.id}.question`)}</span>
                     </div>
                   </AccordionTrigger>
-                  <AccordionContent className="text-[#6b6b6b] pb-6 px-6 pl-16">
+                  <AccordionContent className="text-[#6b6b6b] pb-6 px-6 pl-12 sm:pl-16">
                     {t(`items.${faq.id}.answer`)}
                   </AccordionContent>
                 </AccordionItem>

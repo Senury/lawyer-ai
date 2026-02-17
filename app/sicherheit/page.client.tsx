@@ -72,8 +72,8 @@ export default function SicherheitPageClient() {
               { value: "2", unit: "", label: "Redundante Standorte" },
               { value: "DE", unit: "", label: "Exklusiv Deutschland" },
             ].map((stat, index) => (
-              <div key={index} className="text-center min-w-[140px]">
-                <div className="font-serif text-5xl sm:text-6xl font-light text-[#1a1a1a] tracking-tight tabular-nums">
+              <div key={index} className="text-center min-w-[120px] sm:min-w-[140px] max-w-[160px]">
+                <div className="font-serif text-4xl sm:text-5xl lg:text-6xl font-light text-[#1a1a1a] tracking-tight tabular-nums">
                   {stat.value}
                   <span className="text-xl text-[#c9a66b] ml-1">{stat.unit}</span>
                 </div>
@@ -99,10 +99,10 @@ export default function SicherheitPageClient() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-md sm:max-w-none mx-auto">
             {complianceCards.map((card) => (
               <Card key={card.key} className="bg-white border-[#e8e8e8] rounded-xl overflow-hidden">
-                <CardContent className="p-8">
+                <CardContent className="p-6 sm:p-8">
                   <div className="w-14 h-14 bg-[#fafafa] border border-[#e8e8e8] flex items-center justify-center mb-6 rounded-lg">
                     <card.icon className="w-7 h-7 text-[#1a1a1a]" />
                   </div>
@@ -129,10 +129,10 @@ export default function SicherheitPageClient() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-md sm:max-w-none mx-auto">
             {technicalDetails.map((item) => (
               <Card key={item.key} className="bg-[#faf8f7] border-[#e8e8e8] rounded-xl">
-                <CardContent className="p-8">
+                <CardContent className="p-6 sm:p-8">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-white border border-[#e8e8e8] flex items-center justify-center flex-shrink-0 rounded-lg">
                       <item.icon className="w-6 h-6 text-[#1a1a1a]" />

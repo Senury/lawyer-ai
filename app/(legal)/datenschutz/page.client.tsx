@@ -104,10 +104,10 @@ export default function DatenschutzPageClient() {
                       {t("sections.geltungsbereich.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.geltungsbereich.p1")}</p>
                     <p>{t("sections.geltungsbereich.p2")}</p>
-                    <div className="bg-[#faf8f7] border-l-4 border-[#c9a66b] p-4 sm:p-6 my-6">
+                    <div className="bg-[#faf8f7] border-l-4 border-[#c9a66b] p-3 sm:p-6 my-6">
                       <p className="text-[#1a1a1a] font-medium mb-2">
                         {t("sections.geltungsbereich.note.title")}
                       </p>
@@ -128,10 +128,10 @@ export default function DatenschutzPageClient() {
                       {t("sections.verantwortlicher.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.verantwortlicher.p1")}</p>
                     <Card className="bg-white border-[#e8e8e8] rounded-xl">
-                      <CardContent className="p-6">
+                      <CardContent className="p-4 sm:p-6">
                         <h3 className="font-serif text-lg text-[#1a1a1a] mb-4">
                           {t("sections.verantwortlicher.company")}
                         </h3>
@@ -172,10 +172,10 @@ export default function DatenschutzPageClient() {
                       {t("sections.datenschutzbeauftragter.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.datenschutzbeauftragter.p1")}</p>
                     <Card className="bg-[#faf8f7] border-[#e8e8e8] rounded-xl">
-                      <CardContent className="p-6">
+                      <CardContent className="p-4 sm:p-6">
                         <h3 className="font-serif text-lg text-[#1a1a1a] mb-4">
                           {t("sections.datenschutzbeauftragter.contactTitle")}
                         </h3>
@@ -208,14 +208,14 @@ export default function DatenschutzPageClient() {
                       {t("sections.datenarten.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.datenarten.p1")}</p>
                     <ul className="space-y-3 mt-4">
                       {["kontakt", "nutzung", "vertrag", "technisch"].map(
                         (item) => (
                           <li
                             key={item}
-                            className="flex items-start gap-3 bg-[#faf8f7] p-4 rounded-lg"
+                            className="flex items-start gap-3 bg-[#faf8f7] p-3 sm:p-4 rounded-lg"
                           >
                             <div className="w-1.5 h-1.5 bg-[#c9a66b] rounded-full mt-2 flex-shrink-0" />
                             <div>
@@ -245,9 +245,9 @@ export default function DatenschutzPageClient() {
                       {t("sections.zwecke.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.zwecke.p1")}</p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 max-w-md sm:max-w-none mx-auto">
                       {[
                         "bereitstellung",
                         "vertrag",
@@ -256,7 +256,7 @@ export default function DatenschutzPageClient() {
                       ].map((item) => (
                         <div
                           key={item}
-                          className="bg-white border border-[#e8e8e8] p-4 rounded-lg"
+                          className="bg-white border border-[#e8e8e8] p-3 sm:p-4 rounded-lg"
                         >
                           <div className="w-8 h-8 bg-[#faf8f7] flex items-center justify-center rounded-lg mb-3">
                             <Lock className="w-4 h-4 text-[#c9a66b]" />
@@ -283,16 +283,16 @@ export default function DatenschutzPageClient() {
                       {t("sections.rechtsgrundlagen.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.rechtsgrundlagen.p1")}</p>
-                    <div className="space-y-4 mt-6">
+                    <div className="space-y-3 sm:space-y-4 mt-6">
                       {["einwilligung", "vertrag", "rechtliche", "interessen"].map(
                         (item) => (
                           <div
                             key={item}
-                            className="flex gap-4 p-4 border-l-2 border-[#e8e8e8] hover:border-[#c9a66b] transition-colors"
+                            className="flex gap-3 sm:gap-4 p-3 sm:p-4 border-l-2 border-[#e8e8e8] hover:border-[#c9a66b] transition-colors"
                           >
-                            <span className="text-xs font-mono text-[#9a9a9a] flex-shrink-0 w-16">
+                            <span className="text-xs font-mono text-[#9a9a9a] flex-shrink-0 w-14 sm:w-16">
                               {t(
                                 `sections.rechtsgrundlagen.items.${item}.article`
                               )}
@@ -326,10 +326,10 @@ export default function DatenschutzPageClient() {
                       {t("sections.empfaenger.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.empfaenger.p1")}</p>
                     <p>{t("sections.empfaenger.p2")}</p>
-                    <div className="bg-[#faf8f7] border border-[#e8e8e8] p-4 sm:p-6 rounded-xl mt-6">
+                    <div className="bg-[#faf8f7] border border-[#e8e8e8] p-3 sm:p-6 rounded-xl mt-6">
                       <h4 className="font-medium text-[#1a1a1a] mb-3">
                         {t("sections.empfaenger.drittländer.title")}
                       </h4>
@@ -350,15 +350,15 @@ export default function DatenschutzPageClient() {
                       {t("sections.speicherdauer.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.speicherdauer.p1")}</p>
                     <p>{t("sections.speicherdauer.p2")}</p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 max-w-md sm:max-w-none mx-auto">
                       {["kontakt", "nutzungs", "vertrags", "gesetzliche"].map(
                         (item) => (
                           <div
                             key={item}
-                            className="bg-[#faf8f7] p-4 rounded-lg"
+                            className="bg-[#faf8f7] p-3 sm:p-4 rounded-lg"
                           >
                             <div className="flex items-center gap-2 mb-2">
                               <Clock className="w-4 h-4 text-[#c9a66b]" />
@@ -390,7 +390,7 @@ export default function DatenschutzPageClient() {
                       {t("sections.betroffenenrechte.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.betroffenenrechte.p1")}</p>
                     <div className="grid grid-cols-1 gap-3 mt-6">
                       {[
@@ -403,7 +403,7 @@ export default function DatenschutzPageClient() {
                       ].map((item) => (
                         <div
                           key={item}
-                          className="flex items-start gap-4 p-4 bg-white border border-[#e8e8e8] rounded-lg hover:border-[#c9a66b] transition-colors"
+                          className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-white border border-[#e8e8e8] rounded-lg hover:border-[#c9a66b] transition-colors"
                         >
                           <div className="w-8 h-8 bg-[#faf8f7] flex items-center justify-center rounded-lg flex-shrink-0">
                             <span className="text-xs font-mono text-[#c9a66b] font-medium">
@@ -412,13 +412,13 @@ export default function DatenschutzPageClient() {
                               )}
                             </span>
                           </div>
-                          <div>
+                          <div className="min-w-0 flex-1">
                             <h4 className="font-medium text-[#1a1a1a] text-sm mb-1">
                               {t(
                                 `sections.betroffenenrechte.items.${item}.title`
                               )}
                             </h4>
-                            <p className="text-sm text-[#6b6b6b]">
+                            <p className="text-sm text-[#6b6b6b] break-words">
                               {t(
                                 `sections.betroffenenrechte.items.${item}.description`
                               )}
@@ -440,7 +440,7 @@ export default function DatenschutzPageClient() {
                       {t("sections.widerruf.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.widerruf.p1")}</p>
                     <p>{t("sections.widerruf.p2")}</p>
                   </div>
@@ -456,10 +456,10 @@ export default function DatenschutzPageClient() {
                       {t("sections.beschwerde.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.beschwerde.p1")}</p>
                     <Card className="bg-[#faf8f7] border-[#e8e8e8] rounded-xl">
-                      <CardContent className="p-6">
+                      <CardContent className="p-4 sm:p-6">
                         <h4 className="font-medium text-[#1a1a1a] mb-2">
                           {t("sections.beschwerde.authority")}
                         </h4>
