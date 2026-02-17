@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { Linkedin } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Über uns | Senury",
@@ -16,6 +17,7 @@ const teamMembers = [
       webp: "/about/jun.webp",
       fallback: "/about/jun.jpeg",
     },
+    linkedinUrl: "https://www.linkedin.com/in/jun-augustin-probst-049644378/",
     education: "Student der Mathematik, Wirtschaft und Programmierung in Utrecht",
     bio: [
       "Jun verantwortet die strategische Ausrichtung von Senury und die enge Zusammenarbeit mit Notariaten. Er studiert Mathematik, Wirtschaft und Programmieren in Utrecht und verbindet analytisches Denken mit einem tiefen Verständnis für notarielle Arbeitsweisen.",
@@ -32,6 +34,7 @@ const teamMembers = [
       webp: "/about/johan.webp",
       fallback: "/about/johan.avif",
     },
+    linkedinUrl: "https://www.linkedin.com/in/johanidler/",
     education: "Student der Bioinformatik in Berlin",
     bio: [
       "Johan entwickelt die KI-Systeme von Senury.  Das Programmieren fasziniert ihn schon seit der Jugend. Mit vierzehn entwickelte er sein erstes Videospiel und spürte dabei ein Adrenalin, das ihn bis heute bei jeder neuen Zeile Code begleitet.",
@@ -48,6 +51,7 @@ const teamMembers = [
       webp: "/about/tom.webp",
       fallback: "/about/tom.webp",
     },
+    linkedinUrl: "https://www.linkedin.com/in/tom-pilgram/",
     education: "Student der Mathematik in Hagen",
     bio: [
       "Tom verantwortet die technische Architektur und Backend-Entwicklung von Senury. Mathematik hat ihn gelehrt, in Strukturen zu denken. Stabil, leistungsfähig, sauber.",
@@ -125,9 +129,22 @@ export default function AboutPage() {
                       <span className="text-xs font-semibold uppercase tracking-widest text-[#c9a66b] mb-2 block">
                         {member.role}
                       </span>
-                      <h2 className="font-serif text-3xl lg:text-4xl font-medium text-[#1a1a1a]">
-                        {member.name}
-                      </h2>
+                      <div className={`flex items-center gap-3 justify-center ${index % 2 === 1 ? "lg:justify-end" : "lg:justify-start"}`}>
+                        <h2 className="font-serif text-3xl lg:text-4xl font-medium text-[#1a1a1a]">
+                          {member.name}
+                        </h2>
+                        {"linkedinUrl" in member && member.linkedinUrl && (
+                          <a
+                            href={member.linkedinUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[#9a9a9a] hover:text-[#c9a66b] transition-colors"
+                            aria-label={`${member.name} auf LinkedIn`}
+                          >
+                            <Linkedin className="w-5 h-5" />
+                          </a>
+                        )}
+                      </div>
                       {"education" in member && member.education && (
                         <p className="mt-2 text-xs text-[#9a9a9a]">
                           {member.education}
