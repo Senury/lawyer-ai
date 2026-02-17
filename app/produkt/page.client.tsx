@@ -23,6 +23,7 @@ import {
   Gift,
   Settings,
   Home,
+  ArrowRight,
 } from "lucide-react";
 
 // Enhanced UI Mockup Components
@@ -49,7 +50,7 @@ function WorkspaceMockup() {
           </div>
         </div>
 
-        <div className="flex h-72">
+        <div className="flex h-64 sm:h-72 md:h-80 lg:h-96">
           {/* Sidebar - more refined */}
           <div className="w-16 bg-[#fafafa] border-r border-[#e8e8e8] flex flex-col items-center py-5 gap-5">
             <div className="w-8 h-8 rounded-lg bg-[#c9a66b]/10 flex items-center justify-center">
@@ -76,13 +77,13 @@ function WorkspaceMockup() {
                 <span className="text-xs font-serif text-[#1a1a1a] tracking-tight">
                   Kaufvertrag_Entwurf_v2.urk
                 </span>
-                <span className="px-2 py-0.5 bg-[#c9a66b]/10 text-[#c9a66b] text-[9px] rounded-full font-medium tracking-wide">
+                <span className="px-2 py-0.5 bg-[#c9a66b]/10 text-[#c9a66b] text-[10px] sm:text-xs rounded-full font-medium tracking-wide">
                   AKTUELL
                 </span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></div>
-                <span className="text-[9px] text-[#9a9a9a]">Gespeichert</span>
+                <span className="text-[10px] sm:text-xs text-[#9a9a9a]">Gespeichert</span>
               </div>
             </div>
 
@@ -92,7 +93,7 @@ function WorkspaceMockup() {
                 {/* Document title area */}
                 <div className="text-center pb-4 border-b border-[#f0f0f0]">
                   <div className="font-serif text-[11px] text-[#1a1a1a] tracking-wide">Kaufvertrag</div>
-                  <div className="text-[8px] text-[#9a9a9a] mt-1">Entwurf vom 7. Februar 2025</div>
+                  <div className="text-[10px] text-[#9a9a9a] mt-1">Entwurf vom 7. Februar 2025</div>
                 </div>
 
                 {/* Contract Paragraphs with real legal content */}
@@ -103,8 +104,8 @@ function WorkspaceMockup() {
                       <span className="text-[7px] text-[#c9a66b] font-serif">§1</span>
                     </div>
                     <div className="flex-1">
-                      <div className="font-serif text-[9px] text-[#1a1a1a] font-medium mb-0.5">Kaufgegenstand</div>
-                      <div className="text-[8px] text-[#6b6b6b] leading-relaxed">
+                      <div className="font-serif text-[10px] sm:text-xs text-[#1a1a1a] font-medium mb-0.5">Kaufgegenstand</div>
+                      <div className="text-[10px] text-[#6b6b6b] leading-relaxed">
                         Der Verkäufer veräußert das im Grundbuch...
                       </div>
                     </div>
@@ -116,8 +117,8 @@ function WorkspaceMockup() {
                       <span className="text-[7px] text-[#9a9a9a] font-serif">§2</span>
                     </div>
                     <div className="flex-1">
-                      <div className="font-serif text-[9px] text-[#1a1a1a] font-medium mb-0.5">Kaufpreis und Fälligkeit</div>
-                      <div className="text-[8px] text-[#6b6b6b] leading-relaxed">
+                      <div className="font-serif text-[10px] sm:text-xs text-[#1a1a1a] font-medium mb-0.5">Kaufpreis und Fälligkeit</div>
+                      <div className="text-[10px] text-[#6b6b6b] leading-relaxed">
                         Der Kaufpreis beträgt <span className="text-[#c9a66b] font-medium">EUR 485.000,00</span>...
                       </div>
                     </div>
@@ -129,8 +130,8 @@ function WorkspaceMockup() {
                       <span className="text-[7px] text-[#c9a66b] font-serif">§3</span>
                     </div>
                     <div className="flex-1">
-                      <div className="font-serif text-[9px] text-[#1a1a1a] font-medium mb-0.5">Auflassungc</div>
-                      <div className="text-[8px] text-[#6b6b6b] leading-relaxed">
+                      <div className="font-serif text-[10px] sm:text-xs text-[#1a1a1a] font-medium mb-0.5">Auflassungc</div>
+                      <div className="text-[10px] text-[#6b6b6b] leading-relaxed">
                         Der Verkäufer lässt sich das Eigentum...
                       </div>
                     </div>
@@ -142,11 +143,11 @@ function WorkspaceMockup() {
             {/* Bottom toolbar */}
             <div className="px-4 py-2 border-t border-[#e8e8e8] bg-[#fafafa] flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <span className="text-[9px] text-[#9a9a9a]">Zeile 142, Spalte 12</span>
+                <span className="text-[10px] text-[#9a9a9a]">Zeile 142, Spalte 12</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="px-2 py-0.5 bg-green-100 text-green-700 text-[8px] rounded">§203 OK</span>
-                <span className="text-[9px] text-[#9a9a9a]">1.240 Wörter</span>
+                <span className="px-2 py-0.5 bg-green-100 text-green-700 text-[10px] rounded">§203 OK</span>
+                <span className="text-[10px] text-[#9a9a9a]">1.240 Wörter</span>
               </div>
             </div>
           </div>
@@ -154,22 +155,22 @@ function WorkspaceMockup() {
       </div>
 
       {/* Floating accent elements */}
-      <div className="absolute -top-4 -right-4 bg-white shadow-lg border border-[#e8e8e8] rounded-xl p-3 animate-in fade-in slide-in-from-right-4 duration-700">
+      <div className="hidden sm:block absolute -top-4 -right-4 bg-white shadow-lg border border-[#e8e8e8] rounded-xl p-3 animate-in fade-in slide-in-from-right-4 duration-700">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-full bg-[#c9a66b]/10 flex items-center justify-center">
             <Check className="w-4 h-4 text-[#c9a66b]" />
           </div>
           <div>
-            <div className="text-[9px] text-[#9a9a9a]">Klausel geprüft</div>
-            <div className="text-[10px] font-medium text-[#1a1a1a]">Auflassung v2.3</div>
+            <div className="text-[10px] text-[#9a9a9a]">Klausel geprüft</div>
+            <div className="text-xs font-medium text-[#1a1a1a]">Auflassung v2.3</div>
           </div>
         </div>
       </div>
 
-      <div className="absolute -bottom-3 -left-3 bg-[#1a1a1a] shadow-xl rounded-lg p-2.5 animate-in fade-in slide-in-from-left-4 duration-700 delay-150">
+      <div className="hidden sm:block absolute -bottom-3 -left-3 bg-[#1a1a1a] shadow-xl rounded-lg p-2.5 animate-in fade-in slide-in-from-left-4 duration-700 delay-150">
         <div className="flex items-center gap-2">
           <Sparkles className="w-3.5 h-3.5 text-[#c9a66b]" />
-          <span className="text-[9px] text-white/90">KI-Assistenz aktiv</span>
+          <span className="text-xs text-white/90">KI-Assistenz aktiv</span>
         </div>
       </div>
     </div>
@@ -212,15 +213,15 @@ function SplitViewMockup() {
       <div className="bg-[#fafafa] border-b border-[#e8e8e8] p-3">
         <span className="text-xs font-medium text-[#1a1a1a]">Editor</span>
       </div>
-      <div className="flex h-56">
+      <div className="flex h-48 sm:h-56 md:h-64">
         <div className="w-1/3 bg-[#fafafa] border-r border-[#e8e8e8] p-3">
           <div className="text-[10px] text-[#9a9a9a] mb-2">Daten</div>
           <div className="space-y-2">
             <div className="h-6 bg-white border border-[#e8e8e8] rounded flex items-center px-2">
-              <span className="text-[9px] text-[#6b6b6b]">Kaufpreis: 450.000 €</span>
+              <span className="text-[10px] text-[#6b6b6b]">Kaufpreis: 450.000 €</span>
             </div>
             <div className="h-6 bg-white border border-[#e8e8e8] rounded flex items-center px-2">
-              <span className="text-[9px] text-[#6b6b6b]">Grundstück: 850m²</span>
+              <span className="text-[10px] text-[#6b6b6b]">Grundstück: 850m²</span>
             </div>
           </div>
         </div>
@@ -240,28 +241,28 @@ function SplitViewMockup() {
 function AIChatMockup() {
   return (
     <div className="bg-white shadow-soft border border-[#e8e8e8] rounded-xl overflow-hidden">
-      <div className="bg-[#fafafa] border-b border-[#e8e8e8] p-3 flex items-center gap-2">
+      <div className="bg-[#fafafa] border-b border-[#e8e8e8] p-2.5 sm:p-3 flex items-center gap-2">
         <Sparkles className="w-4 h-4 text-[#c9a66b]" />
-        <span className="text-xs font-medium text-[#1a1a1a]">Entwurfsassistent</span>
+        <span className="text-[10px] sm:text-xs font-medium text-[#1a1a1a]">Entwurfsassistent</span>
       </div>
-      <div className="p-3 space-y-3">
+      <div className="p-2.5 sm:p-3 space-y-2.5 sm:space-y-3">
         <div className="flex gap-2">
-          <div className="w-6 h-6 bg-[#1a1a1a] rounded-full flex items-center justify-center">
-            <span className="text-[8px] text-white">U</span>
+          <div className="w-5 h-5 sm:w-6 sm:h-6 bg-[#1a1a1a] rounded-full flex items-center justify-center flex-shrink-0">
+            <span className="text-[7px] sm:text-[8px] text-white">U</span>
           </div>
-          <div className="bg-[#f5f5f5] rounded-lg p-2 max-w-[80%]">
-            <span className="text-[10px] text-[#1a1a1a]">
+          <div className="bg-[#f5f5f5] rounded-lg p-2 max-w-[85%] sm:max-w-[80%]">
+            <span className="text-[9px] sm:text-[10px] text-[#1a1a1a] leading-relaxed block">
               Bitte gib mir eine bewährte Musterklausel für Auflassung
             </span>
           </div>
         </div>
         <div className="flex gap-2 justify-end">
-          <div className="bg-[#c9a66b]/10 rounded-lg p-2 max-w-[80%]">
-            <span className="text-[10px] text-[#1a1a1a]">
+          <div className="bg-[#c9a66b]/10 rounded-lg p-2 max-w-[85%] sm:max-w-[80%]">
+            <span className="text-[9px] sm:text-[10px] text-[#1a1a1a] leading-relaxed block">
               Die Auflassung erfolgt unter der aufschiebenden Bedingung...
             </span>
           </div>
-          <div className="w-6 h-6 bg-[#c9a66b]/20 rounded-full flex items-center justify-center">
+          <div className="w-5 h-5 sm:w-6 sm:h-6 bg-[#c9a66b]/20 rounded-full flex items-center justify-center flex-shrink-0">
             <Sparkles className="w-3 h-3 text-[#c9a66b]" />
           </div>
         </div>
@@ -283,7 +284,7 @@ function VersionCompareMockup() {
         </div>
         <div className="flex items-center gap-2 p-2 bg-green-50 rounded border border-green-100">
           <span className="text-[10px] text-green-600">475.000 €</span>
-          <span className="text-[9px] text-[#9a9a9a]">— Kaufpreis angepasst</span>
+          <span className="text-[10px] text-[#9a9a9a]">— Kaufpreis angepasst</span>
         </div>
       </div>
     </div>
@@ -348,7 +349,7 @@ export default function ProduktPageClient() {
       {/* Hero Section */}
       <section className="relative pt-24 pb-12 sm:pb-16 lg:pt-32 lg:pb-24 bg-gradient-to-b from-[#fdfcfb] to-white overflow-hidden">
         {/* Subtle document lines - suggests text/contract */}
-        <div className="absolute inset-0 opacity-[0.02] hidden lg:block" style={{
+        <div className="absolute inset-0 opacity-[0.02] hidden md:block" style={{
           backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 32px, #1a1a1a 32px, #1a1a1a 33px)`,
         }} />
 
@@ -361,7 +362,7 @@ export default function ProduktPageClient() {
               {t("hero.title")}
             </h1>
             <p className="text-lg text-[#6b6b6b] mb-8">{t("hero.description")}</p>
-            <Button className="bg-[#1a1a1a] hover:bg-[#2d2d2d] text-white h-14 px-8 text-base rounded-full transition-colors" asChild>
+            <Button className="bg-[#1a1a1a] hover:bg-[#2d2d2d] text-white min-h-14 h-auto py-3 px-8 text-base rounded-full transition-colors" asChild>
               <Link href="/demo/">{t("hero.cta")}</Link>
             </Button>
           </div>
@@ -401,7 +402,7 @@ export default function ProduktPageClient() {
                 ))}
               </ul>
             </div>
-            <div className="bg-white p-8 border border-[#e8e8e8] shadow-soft rounded-xl">
+            <div className="bg-white p-4 sm:p-6 lg:p-8 border border-[#e8e8e8] shadow-soft rounded-xl">
               <VorgangListMockup />
             </div>
           </div>
@@ -412,7 +413,7 @@ export default function ProduktPageClient() {
       <section className="py-16 sm:py-24 lg:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="order-2 lg:order-1 bg-[#faf8f7] p-8 border border-[#e8e8e8] rounded-xl">
+            <div className="order-2 lg:order-1 bg-[#faf8f7] p-4 sm:p-6 lg:p-8 border border-[#e8e8e8] rounded-xl">
               <div className="space-y-4">
                 <SplitViewMockup />
                 <div className="grid grid-cols-2 gap-4">
@@ -467,7 +468,7 @@ export default function ProduktPageClient() {
                 ))}
               </ul>
             </div>
-            <div className="bg-white p-8 border border-[#e8e8e8] shadow-soft rounded-xl">
+            <div className="bg-white p-4 sm:p-6 lg:p-8 border border-[#e8e8e8] shadow-soft rounded-xl max-w-md mx-auto lg:max-w-none">
               <AIChatMockup />
             </div>
           </div>
@@ -478,7 +479,7 @@ export default function ProduktPageClient() {
       <section className="py-16 sm:py-24 lg:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="order-2 lg:order-1 bg-[#faf8f7] p-8 border border-[#e8e8e8] rounded-xl">
+            <div className="order-2 lg:order-1 bg-[#faf8f7] p-4 sm:p-6 lg:p-8 border border-[#e8e8e8] rounded-xl">
               <FormMockup />
             </div>
             <div className="order-1 lg:order-2">
@@ -627,7 +628,7 @@ export default function ProduktPageClient() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12">
             {[
               { key: "encryption", icon: Lock },
               { key: "compliance", icon: Shield },
@@ -650,6 +651,16 @@ export default function ProduktPageClient() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/sicherheit/"
+              className="inline-flex items-center gap-2 text-[#1a1a1a] hover:text-[#c9a66b] transition-colors"
+            >
+              <span className="font-medium">{t("security.learnMore")}</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
@@ -749,7 +760,7 @@ export default function ProduktPageClient() {
           <p className="text-[#9a9a9a] text-lg mb-10 max-w-2xl mx-auto">
             {t("cta.description")}
           </p>
-          <Button className="bg-white text-[#1a1a1a] hover:bg-[#f5f5f5] h-14 px-8 text-base rounded-full transition-colors" asChild>
+          <Button className="bg-white text-[#1a1a1a] hover:bg-[#f5f5f5] min-h-14 h-auto py-3 px-8 text-base rounded-full transition-colors" asChild>
             <Link href="/demo/">{t("cta.button")}</Link>
           </Button>
           <p className="text-xs text-[#6b6b6b] mt-6">{t("cta.footer")}</p>

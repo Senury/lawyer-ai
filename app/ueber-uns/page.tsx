@@ -101,13 +101,13 @@ export default function AboutPage() {
             {teamMembers.map((member, index) => (
               <div
                 key={member.name}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center ${
+                className={`grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center ${
                   index % 2 === 1 ? "" : ""
                 }`}
               >
                 {/* Image */}
-                <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                  <div className={`relative aspect-[4/5] max-w-sm mx-auto ${index % 2 === 1 ? "lg:ml-auto" : "lg:mr-auto"} overflow-hidden bg-[#faf8f7]`}>
+                <div className={index % 2 === 1 ? "md:order-2" : ""}>
+                  <div className={`relative aspect-[3/4] sm:aspect-[4/5] max-w-sm mx-auto ${index % 2 === 1 ? "md:ml-auto" : "md:mr-auto"} overflow-hidden bg-[#faf8f7]`}>
                     <picture>
                       <source srcSet={member.image.avif} type="image/avif" />
                       <source srcSet={member.image.webp} type="image/webp" />
@@ -115,7 +115,7 @@ export default function AboutPage() {
                         src={member.image.fallback}
                         alt={member.name}
                         fill
-                        className="object-cover object-top"
+                        className="object-cover object-center sm:object-top"
                         sizes="(max-width: 1024px) 100vw, 50vw"
                       />
                     </picture>
@@ -123,13 +123,13 @@ export default function AboutPage() {
                 </div>
 
                 {/* Content */}
-                <div className={`${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                  <div className={`space-y-4 text-center ${index % 2 === 1 ? "lg:text-right lg:ml-auto" : "lg:text-left"} max-w-lg mx-auto lg:mx-0`}>
+                <div className={`${index % 2 === 1 ? "md:order-1" : ""}`}>
+                  <div className={`space-y-4 text-center ${index % 2 === 1 ? "md:text-right md:ml-auto" : "md:text-left"} max-w-lg mx-auto md:mx-0`}>
                     <div>
                       <span className="text-xs font-semibold uppercase tracking-widest text-[#c9a66b] mb-2 block">
                         {member.role}
                       </span>
-                      <div className={`flex items-center gap-3 justify-center ${index % 2 === 1 ? "lg:justify-end" : "lg:justify-start"}`}>
+                      <div className={`flex items-center gap-3 justify-center ${index % 2 === 1 ? "md:justify-end" : "md:justify-start"}`}>
                         <h2 className="font-serif text-3xl lg:text-4xl font-medium text-[#1a1a1a]">
                           {member.name}
                         </h2>
@@ -151,7 +151,7 @@ export default function AboutPage() {
                         </p>
                       )}
                     </div>
-                    <div className={`w-12 h-px bg-[#e8e8e8] mx-auto ${index % 2 === 1 ? "lg:ml-auto lg:mr-0" : "lg:mx-0"}`} />
+                    <div className={`w-12 h-px bg-[#e8e8e8] mx-auto ${index % 2 === 1 ? "md:ml-auto md:mr-0" : "md:mx-0"}`} />
                     <div className="space-y-4">
                       {member.bio.map((paragraph, idx) => (
                         <p key={idx} className="text-[#6b6b6b] leading-relaxed">
@@ -177,11 +177,11 @@ export default function AboutPage() {
 
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           {/* Large quote mark */}
-          <span className="block font-serif text-[10rem] lg:text-[14rem] font-medium text-[#c9a66b]/20 leading-none -mb-20 lg:-mb-32">
+          <span className="block font-serif text-[6rem] sm:text-[8rem] lg:text-[10rem] font-medium text-[#c9a66b]/20 leading-none -mb-12 sm:-mb-16 lg:-mb-24">
             &ldquo;
           </span>
 
-          <blockquote className="relative font-serif text-2xl sm:text-3xl lg:text-4xl text-white leading-relaxed">
+          <blockquote className="relative font-serif text-xl sm:text-2xl lg:text-3xl text-white leading-relaxed max-w-3xl mx-auto">
             Wir glauben daran, dass Kundenzufriedenheit und Qualität der Schlüssel zum Erfolg ist.
           </blockquote>
 

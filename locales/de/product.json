@@ -118,6 +118,7 @@
       "label": "Sicherheit",
       "title": "Sicherheit auf Notariats-Niveau",
       "description": "Entwickelt für den §203 StGB-Kontext. Ihre Mandantendaten verdienen höchsten Schutz.",
+      "learnMore": "Mehr zur Sicherheit",
       "features": {
         "encryption": {
           "title": "End-to-End Verschlüsselung",

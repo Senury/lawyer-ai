@@ -148,7 +148,7 @@ function FeatureCard({
   description: string;
 }) {
   return (
-    <div className="group bg-white p-8 border border-[#e8e8e8] hover:border-[#c9a66b]/30 hover:shadow-elevated transition-all duration-500">
+    <div className="group bg-white p-5 sm:p-6 lg:p-8 border border-[#e8e8e8] hover:border-[#c9a66b]/30 hover:shadow-elevated transition-all duration-500">
       <div className="w-12 h-12 flex items-center justify-center bg-[#fafafa] border border-[#e8e8e8] rounded-xl mb-6 group-hover:bg-[#c9a66b]/5 group-hover:border-[#c9a66b]/20 transition-all duration-500">
         <Icon className="w-6 h-6 text-[#1a1a1a] group-hover:text-[#c9a66b] transition-colors duration-500" strokeWidth={1.5} />
       </div>
@@ -261,12 +261,12 @@ export default function HomePageClient() {
             </div>
 
             {/* Right Content - Floating Mockups */}
-            <div className="relative min-h-[380px] sm:min-h-[450px] lg:min-h-[580px] w-full flex items-center justify-center order-1 lg:order-2 py-6">
+            <div className="relative min-h-[280px] sm:min-h-[380px] lg:min-h-[580px] w-full flex items-center justify-center order-1 lg:order-2 py-6">
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] lg:w-[400px] lg:h-[400px] bg-gradient-to-br from-[#c9a66b]/20 to-transparent rounded-full blur-3xl"></div>
 
               <div className="relative w-full max-w-[280px] sm:max-w-sm mx-auto">
                 {/* Main Mockup */}
-                <div className="relative z-10 scale-90 sm:scale-100">
+                <div className="relative z-10 scale-[0.85] sm:scale-100 max-w-full">
                   <ClauseLibraryMockup />
                 </div>
 
@@ -319,8 +319,8 @@ export default function HomePageClient() {
       <section className="py-20 sm:py-28 lg:py-36 bg-[#faf8f7] relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-            <div className="order-2 lg:order-1 bg-white p-10 border border-[#e8e8e8] shadow-elevated">
-              <div className="bg-[#fafafa] p-8 border border-[#e8e8e8]">
+            <div className="order-2 lg:order-1 bg-white p-6 sm:p-8 lg:p-10 border border-[#e8e8e8] shadow-elevated">
+              <div className="bg-[#fafafa] p-5 sm:p-6 lg:p-8 border border-[#e8e8e8]">
                 <div className="flex items-center gap-3 mb-8">
                   <div className="w-10 h-10 bg-[#c9a66b]/10 flex items-center justify-center rounded-lg">
                     <Zap className="w-5 h-5 text-[#c9a66b]" />
@@ -385,16 +385,16 @@ export default function HomePageClient() {
 
             <div className="order-1 lg:order-2">
               <SectionLabel>{t("solution.label")}</SectionLabel>
-              <h2 className="font-serif font-medium text-3xl md:text-4xl lg:text-5xl text-[#1a1a1a] mb-6 text-center lg:text-left">
+              <h2 className="font-serif font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#1a1a1a] mb-6 text-center lg:text-left">
                 {t("solution.title")}
               </h2>
               <p className="text-lg text-[#6b6b6b] mb-10 leading-relaxed text-center lg:text-left">
                 {t("solution.description")}
               </p>
-              <ul className="space-y-5">
+              <ul className="space-y-3 sm:gap-4">
                 {[0, 1, 2, 3].map((i) => (
-                  <li key={i} className="flex items-start gap-4 text-[#1a1a1a]">
-                    <div className="w-6 h-6 bg-[#c9a66b]/10 flex items-center justify-center rounded-full flex-shrink-0 mt-0.5">
+                  <li key={i} className="flex items-start gap-3 sm:gap-4 text-[#1a1a1a]">
+                    <div className="w-5 h-5 sm:w-6 sm:h-6 bg-[#c9a66b]/10 flex items-center justify-center rounded-full flex-shrink-0 mt-0.5">
                       <Check className="w-4 h-4 text-[#c9a66b]" strokeWidth={2} />
                     </div>
                     <span className="text-base">{t(`solution.benefits.${i}`)}</span>
@@ -427,7 +427,7 @@ export default function HomePageClient() {
                 ))}
               </ul>
             </div>
-            <div className="bg-[#faf8f7] p-8 border border-[#e8e8e8] rounded-xl">
+            <div className="bg-[#faf8f7] p-5 sm:p-6 lg:p-8 border border-[#e8e8e8] rounded-xl">
               <div className="space-y-4">
                 <div className="p-4 bg-white border border-[#e8e8e8] rounded-lg flex items-center gap-4">
                   <div className="w-10 h-10 bg-[#c9a66b]/10 flex items-center justify-center rounded-lg">
@@ -487,7 +487,7 @@ export default function HomePageClient() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
             <FeatureCard
               icon={TextCursorInput}
               title={t("features.items.intelligentCapture.title")}
@@ -730,7 +730,7 @@ export default function HomePageClient() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 relative">
             <div className="hidden lg:block absolute top-7 left-[12.5%] right-[12.5%] h-px bg-gradient-to-r from-transparent via-[#e8e8e8] to-transparent"></div>
 
             <ProcessStep
@@ -779,12 +779,12 @@ export default function HomePageClient() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 relative">
           <div className="flex flex-col items-center text-center">
             {/* Large decorative quote mark */}
-            <div className="text-[#c9a66b]/20 font-serif text-[120px] leading-none mb-2 select-none">
+            <div className="text-[#c9a66b]/20 font-serif text-[80px] sm:text-[100px] lg:text-[120px] leading-none mb-2 select-none">
               &ldquo;
             </div>
 
             {/* Quote */}
-            <blockquote className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#1a1a1a] leading-[1.3] mb-8 -mt-8">
+            <blockquote className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#1a1a1a] leading-[1.3] mb-8 -mt-8">
               {t("testimonial.quote")}
             </blockquote>
 
@@ -810,13 +810,13 @@ export default function HomePageClient() {
           <p className="text-[#6b6b6b] text-lg mb-10 max-w-xl mx-auto">
             {t("cta.description")}
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button className="bg-[#1a1a1a] hover:bg-[#2d2d2d] text-white h-14 px-10 text-base rounded-full shadow-lg shadow-[#1a1a1a]/10 transition-all" asChild>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto">
+            <Button className="w-full sm:w-auto bg-[#1a1a1a] hover:bg-[#2d2d2d] text-white h-12 sm:h-14 px-6 sm:px-10 text-sm sm:text-base rounded-full shadow-lg shadow-[#1a1a1a]/10 transition-all" asChild>
               <Link href="/demo/">{t("cta.primary")}</Link>
             </Button>
             <Button
               variant="outline"
-              className="border-[#d0d0d0] text-[#1a1a1a] hover:bg-white hover:border-[#c9a66b]/30 h-14 px-10 text-base rounded-full transition-all"
+              className="w-full sm:w-auto border-[#d0d0d0] text-[#1a1a1a] hover:bg-white hover:border-[#c9a66b]/30 h-12 sm:h-14 px-6 sm:px-10 text-sm sm:text-base rounded-full transition-all"
               asChild
             >
               <Link href="/kontakt/">{t("cta.secondary")}</Link>

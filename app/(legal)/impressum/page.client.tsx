@@ -101,7 +101,7 @@ export default function ImpressumPageClient() {
                       Angaben gemäß § 5 DDG
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-6 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-6 text-[#6b6b6b] leading-relaxed">
                     <Card className="bg-white border-[#e8e8e8] rounded-xl">
                       <CardContent className="p-6">
                         <h3 className="font-serif text-lg text-[#1a1a1a] mb-4">
@@ -169,12 +169,12 @@ export default function ImpressumPageClient() {
                       Besondere rechtliche Hinweise für Berufsgeheimnisträger
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>
                       Die Senury UG ist auf die Zusammenarbeit mit Berufsgeheimnisträgern (Notare und Rechtsanwälte) spezialisiert. Wir gewährleisten die Einhaltung der folgenden gesetzlichen Standards:
                     </p>
-                    <ul className="space-y-4 mt-6">
-                      <li className="flex gap-4 bg-[#faf8f7] p-4 rounded-lg">
+                    <ul className="space-y-3 sm:space-y-4 mt-6">
+                      <li className="flex gap-3 sm:gap-4 bg-[#faf8f7] p-3 sm:p-4 rounded-lg">
                         <span className="w-2 h-2 bg-[#c9a66b] rounded-full mt-2 flex-shrink-0" />
                         <div>
                           <span className="font-medium text-[#1a1a1a]">Schutz von Privatgeheimnissen (§ 203 StGB)</span>
@@ -183,7 +183,7 @@ export default function ImpressumPageClient() {
                           </p>
                         </div>
                       </li>
-                      <li className="flex gap-4 bg-[#faf8f7] p-4 rounded-lg">
+                      <li className="flex gap-3 sm:gap-4 bg-[#faf8f7] p-3 sm:p-4 rounded-lg">
                         <span className="w-2 h-2 bg-[#c9a66b] rounded-full mt-2 flex-shrink-0" />
                         <div>
                           <span className="font-medium text-[#1a1a1a]">Wahrung der notariellen Amtsausübung (§§ 18, 19 BNotO)</span>
@@ -192,7 +192,7 @@ export default function ImpressumPageClient() {
                           </p>
                         </div>
                       </li>
-                      <li className="flex gap-4 bg-[#faf8f7] p-4 rounded-lg">
+                      <li className="flex gap-3 sm:gap-4 bg-[#faf8f7] p-3 sm:p-4 rounded-lg">
                         <span className="w-2 h-2 bg-[#c9a66b] rounded-full mt-2 flex-shrink-0" />
                         <div>
                           <span className="font-medium text-[#1a1a1a]">Datenschutz (Art. 28 DSGVO)</span>
@@ -215,7 +215,7 @@ export default function ImpressumPageClient() {
                       Urheberrecht
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>
                       Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Arbeit der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
                     </p>
@@ -235,7 +235,7 @@ export default function ImpressumPageClient() {
                       Haftung für Links
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>
                       Wir weisen ausdrücklich darauf hin, dass wir für die Angebote Dritter im World Wide Web (sog. „deep links“) nicht verantwortlich sind. Soweit Links auf die Angebote Dritter verweisen, enthalten diese nach unserer Kenntnis keine strafbaren oder anderweitig verbotenen Inhalte. Für diese Inhalte wird keinerlei Haftung übernommen.
                     </p>
@@ -252,10 +252,10 @@ export default function ImpressumPageClient() {
                       Verantwortlich für den Inhalt
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</p>
                     <Card className="bg-[#faf8f7] border-[#e8e8e8] rounded-xl">
-                      <CardContent className="p-6">
+                      <CardContent className="p-4 sm:p-6">
                         <p className="font-medium text-[#1a1a1a]">Jun Augustin Probst und Johan Kawamura</p>
                         <p className="text-sm text-[#6b6b6b] mt-1">Baron-Voght Straße 19d, 22609 Hamburg</p>
                       </CardContent>
@@ -273,7 +273,7 @@ export default function ImpressumPageClient() {
                       Streitbeilegung
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>
                       Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{" "}
                       <a
@@ -287,7 +287,7 @@ export default function ImpressumPageClient() {
                     </p>
                     <p>Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
 
-                    <div className="bg-[#faf8f7] border border-[#e8e8e8] p-4 sm:p-6 rounded-xl mt-6">
+                    <div className="bg-[#faf8f7] border border-[#e8e8e8] p-3 sm:p-6 rounded-xl mt-6">
                       <h4 className="font-medium text-[#1a1a1a] mb-2">
                         Hinweis gemäß § 36 VSBG:
                       </h4>

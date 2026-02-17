@@ -72,7 +72,7 @@ export default function PreisPageClient() {
             <span className={`text-sm ${isYearly ? "text-[#1a1a1a] font-medium" : "text-[#6b6b6b]"}`}>
               {t("toggle.yearly")}
             </span>
-            <span className="pill-badge bg-[#c9a66b]/10 text-[#c9a66b] text-[10px]">
+            <span className="pill-badge bg-[#c9a66b]/10 text-[#c9a66b] text-[10px] whitespace-nowrap">
               {t("toggle.save")}
             </span>
           </div>
@@ -168,7 +168,7 @@ export default function PreisPageClient() {
           </div>
 
           <div className="bg-white border border-[#e8e8e8] rounded-xl overflow-hidden overflow-x-auto scrollbar-hide">
-            <div className="min-w-[500px]">
+            <div className="min-w-[320px] sm:min-w-[500px]">
               <div className="grid grid-cols-4 gap-2 sm:gap-4 p-3 sm:p-4 bg-[#fafafa] border-b border-[#e8e8e8] text-xs sm:text-sm font-medium text-[#1a1a1a]">
                 <div className="min-w-[120px]">{t("comparison.header.feature")}</div>
                 <div className="text-center min-w-[80px]">{t("comparison.header.pilot")}</div>

@@ -111,7 +111,7 @@ export default function AgbPageClient() {
                       {t("sections.geltungsbereich.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.geltungsbereich.p1")}</p>
                     <p>{t("sections.geltungsbereich.p2")}</p>
                     <div className="bg-white border-l-4 border-[#c9a66b] p-4 sm:p-6 my-6">
@@ -131,7 +131,7 @@ export default function AgbPageClient() {
                       {t("sections.vertragsschluss.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.vertragsschluss.p1")}</p>
                     <ol className="space-y-3 list-decimal list-inside">
                       <li>{t("sections.vertragsschluss.steps.1")}</li>
@@ -151,7 +151,7 @@ export default function AgbPageClient() {
                       {t("sections.preise.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.preise.p1")}</p>
                     <p>{t("sections.preise.p2")}</p>
                     <Card className="bg-white border-[#e8e8e8] rounded-xl mt-6">
@@ -182,11 +182,11 @@ export default function AgbPageClient() {
                       {t("sections.zahlung.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.zahlung.p1")}</p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 max-w-md sm:max-w-none mx-auto">
                       {t.raw("sections.zahlung.methods").map((method: string, index: number) => (
-                        <div key={index} className="bg-white border border-[#e8e8e8] p-4 rounded-lg">
+                        <div key={index} className="bg-white border border-[#e8e8e8] p-3 sm:p-4 rounded-lg">
                           <div className="flex items-center gap-2">
                             <CheckCircle2 className="w-4 h-4 text-[#c9a66b]" />
                             <span className="text-[#1a1a1a] font-medium">{method}</span>
@@ -207,10 +207,10 @@ export default function AgbPageClient() {
                       {t("sections.widerruf.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.widerruf.p1")}</p>
                     <Card className="bg-[#faf8f7] border-[#e8e8e8] rounded-xl">
-                      <CardContent className="p-6">
+                      <CardContent className="p-4 sm:p-6">
                         <h3 className="font-serif text-lg text-[#1a1a1a] mb-4">
                           {t("sections.widerruf.model.title")}
                         </h3>
@@ -236,7 +236,7 @@ export default function AgbPageClient() {
                       {t("sections.nutzung.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.nutzung.p1")}</p>
                     <ul className="space-y-3 mt-4">
                       {t.raw("sections.nutzung.obligations").map((item: string, index: number) => (
@@ -259,10 +259,10 @@ export default function AgbPageClient() {
                       {t("sections.haftung.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.haftung.p1")}</p>
                     <p>{t("sections.haftung.p2")}</p>
-                    <div className="bg-white border border-[#e8e8e8] p-4 sm:p-6 rounded-xl mt-6">
+                    <div className="bg-white border border-[#e8e8e8] p-3 sm:p-6 rounded-xl mt-6">
                       <h4 className="font-medium text-[#1a1a1a] mb-3">{t("sections.haftung.exclusion.title")}</h4>
                       <ul className="space-y-2 text-sm">
                         {t.raw("sections.haftung.exclusion.items").map((item: string, index: number) => (
@@ -286,18 +286,18 @@ export default function AgbPageClient() {
                       {t("sections.laufzeit.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.laufzeit.p1")}</p>
                     <p>{t("sections.laufzeit.p2")}</p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-                      <div className="bg-[#faf8f7] p-4 rounded-lg">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 max-w-md sm:max-w-none mx-auto">
+                      <div className="bg-[#faf8f7] p-3 sm:p-4 rounded-lg">
                         <div className="flex items-center gap-2 mb-2">
                           <Clock className="w-4 h-4 text-[#c9a66b]" />
                           <span className="font-medium text-[#1a1a1a]">{t("sections.laufzeit.notice.title")}</span>
                         </div>
                         <p className="text-sm">{t("sections.laufzeit.notice.text")}</p>
                       </div>
-                      <div className="bg-[#faf8f7] p-4 rounded-lg">
+                      <div className="bg-[#faf8f7] p-3 sm:p-4 rounded-lg">
                         <div className="flex items-center gap-2 mb-2">
                           <AlertCircle className="w-4 h-4 text-[#c9a66b]" />
                           <span className="font-medium text-[#1a1a1a]">{t("sections.laufzeit.termination.title")}</span>
@@ -318,7 +318,7 @@ export default function AgbPageClient() {
                       {t("sections.schlussbestimmungen.title")}
                     </h2>
                   </div>
-                  <div className="pl-0 sm:pl-13 space-y-4 text-[#6b6b6b] leading-relaxed">
+                  <div className="pl-0 sm:pl-12 space-y-4 text-[#6b6b6b] leading-relaxed">
                     <p>{t("sections.schlussbestimmungen.p1")}</p>
                     <p>{t("sections.schlussbestimmungen.p2")}</p>
                     <p>{t("sections.schlussbestimmungen.p3")}</p>

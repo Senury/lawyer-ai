@@ -256,7 +256,7 @@ export default function DemoPageClient() {
                               onClick={() => day.available && handleDateSelect(day.date)}
                               disabled={!day.available}
                               className={cn(
-                                "flex flex-col items-center p-2 sm:p-3 rounded-lg border transition-all",
+                                "flex flex-col items-center p-2 sm:p-3 rounded-lg border transition-all min-h-[60px] sm:min-h-0",
                                 !day.available && "opacity-40 cursor-not-allowed bg-[#f5f5f5]",
                                 day.available && "hover:border-[#c9a66b] cursor-pointer",
                                 selectedDate?.toDateString() === day.date.toDateString()
@@ -266,7 +266,7 @@ export default function DemoPageClient() {
                             >
                               <span
                                 className={cn(
-                                  "text-[10px] sm:text-xs mb-1",
+                                  "text-xs sm:text-xs mb-1",
                                   selectedDate?.toDateString() === day.date.toDateString()
                                     ? "text-[#c9a66b]"
                                     : "text-[#9a9a9a]"
@@ -277,7 +277,7 @@ export default function DemoPageClient() {
                               <span className="text-base sm:text-lg font-medium">{day.dayNum}</span>
                               <span
                                 className={cn(
-                                  "text-[9px] sm:text-[10px] mt-0.5",
+                                  "text-[10px] sm:text-[10px] mt-0.5",
                                   selectedDate?.toDateString() === day.date.toDateString()
                                     ? "text-white/70"
                                     : "text-[#9a9a9a]"
@@ -296,13 +296,13 @@ export default function DemoPageClient() {
                           <h3 className="text-sm font-semibold uppercase tracking-wider text-[#9a9a9a] mb-4">
                             {t("calendar.selectTime")}
                           </h3>
-                          <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
+                          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                             {timeSlots.map((time) => (
                               <button
                                 key={time}
                                 onClick={() => handleTimeSelect(time)}
                                 className={cn(
-                                  "py-2.5 px-3 rounded-lg border text-sm font-medium transition-all",
+                                  "h-12 sm:h-auto py-3 rounded-lg border text-sm font-medium transition-all",
                                   selectedTime === time
                                     ? "border-[#1a1a1a] bg-[#1a1a1a] text-white"
                                     : "border-[#e8e8e8] bg-white hover:border-[#c9a66b] text-[#6b6b6b]"
@@ -327,7 +327,7 @@ export default function DemoPageClient() {
                         <p className="text-[#6b6b6b]">{t("steps.info.description")}</p>
                       </div>
 
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                         <div className="space-y-2">
                           <label htmlFor="name" className="text-sm font-medium text-[#1a1a1a]">
                             {t("form.name.label")}
@@ -341,7 +341,7 @@ export default function DemoPageClient() {
                               onChange={(e) =>
                                 setFormData({ ...formData, name: e.target.value })
                               }
-                              className="pl-10 h-12 border-[#e8e8e8] focus:border-[#c9a66b] focus:ring-[#c9a66b]"
+                              className="pl-10 h-11 sm:h-12 border-[#e8e8e8] focus:border-[#c9a66b] focus:ring-[#c9a66b]"
                             />
                           </div>
                         </div>
@@ -360,7 +360,7 @@ export default function DemoPageClient() {
                               onChange={(e) =>
                                 setFormData({ ...formData, email: e.target.value })
                               }
-                              className="pl-10 h-12 border-[#e8e8e8] focus:border-[#c9a66b] focus:ring-[#c9a66b]"
+                              className="pl-10 h-11 sm:h-12 border-[#e8e8e8] focus:border-[#c9a66b] focus:ring-[#c9a66b]"
                             />
                           </div>
                         </div>
@@ -379,7 +379,7 @@ export default function DemoPageClient() {
                               onChange={(e) =>
                                 setFormData({ ...formData, phone: e.target.value })
                               }
-                              className="pl-10 h-12 border-[#e8e8e8] focus:border-[#c9a66b] focus:ring-[#c9a66b]"
+                              className="pl-10 h-11 sm:h-12 border-[#e8e8e8] focus:border-[#c9a66b] focus:ring-[#c9a66b]"
                             />
                           </div>
                         </div>
@@ -397,7 +397,7 @@ export default function DemoPageClient() {
                               onChange={(e) =>
                                 setFormData({ ...formData, notaryName: e.target.value })
                               }
-                              className="pl-10 h-12 border-[#e8e8e8] focus:border-[#c9a66b] focus:ring-[#c9a66b]"
+                              className="pl-10 h-11 sm:h-12 border-[#e8e8e8] focus:border-[#c9a66b] focus:ring-[#c9a66b]"
                             />
                           </div>
                         </div>
@@ -546,7 +546,7 @@ export default function DemoPageClient() {
             </div>
 
             {/* Right Column - Info */}
-            <div className="lg:col-span-4">
+            <div className="lg:col-span-4 mt-8 lg:mt-0">
               <div className="lg:sticky lg:top-28 space-y-6">
                 {/* What to expect */}
                 <Card className="bg-white border-[#e8e8e8] rounded-xl">
