@@ -354,7 +354,9 @@ export default function DemoPageClient() {
                             <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#9a9a9a]" />
                             <Input
                               id="email"
-                              type="email"
+                              type="text"
+                              inputMode="email"
+                              autoComplete="email"
                               placeholder={t("form.email.placeholder")}
                               value={formData.email}
                               onChange={(e) =>

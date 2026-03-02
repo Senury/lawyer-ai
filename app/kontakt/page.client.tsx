@@ -195,7 +195,9 @@ export default function KontaktPageClient() {
                         {t("form.fields.email.label")}
                       </label>
                       <Input
-                        type="email"
+                        type="text"
+                        inputMode="email"
+                        autoComplete="email"
                         placeholder={t("form.fields.email.placeholder")}
                         value={formState.email}
                         onChange={(e) =>
