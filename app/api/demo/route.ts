@@ -1,6 +1,7 @@
 import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
 import { createDemoRequestEmail } from "@/lib/emails/demo-template";
+import { createConfirmationEmail } from "@/lib/emails/confirmation-template";
 
 let resend: Resend | null = null;
 
@@ -133,7 +134,6 @@ export async function POST(request: NextRequest) {
 
     // Send confirmation to user (non-blocking)
     try {
-      const { createConfirmationEmail } = await import("@/lib/emails/confirmation-template");
       const { html: confirmHtml, text: confirmText } = createConfirmationEmail({
         name: sanitizedName,
         type: "demo",
