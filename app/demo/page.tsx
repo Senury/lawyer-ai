@@ -24,7 +24,14 @@ export const metadata: Metadata = {
 };
 
 import DemoPageClient from "./page.client";
+import DemoComingSoon from "./page-coming-soon";
 
 export default function DemoPage() {
+  const isEnabled = process.env.ENABLE_DEMO_REQUEST === "true";
+
+  if (!isEnabled) {
+    return <DemoComingSoon />;
+  }
+
   return <DemoPageClient />;
 }
