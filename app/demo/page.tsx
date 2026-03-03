@@ -1,23 +1,24 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Demo | Persönliche Produktvorführung",
+  title: "Demo-Termin vereinbaren | Senury",
   description:
-    "Vereinbaren Sie eine persönliche Demo von Senury. Lassen Sie sich unsere KI-gestützte Notariatssoftware in einem 30-minütigen Videoanruf vorstellen.",
+    "Sichern Sie sich einen der ersten Demo-Termine im April 2026. Erleben Sie live, wie Senury Ihren Notariatsalltag transformiert. Nennen Sie uns drei Wunschtermine.",
   keywords: [
     "Senury Demo",
+    "Demo-Termin",
     "Notariatssoftware Demo",
     "KI Notar Demo",
     "Produktvorführung",
-    "Software Test",
+    "Termin vereinbaren",
   ],
   alternates: {
     canonical: "/demo/",
   },
   openGraph: {
-    title: "Senury Demo | Persönliche Produktvorführung",
+    title: "Demo-Termin vereinbaren | Senury",
     description:
-      "Vereinbaren Sie eine persönliche Demo. Lassen Sie sich Senury in einem 30-minütigen Videoanruf vorstellen.",
+      "Sichern Sie sich einen der ersten Demo-Termine im April 2026. Nennen Sie uns drei Wunschtermine – wir bestätigen innerhalb von 24 Stunden.",
     url: "https://senury.com/demo/",
     images: ["/favicon.png"],
   },

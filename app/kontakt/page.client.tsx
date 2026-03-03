@@ -20,7 +20,11 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-export default function KontaktPageClient() {
+interface KontaktPageClientProps {
+  showPhoneNumber: boolean;
+}
+
+export default function KontaktPageClient({ showPhoneNumber }: KontaktPageClientProps) {
   const t = useTranslations("contact");
   const [formState, setFormState] = useState({
     name: "",
@@ -64,7 +68,7 @@ export default function KontaktPageClient() {
     }
   };
 
-  const contactMethods = [
+  const allContactMethods = [
     {
       icon: Mail,
       key: "email",
@@ -82,6 +86,11 @@ export default function KontaktPageClient() {
       key: "hours",
     },
   ];
+
+  // Filter out phone if disabled
+  const contactMethods = allContactMethods.filter(
+    (method) => method.key !== "phone" || showPhoneNumber
+  );
 
   return (
     <div className="min-h-screen">
@@ -114,7 +123,11 @@ export default function KontaktPageClient() {
       {/* Contact Methods Grid */}
       <section className="py-12 sm:py-16 lg:py-24 bg-white border-y border-[#e8e8e8]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
+          <div className={
+            contactMethods.length === 3
+              ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto"
+              : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8"
+          }>
             {contactMethods.map((method) => (
               <Card
                 key={method.key}

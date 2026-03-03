@@ -64,10 +64,12 @@ function LocalBusinessSchema() {
 }
 
 export default function KontaktPage() {
+  const showPhoneNumber = process.env.SHOW_PHONE_NUMBER === "true";
+
   return (
     <>
       <LocalBusinessSchema />
-      <KontaktPageClient />
+      <KontaktPageClient showPhoneNumber={showPhoneNumber} />
     </>
   );
 }
