@@ -319,20 +319,25 @@ export async function POST(request: NextRequest) {
     // Check if slot is already booked (if DB is configured)
     const dbConfigured = !!process.env.DATABASE_URL;
     if (dbConfigured) {
-      const sql = getDb();
+      try {
+        const sql = getDb();
 
-      const existing = await sql`
-        SELECT id FROM appointments
-        WHERE date = ${date}::date
-          AND time = ${time}
-          AND status != 'cancelled'
-      `;
+        const existing = await sql`
+          SELECT id FROM appointments
+          WHERE date = ${date}::date
+            AND time = ${time}
+            AND status != 'cancelled'
+        `;
 
-      if (existing.length > 0) {
-        return NextResponse.json(
-          { error: "Dieser Termin ist leider bereits vergeben. Bitte wählen Sie einen anderen Zeitpunkt." },
-          { status: 409 }
-        );
+        if (existing.length > 0) {
+          return NextResponse.json(
+            { error: "Dieser Termin ist leider bereits vergeben. Bitte wählen Sie einen anderen Zeitpunkt." },
+            { status: 409 }
+          );
+        }
+      } catch (dbError) {
+        // DB not ready (table missing, connection issue) — continue without availability check
+        console.error("DB availability check failed:", dbError);
       }
     }
 
