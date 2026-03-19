@@ -108,8 +108,8 @@ export default function ImpressumPageClient() {
                           Senury UG (haftungsbeschränkt)
                         </h3>
                         <address className="not-italic space-y-1 text-[#6b6b6b]">
-                          <p className="font-medium text-[#1a1a1a]">Baron-Voght-Straße 19d</p>
-                          <p>22609 Hamburg</p>
+                          <p className="font-medium text-[#1a1a1a]">Paul-Lincke-Ufer 8c</p>
+                          <p>10999 Berlin</p>
                         </address>
 
                         <div className="pt-4 mt-4 border-t border-[#e8e8e8]">
@@ -138,7 +138,7 @@ export default function ImpressumPageClient() {
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                             <div>
                               <p className="text-[#9a9a9a]">Registergericht</p>
-                              <p className="text-[#1a1a1a] font-medium">Amtsgericht Hamburg</p>
+                              <p className="text-[#1a1a1a] font-medium">Amtsgericht Berlin (Charlottenburg)</p>
                             </div>
                             <div>
                               <p className="text-[#9a9a9a]">Registernummer</p>
@@ -257,7 +257,7 @@ export default function ImpressumPageClient() {
                     <Card className="bg-[#faf8f7] border-[#e8e8e8] rounded-xl">
                       <CardContent className="p-4 sm:p-6">
                         <p className="font-medium text-[#1a1a1a]">Jun Augustin Probst und Johan Kawamura</p>
-                        <p className="text-sm text-[#6b6b6b] mt-1">Baron-Voght Straße 19d, 22609 Hamburg</p>
+                        <p className="text-sm text-[#6b6b6b] mt-1">Paul-Lincke-Ufer 8c, 10999 Berlin</p>
                       </CardContent>
                     </Card>
                   </div>

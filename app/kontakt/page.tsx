@@ -35,12 +35,14 @@ function LocalBusinessSchema() {
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "DE",
-      "addressLocality": "Hamburg"
+      "streetAddress": "Paul-Lincke-Ufer 8c",
+      "postalCode": "10999",
+      "addressLocality": "Berlin"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "53.5511",
-      "longitude": "9.9937"
+      "latitude": "52.4951",
+      "longitude": "13.4234"
     },
     "openingHoursSpecification": [
       {
