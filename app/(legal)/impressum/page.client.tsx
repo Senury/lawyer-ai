@@ -108,7 +108,7 @@ export default function ImpressumPageClient() {
                           Senury UG (haftungsbeschränkt)
                         </h3>
                         <address className="not-italic space-y-1 text-[#6b6b6b]">
-                          <p className="font-medium text-[#1a1a1a]">Paul-Lincke-Ufer 8c</p>
+                          <p className="font-medium text-[#1a1a1a]">Paul-Lincke-Ufer 8C</p>
                           <p>10999 Berlin</p>
                         </address>
 
@@ -257,7 +257,7 @@ export default function ImpressumPageClient() {
                     <Card className="bg-[#faf8f7] border-[#e8e8e8] rounded-xl">
                       <CardContent className="p-4 sm:p-6">
                         <p className="font-medium text-[#1a1a1a]">Jun Augustin Probst und Johan Kawamura</p>
-                        <p className="text-sm text-[#6b6b6b] mt-1">Paul-Lincke-Ufer 8c, 10999 Berlin</p>
+                        <p className="text-sm text-[#6b6b6b] mt-1">Paul-Lincke-Ufer 8C, 10999 Berlin</p>
                       </CardContent>
                     </Card>
                   </div>

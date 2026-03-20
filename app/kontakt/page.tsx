@@ -34,10 +34,10 @@ function LocalBusinessSchema() {
     "email": "hello@senury.com",
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "DE",
-      "streetAddress": "Paul-Lincke-Ufer 8c",
+      "streetAddress": "Paul-Lincke-Ufer 8C",
       "postalCode": "10999",
-      "addressLocality": "Berlin"
+      "addressLocality": "Berlin",
+      "addressCountry": "DE"
     },
     "geo": {
       "@type": "GeoCoordinates",

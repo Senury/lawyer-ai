@@ -470,12 +470,12 @@ export default function DatenschutzPageClient() {
                           <p className="pt-2">
                             {t("sections.beschwerde.websiteLabel")}:{" "}
                             <a
-                              href="https://datenschutz-hamburg.de/"
+                              href="https://www.datenschutz-berlin.de/"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="text-[#c9a66b] hover:underline"
                             >
-                              https://datenschutz-hamburg.de/
+                              https://www.datenschutz-berlin.de/
                             </a>
                           </p>
                         </address>

@@ -26,7 +26,7 @@
         "p1": "Verantwortlicher im Sinne der Datenschutz-Grundverordnung und anderer nationaler Datenschutzgesetze ist:",
         "company": "Senury UG (haftungsbeschränkt)",
         "name": "Senury UG (haftungsbeschränkt)",
-        "street": "Paul-Lincke-Ufer 8c",
+        "street": "Paul-Lincke-Ufer 8C",
         "city": "10999 Berlin",
         "emailLabel": "E-Mail",
         "email": "info@senury.com",
@@ -187,10 +187,10 @@
       "beschwerde": {
         "title": "Beschwerderecht",
         "p1": "Sie haben das Recht, jederzeit bei einer Datenschutz-Aufsichtsbehörde Beschwerde einzulegen. Zuständig ist die Aufsichtsbehörde des Bundeslandes, in dem wir unseren Sitz haben:",
-        "authority": "Hamburgische Beauftragte für Datenschutz und Informationsfreiheit",
-        "name": "Hamburgische Beauftragte für Datenschutz und Informationsfreiheit (HmbBfDI)",
-        "street": "Ludwig-Erhard-Straße 22",
-        "city": "20459 Hamburg",
+        "authority": "Berliner Beauftragte für Datenschutz und Informationsfreiheit",
+        "name": "Berliner Beauftragte für Datenschutz und Informationsfreiheit (BlnBDI)",
+        "street": "Alt-Moabit 59-61",
+        "city": "10555 Berlin",
         "websiteLabel": "Website"
       }
     },
